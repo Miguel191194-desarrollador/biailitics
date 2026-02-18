@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ── SEO Primary ──────────────────────────────────────── -->
+    <title>BiAilitics | Automatización con IA — Consultor Freelance</title>
+    <meta name="description"
+        content="Especialista freelance en automatización de procesos con IA. Flujos automáticos, dashboards en vivo y gestión inteligente para escalar tu negocio. Consultoría gratuita." />
+    <meta name="keywords"
+        content="automatización con IA, consultor freelance automatización, flujos de trabajo automáticos, dashboard en tiempo real, inteligencia artificial empresas" />
+    <meta name="author" content="BiAilitics Automation" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.biailitics.com/" />
+
+    <!-- ── Open Graph ───────────────────────────────────────── -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.biailitics.com/" />
+    <meta property="og:title" content="BiAilitics — Automatización con IA para tu Negocio" />
+    <meta property="og:description"
+        content="Transforma tu empresa con IA: flujos automatizados, análisis predictivo y dashboards en tiempo real. Consultoría gratuita disponible." />
+    <meta property="og:image" content="https://www.biailitics.com/og-image.jpg" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="BiAilitics Automation" />
+
+    <!-- ── Twitter Card ─────────────────────────────────────── -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="BiAilitics — Automatización con IA para tu Negocio" />
+    <meta name="twitter:description"
+        content="Especialista en automatización de procesos con IA. Consultoría gratuita." />
+    <meta name="twitter:image" content="https://www.biailitics.com/og-image.jpg" />
+
+    <!-- ── Structured Data (JSON-LD) ────────────────────────── -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "name": "BiAilitics Automation",
+    "jobTitle": "Consultor Freelance de Automatización e Inteligencia Artificial",
+    "url": "https://www.biailitics.com",
+    "description": "Especialista en automatización de procesos empresariales con IA, flujos de trabajo automáticos y dashboards de datos en tiempo real.",
+    "sameAs": [
+      "https://linkedin.com/in/aiflow",
+      "https://github.com/aiflow"
+    ],
+    "knowsAbout": ["Inteligencia Artificial", "Automatización de Procesos", "Análisis de Datos", "n8n", "Power BI"],
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Gestión con IA",
+        "description": "Sistemas que toman decisiones automáticas analizando variables en tiempo real."
+      },
+      {
+        "@type": "Offer",
+        "name": "Flujos Automatizados",
+        "description": "Integración total entre CRM, ERP y herramientas de marketing para eliminar tareas repetitivas."
+      },
+      {
+        "@type": "Offer",
+        "name": "Dashboards en Vivo",
+        "description": "Visualización avanzada de datos para identificar tendencias y tomar decisiones estratégicas."
+      }
+    ]
+  }
+  </script>
+
+    <!-- ── Fonts ─────────────────────────────────────────────── -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        rel="stylesheet" />
+
+    <!-- ── Styles ────────────────────────────────────────────── -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Favicon placeholder -->
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%236366f1'/></svg>" />
+</head>
+
+<body>
+
+    <!-- Skip to main content (Accessibility) -->
+    <a class="skip-link" href="#main">Saltar al contenido principal</a>
+
+    <!-- ══════════════════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════════════════ -->
+    <nav class="nav" role="navigation" aria-label="Navegación principal">
+        <div class="container nav__inner">
+
+            <!-- Logo -->
+            <a class="nav__logo" href="#" aria-label="BiAilitics — Inicio">
+                <span class="nav__logo-text">BiAilitics</span>
+            </a>
+
+            <!-- Desktop Links -->
+            <ul class="nav__links" role="list">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#por-que">Ventajas</a></li>
+                <li><a href="#testimonios">Casos de Éxito</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <!-- Actions -->
+            <div class="nav__actions">
+                <button class="btn-icon" id="theme-toggle" aria-label="Activar modo oscuro">
+                    <span class="material-symbols-outlined" aria-hidden="true">dark_mode</span>
+                </button>
+                <a class="btn-cta-nav" href="#contacto">Consultoría Gratuita</a>
+                <button class="nav__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false"
+                    aria-controls="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <nav class="nav__mobile" id="mobile-menu" aria-label="Menú móvil">
+        <a href="#servicios">Servicios</a>
+        <a href="#por-que">Ventajas</a>
+        <a href="#testimonios">Casos de Éxito</a>
+        <a href="#contacto">Contacto</a>
+        <a class="btn-cta-mobile" href="#contacto">Consultoría Gratuita →</a>
+    </nav>
+
+    <main id="main">
+
+        <!-- ══════════════════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════════════════ -->
+        <section class="hero mesh-bg" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero__grid">
+
+                    <!-- Left: Copy -->
+                    <div>
+                        <div class="hero__badge" aria-label="Estado: disponible para nuevos proyectos">
+                            <span class="hero__badge-dot" aria-hidden="true"></span>
+                            Disponible para nuevos proyectos
+                        </div>
+
+                        <h1 class="hero__title" id="hero-title">
+                            Transforma tu negocio con
+                            <span class="gradient-text">Inteligencia Artificial.</span>
+                        </h1>
+
+                        <p class="hero__desc">
+                            Ayudo a empresas a escalar mediante la automatización de procesos complejos y el análisis
+                            predictivo de datos. Menos errores, más beneficios.
+                        </p>
+
+                        <div class="hero__actions">
+                            <a class="btn-primary" href="#contacto">
+                                Empezar Transformación
+                                <span class="material-symbols-outlined" aria-hidden="true">trending_flat</span>
+                            </a>
+                            <a class="btn-outline" href="#servicios">
+                                Ver Servicios
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right: Image + Metric -->
+                    <div class="hero__img-wrap reveal reveal-delay-2">
+                        <div class="hero__img-card hero__img-card--portrait">
+                            <img src="yo.png"
+                                alt="Consultor especialista en automatización con IA trabajando con su equipo"
+                                width="800" height="800" loading="eager" />
+                        </div>
+                        <div class="hero__metric glass-card" aria-label="Eficiencia operativa aumentada un 85%">
+                            <p class="hero__metric-label">Eficiencia Operativa</p>
+                            <p class="hero__metric-value">+85%</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════
+         SERVICES
+    ══════════════════════════════════════════════════════ -->
+        <section class="services" id="servicios" aria-labelledby="servicios-title">
+            <div class="container">
+
+                <div class="section-header">
+                    <div class="section-header__left reveal">
+                        <h2 class="section-title" id="servicios-title">
+                            Soluciones diseñadas para el
+                            <span>crecimiento exponencial.</span>
+                        </h2>
+                        <p class="section-desc">
+                            Implemento tecnología de vanguardia para eliminar cuellos de botella y maximizar el valor de
+                            tu información.
+                        </p>
+                    </div>
+                    <a class="link-arrow reveal reveal-delay-1" href="#contacto">
+                        Solicitar presupuesto personalizado
+                        <span class="material-symbols-outlined" aria-hidden="true">east</span>
+                    </a>
+                </div>
+
+                <div class="services__grid">
+
+                    <!-- Card 1: Gestión con IA -->
+                    <article class="service-card service-card--blue reveal">
+                        <div class="service-card__icon service-card__icon--blue" aria-hidden="true">
+                            <span class="material-symbols-outlined">psychology</span>
+                        </div>
+                        <h3 class="service-card__title">Gestión con IA</h3>
+                        <p class="service-card__desc">
+                            Implementamos sistemas que toman decisiones automáticas por ti, analizando variables en
+                            tiempo real para optimizar resultados sin intervención humana.
+                        </p>
+                        <div class="service-card__img">
+                            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&q=75"
+                                alt="Sistema de gestión con inteligencia artificial tomando decisiones automáticas"
+                                width="600" height="400" loading="lazy" />
+                        </div>
+                    </article>
+
+                    <!-- Card 2: Flujos Automatizados -->
+                    <article class="service-card service-card--purple reveal reveal-delay-1">
+                        <div class="service-card__icon service-card__icon--purple" aria-hidden="true">
+                            <span class="material-symbols-outlined">settings_input_component</span>
+                        </div>
+                        <h3 class="service-card__title">Flujos Automatizados</h3>
+                        <p class="service-card__desc">
+                            Conexión total entre tus herramientas (CRM, ERP, Marketing). Eliminamos las tareas
+                            repetitivas mediante integraciones robustas y escalables.
+                        </p>
+                        <div class="service-card__img">
+                            <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&q=75"
+                                alt="Flujos de trabajo automatizados conectando CRM, ERP y herramientas de marketing"
+                                width="600" height="400" loading="lazy" />
+                        </div>
+                    </article>
+
+                    <!-- Card 3: Dashboards en Vivo -->
+                    <article class="service-card service-card--orange reveal reveal-delay-2">
+                        <div class="service-card__icon service-card__icon--orange" aria-hidden="true">
+                            <span class="material-symbols-outlined">analytics</span>
+                        </div>
+                        <h3 class="service-card__title">Dashboards en Vivo</h3>
+                        <p class="service-card__desc">
+                            Visualización avanzada de datos que permite identificar tendencias antes que la competencia.
+                            Información clara para decisiones estratégicas inmediatas.
+                        </p>
+                        <div class="service-card__img">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=75"
+                                alt="Dashboard en tiempo real con visualización avanzada de datos empresariales"
+                                width="600" height="400" loading="lazy" />
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════
+         WHY AUTOMATE
+    ══════════════════════════════════════════════════════ -->
+        <section class="why" id="por-que" aria-labelledby="porque-title">
+            <div class="container">
+                <div class="why__grid">
+
+                    <!-- Left: Benefits -->
+                    <div class="reveal">
+                        <h2 class="why__title" id="porque-title">
+                            ¿Por qué automatizar con un especialista?
+                        </h2>
+
+                        <div class="why__items">
+                            <div class="why__item">
+                                <div class="why__item-icon" aria-hidden="true">
+                                    <span class="material-symbols-outlined">verified</span>
+                                </div>
+                                <div>
+                                    <h3 class="why__item-title">Precisión de Datos</h3>
+                                    <p class="why__item-desc">Elimina el error humano en la entrada y procesamiento de
+                                        datos críticos para tu negocio.</p>
+                                </div>
+                            </div>
+
+                            <div class="why__item">
+                                <div class="why__item-icon" aria-hidden="true">
+                                    <span class="material-symbols-outlined">speed</span>
+                                </div>
+                                <div>
+                                    <h3 class="why__item-title">Velocidad de Respuesta</h3>
+                                    <p class="why__item-desc">Tus sistemas trabajarán 24/7, procesando información y
+                                        ejecutando acciones mientras tú descansas.</p>
+                                </div>
+                            </div>
+
+                            <div class="why__item">
+                                <div class="why__item-icon" aria-hidden="true">
+                                    <span class="material-symbols-outlined">savings</span>
+                                </div>
+                                <div>
+                                    <h3 class="why__item-title">Reducción de Costes</h3>
+                                    <p class="why__item-desc">Optimiza tus recursos humanos delegando las tareas de bajo
+                                        valor a sistemas inteligentes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Stats + Images -->
+                    <div class="why__stats reveal reveal-delay-1">
+                        <div style="display:flex; flex-direction:column; gap:1rem;">
+                            <div class="why__stat-card glass-card">
+                                <p class="why__stat-value">20h+</p>
+                                <p class="why__stat-label">Ahorradas por semana por cliente</p>
+                            </div>
+                            <div class="why__stat-img">
+                                <img src="yo2.png" alt="Consultor de automatización con IA en acción" width="600"
+                                    height="400" loading="lazy" />
+                            </div>
+                        </div>
+                        <div style="display:flex; flex-direction:column; gap:1rem; padding-top:3rem;">
+                            <div class="why__stat-img">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=75"
+                                    alt="Análisis de datos y métricas de rendimiento empresarial" width="600"
+                                    height="400" loading="lazy" />
+                            </div>
+                            <div class="why__stat-card why__stat-card--accent glass-card">
+                                <p class="why__stat-value">100%</p>
+                                <p class="why__stat-label">Escalabilidad Garantizada</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════
+         TESTIMONIALS
+    ══════════════════════════════════════════════════════ -->
+        <section class="testimonials" id="testimonios" aria-labelledby="testimonios-title">
+            <div class="container">
+
+                <div class="testimonials__header reveal">
+                    <h2 class="section-title" id="testimonios-title">Casos de Uso: De problemas a resultados</h2>
+                    <p class="section-desc">
+                        No solo implementamos herramientas, resolvemos cuellos de botella reales con <span>Power
+                            BI</span> y <span>n8n</span>.
+                    </p>
+                </div>
+
+                <div class="testimonials__grid">
+
+                    <article class="testimonial-card glass-card reveal">
+                        <div class="use-case__content">
+                            <h4 class="use-case__label use-case__label--problem">El Problema</h4>
+                            <p class="use-case__text">"Teníamos a dos personas perdiendo 3 días a la semana solo
+                                consolidando Excels de diferentes departamentos para el reporte mensual."</p>
+
+                            <h4 class="use-case__label use-case__label--solution">La Solución</h4>
+                            <p class="use-case__text">Automatización completa del flujo con <strong>n8n</strong> y
+                                visualización en tiempo real con un dashboard de <strong>Power BI</strong>.</p>
+
+                            <div class="use-case__result">
+                                <span class="material-symbols-outlined">trending_up</span>
+                                <strong>Resultado:</strong> Ahorro del 95% del tiempo y reportes disponibles 24/7.
+                            </div>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <img class="testimonial-card__avatar"
+                                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=96&q=75"
+                                alt="Foto de Alejandro R." width="48" height="48" loading="lazy" />
+                            <div>
+                                <p class="testimonial-card__name">Alejandro R.</p>
+                                <p class="testimonial-card__role">Director de Operaciones</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card glass-card reveal reveal-delay-1">
+                        <div class="use-case__content">
+                            <h4 class="use-case__label use-case__label--problem">El Problema</h4>
+                            <p class="use-case__text">"Nuestros proyectos de consultoría se descontrolaban en costes
+                                porque no sabíamos cuántas horas reales se dedicaban a cada tarea."</p>
+
+                            <h4 class="use-case__label use-case__label--solution">La Solución</h4>
+                            <p class="use-case__text">Integración automatizada entre el software de gestión y
+                                <strong>Power BI</strong> para control de márgenes en tiempo real.</p>
+
+                            <div class="use-case__result">
+                                <span class="material-symbols-outlined">payments</span>
+                                <strong>Resultado:</strong> Incremento del 18% en la rentabilidad por proyecto.
+                            </div>
+                        </div>
+                        <div class="testimonial-card__author">
+                            <img class="testimonial-card__avatar"
+                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&q=75"
+                                alt="Foto de Sara M." width="48" height="48" loading="lazy" />
+                            <div>
+                                <p class="testimonial-card__name">Sara M.</p>
+                                <p class="testimonial-card__role">Fundadora de Consultoría</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card glass-card reveal reveal-delay-2">
+                        <div class="use-case__content">
+                            <h4 class="use-case__label use-case__label--problem">El Problema</h4>
+                            <p class="use-case__text">"Los leads que llegaban por la web tardaban horas en ser
+                                contactados, perdiendo muchas oportunidades de venta."</p>
+
+                            <h4 class="use-case__label use-case__label--solution">La Solución</h4>
+                            <p class="use-case__text">Flujo con <strong>n8n</strong> que califica el lead al instante,
+                                lo asigna al comercial en Slack y le envía un PDF personalizado.</p>
+
+                            <div class="use-case__result">
+                                <span class="material-symbols-outlined">bolt</span>
+                                <strong>Resultado:</strong> Respuesta en < 2 minutos y aumento de conversión del 30%.
+                                    </div>
+                            </div>
+                            <div class="testimonial-card__author">
+                                <img class="testimonial-card__avatar"
+                                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=96&q=75"
+                                    alt="Foto de Marcos T." width="48" height="48" loading="lazy" />
+                                <div>
+                                    <p class="testimonial-card__name">Marcos T.</p>
+                                    <p class="testimonial-card__role">Responsable Comercial</p>
+                                </div>
+                            </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════
+         CONTACT
+    ══════════════════════════════════════════════════════ -->
+        <section class="contact" id="contacto" aria-labelledby="contacto-title">
+            <div class="container">
+                <div class="contact__card reveal">
+                    <div class="contact__glow-1" aria-hidden="true"></div>
+                    <div class="contact__glow-2" aria-hidden="true"></div>
+
+                    <div class="contact__inner">
+
+                        <!-- Left: CTA copy -->
+                        <div>
+                            <h2 class="contact__title" id="contacto-title">
+                                ¿Listo para el siguiente nivel?
+                            </h2>
+                            <p class="contact__desc">
+                                Deja de perder tiempo en tareas manuales. Empieza hoy a construir un negocio inteligente
+                                impulsado por datos e IA.
+                            </p>
+                            <p class="contact__note">⚡ Respuesta garantizada en menos de 24 horas.</p>
+                        </div>
+
+                        <!-- Right: Form -->
+                        <div>
+                            <form class="contact__form" id="contact-form" novalidate
+                                aria-label="Formulario de contacto">
+
+                                <div class="form-group">
+                                    <label for="nombre">Nombre completo</label>
+                                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required
+                                        autocomplete="name" />
+                                    <span class="error-msg" role="alert"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email de contacto</label>
+                                    <input type="email" id="email" name="email" placeholder="tu@empresa.com" required
+                                        autocomplete="email" />
+                                    <span class="error-msg" role="alert"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="servicio">¿Qué problema quieres resolver?</label>
+                                    <select id="servicio" name="servicio">
+                                        <option value="Ahorro de tiempo / Automatización">Quiero automatizar tareas
+                                            manuales (n8n)</option>
+                                        <option value="Visualización de Datos / Power BI">Necesito dashboards de mis
+                                            datos (Power BI)</option>
+                                        <option value="Integración de herramientas">Tengo herramientas que no se hablan
+                                            entre sí</option>
+                                        <option value="Optimización de procesos">No sé por dónde empezar, quiero una
+                                            auditoría</option>
+                                    </select>
+                                    <span class="error-msg" role="alert"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="mensaje">Cuéntame tu proyecto</label>
+                                    <textarea id="mensaje" name="mensaje"
+                                        placeholder="Describe brevemente tu negocio y qué procesos quieres automatizar…"
+                                        required rows="4"></textarea>
+                                    <span class="error-msg" role="alert"></span>
+                                </div>
+
+                                <button class="btn-submit" type="submit">
+                                    Solicitar consultoría gratuita →
+                                </button>
+
+                            </form>
+
+                            <div class="form-success" id="form-success" role="status" aria-live="polite">
+                                ✅ ¡Mensaje enviado! Te respondo en menos de 24 horas.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container footer__inner">
+
+            <a class="footer__logo" href="#" aria-label="BiAilitics — Volver al inicio">
+                <span class="footer__logo-text">BiAilitics</span>
+            </a>
+
+            <nav class="footer__links" aria-label="Redes sociales y contacto">
+                <a href="https://linkedin.com/in/aiflow" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/aiflow" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="mailto:hola@aiflow.es">Escríbeme</a>
+            </nav>
+
+            <p class="footer__copy">
+                &copy; <span id="year"></span> BiAilitics Automation. Especialista en IA y Datos.
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- ── Scripts ───────────────────────────────────────────── -->
+    <script>
+        // Dynamic year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="script.js" defer></script>
+
+</body>
+
+</html>
