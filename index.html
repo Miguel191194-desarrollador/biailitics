@@ -81,6 +81,37 @@
     <!-- Favicon placeholder -->
     <link rel="icon" type="image/svg+xml"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%236366f1'/></svg>" />
+    <!-- ── n8n Chat Custom Styles ──────────────────────────── -->
+    <style>
+        /* Forzar color y cambio de icono en el botón de n8n */
+        :root {
+            --chat--color--primary: #6366f1 !important;
+        }
+
+        #n8n-chat-container .n8n-chat-widget-launcher-button,
+        .n8n-chat-widget-launcher-button,
+        [class*="chat-widget-launcher-button"] {
+            background-color: #6366f1 !important;
+        }
+
+        /* Ocultar el icono de mensaje y poner el robot */
+        .n8n-chat-widget-launcher-button svg,
+        [class*="chat-widget-launcher-button"] svg {
+            display: none !important;
+        }
+
+        .n8n-chat-widget-launcher-button::after,
+        [class*="chat-widget-launcher-button"]::after {
+            content: "";
+            display: block;
+            width: 35px;
+            height: 35px;
+            background-image: url('https://cdn-icons-png.flaticon.com/512/4712/4712035.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -558,6 +589,13 @@
 
     <!-- ── n8n Chatbot Integration ───────────────────────────── -->
     <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <style>
+        /* Estilos base que sí pasan la frontera del Shadow DOM */
+        :root {
+            --chat--color--primary: #6366f1 !important;
+        }
+    </style>
+
     <script type="module">
         import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
@@ -570,19 +608,20 @@
             title: 'Asistente BiAilitics',
             subtitle: 'Pregúntame sobre automatización e IA',
             mainColor: '#6366f1',
+            avatarUrl: 'https://cdn-icons-png.flaticon.com/512/4712/4712035.png',
             errorMsg: 'Hubo un error al conectar. Inténtalo de nuevo.',
             placeholder: '¿En qué puedo ayudarte hoy?',
-            welcomeMessage: '¡Hola! 👋 Soy el asistente de Miguel. ¿Te gustaría saber cómo podemos automatizar tu negocio?',
+            welcomeMessage: '¡Hola! 👋 Soy **Bia**, tu asistente virtual de BiAilitics. ¿En qué puedo ayudarte hoy?',
             initialMessages: [
                 '¡Hola! Soy experto en Power BI y n8n.',
                 'Pregúntame sobre nuestros servicios o solicita una consultoría.'
             ],
             i18n: {
                 en: {
-                    title: 'Asistente Milo',
-                    subtitle: 'Consultoría en IA Y Automatización',
+                    title: 'Asistente de Miguel',
+                    subtitle: 'Pregunta sobre Automatización y IA',
                     placeholder: 'Type your message...',
-                    welcomeMessage: 'Hello! I am the Miguel assistant. How can I help you today?',
+                    welcomeMessage: 'Hello! I am the BiAilitics assistant. How can I help you today?',
                     errorMsg: 'There was an error connecting. Please try again.',
                     sendButtonAriaLabel: 'Send message',
                 },
@@ -590,10 +629,52 @@
                     title: 'Asistente BiAilitics',
                     subtitle: 'Consultoría en IA y Automatización',
                     placeholder: 'Escribe tu mensaje...',
-                    welcomeMessage: '¡Hola! Soy el asistente de Miguel. ¿En qué puedo ayudarte?',
+                    welcomeMessage: '¡Hola! Soy el asistente de BiAilitics. ¿En qué puedo ayudarte?',
                 }
             }
         });
+
+        // Script para "Hackear" el Shadow DOM y cambiar el icono del botón flotante
+        function injectShadowStyles() {
+            // Buscamos cualquier elemento que pueda contener el chat
+            const hosts = document.querySelectorAll('n8n-chat, .n8n-chat-widget, #n8n-chat-container');
+
+            hosts.forEach(host => {
+                if (host.shadowRoot) {
+                    const style = document.createElement('style');
+                    style.textContent = `
+                        /* Ocultar el SVG original */
+                        .n8n-chat-widget-launcher-button svg { 
+                            display: none !important; 
+                        }
+                        /* Insertar el robot Bia */
+                        .n8n-chat-widget-launcher-button::after {
+                            content: "";
+                            display: block;
+                            width: 38px;
+                            height: 38px;
+                            background-image: url('https://cdn-icons-png.flaticon.com/512/4712/4712035.png');
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+                        }
+                        /* Ajustar el botón si es necesario */
+                        .n8n-chat-widget-launcher-button {
+                            display: flex !important;
+                            align-items: center !important;
+                            justify-content: center !important;
+                        }
+                    `;
+                    host.shadowRoot.appendChild(style);
+                }
+            });
+        }
+
+        // Ejecutar con un pequeño delay para asegurar que el widget se ha renderizado
+        setTimeout(injectShadowStyles, 1000);
+        // También intentar en 3 segundos por si tarda más en cargar
+        setTimeout(injectShadowStyles, 3000);
     </script>
 </body>
 
