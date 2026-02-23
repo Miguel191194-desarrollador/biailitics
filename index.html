@@ -40,11 +40,10 @@
     "jobTitle": "Consultor Freelance de Automatización e Inteligencia Artificial",
     "url": "https://www.biailitics.com",
     "description": "Especialista en automatización de procesos empresariales con IA, flujos de trabajo automáticos y dashboards de datos en tiempo real.",
-"sameAs": [
-  "https://www.linkedin.com/in/miguel-%C3%A1ngel-dom%C3%ADnguez-rangel-373441176/",
-  "https://github.com/aiflow"
-],
-
+    "sameAs": [
+      "https://linkedin.com/in/aiflow",
+      "https://github.com/aiflow"
+    ],
     "knowsAbout": ["Inteligencia Artificial", "Automatización de Procesos", "Análisis de Datos", "n8n", "Power BI"],
     "offers": [
       {
@@ -395,7 +394,8 @@
 
                             <h4 class="use-case__label use-case__label--solution">La Solución</h4>
                             <p class="use-case__text">Integración automatizada entre el software de gestión y
-                                <strong>Power BI</strong> para control de márgenes en tiempo real.</p>
+                                <strong>Power BI</strong> para control de márgenes en tiempo real.
+                            </p>
 
                             <div class="use-case__result">
                                 <span class="material-symbols-outlined">payments</span>
@@ -537,7 +537,7 @@
             </a>
 
             <nav class="footer__links" aria-label="Redes sociales y contacto">
-                <a href="https://www.linkedin.com/in/miguel-%C3%A1ngel-dom%C3%ADnguez-rangel-373441176/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://linkedin.com/in/aiflow" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 <a href="https://github.com/aiflow" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a href="mailto:hola@aiflow.es">Escríbeme</a>
             </nav>
@@ -556,7 +556,45 @@
     </script>
     <script src="script.js" defer></script>
 
-</body>
+    <!-- ── n8n Chatbot Integration ───────────────────────────── -->
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
+        createChat({
+            webhookUrl: 'https://miguelangeljmrey.app.n8n.cloud/webhook/0c889e5d-b206-452e-a170-b0185e2aafd6/chat',
+            webhookConfig: {
+                method: 'POST'
+            },
+            showWelcomeScreen: true,
+            title: 'Asistente BiAilitics',
+            subtitle: 'Pregúntame sobre automatización e IA',
+            mainColor: '#6366f1',
+            errorMsg: 'Hubo un error al conectar. Inténtalo de nuevo.',
+            placeholder: '¿En qué puedo ayudarte hoy?',
+            welcomeMessage: '¡Hola! 👋 Soy el asistente de Miguel. ¿Te gustaría saber cómo podemos automatizar tu negocio?',
+            initialMessages: [
+                '¡Hola! Soy experto en Power BI y n8n.',
+                'Pregúntame sobre nuestros servicios o solicita una consultoría.'
+            ],
+            i18n: {
+                en: {
+                    title: 'BiAilitics Assistant',
+                    subtitle: 'Ask me about automation & AI',
+                    placeholder: 'Type your message...',
+                    welcomeMessage: 'Hello! I am the Miguel assistant. How can I help you today?',
+                    errorMsg: 'There was an error connecting. Please try again.',
+                    sendButtonAriaLabel: 'Send message',
+                },
+                es: {
+                    title: 'Asistente BiAilitics',
+                    subtitle: 'Consultoría en IA y Automatización',
+                    placeholder: 'Escribe tu mensaje...',
+                    welcomeMessage: '¡Hola! Soy el asistente de Miguel. ¿En qué puedo ayudarte?',
+                }
+            }
+        });
+    </script>
+</body>
 
 </html>
