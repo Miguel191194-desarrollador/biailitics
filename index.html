@@ -65,6 +65,43 @@
   }
   </script>
 
+    <!-- ── FAQ Schema ───────────────────────────────────────── -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "¿Qué herramientas utilizas para automatizar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Principalmente utilizo n8n por su potencia y flexibilidad en integraciones, y Power BI para la visualización avanzada de datos."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Cuánto tiempo tarda en implementarse una automatización?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende de la complejidad. Flujos sencillos pueden estar listos en 1-2 semanas. Proyectos más grandes de 3 a 6 semanas."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Necesito conocimientos técnicos para usar las automatizaciones?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, entregamos los sistemas configurados para funcionar llave en mano. Además, impartimos formación a tu equipo."
+        }
+      }, {
+        "@type": "Question",
+        "name": "¿Es segura la información de mi empresa?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutamente. Trabajamos bajo estrictos estándares de seguridad y confidencialidad. Los datos se transmiten de forma segura."
+        }
+      }]
+    }
+    </script>
+
     <!-- ── Fonts ─────────────────────────────────────────────── -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -180,13 +217,14 @@
                         </div>
 
                         <h1 class="hero__title" id="hero-title">
-                            Transforma tu negocio con
+                            Automatización de Procesos con
                             <span class="gradient-text">Inteligencia Artificial.</span>
                         </h1>
 
                         <p class="hero__desc">
-                            Ayudo a empresas a escalar mediante la automatización de procesos complejos y el análisis
-                            predictivo de datos. Menos errores, más beneficios.
+                            Soy especialista freelance en n8n y Power BI. Ayudo a tu empresa a escalar creando flujos de
+                            trabajo automáticos y dashboards en tiempo real. Elimina tareas repetitivas y toma
+                            decisiones basadas en datos.
                         </p>
 
                         <div class="hero__actions">
@@ -203,7 +241,7 @@
                     <!-- Right: Image + Metric -->
                     <div class="hero__img-wrap reveal reveal-delay-2">
                         <div class="hero__img-card hero__img-card--portrait">
-                            <img src="yo.png"
+                            <img src="yo.webp"
                                 alt="Consultor especialista en automatización con IA trabajando con su equipo"
                                 width="800" height="800" loading="eager" />
                         </div>
@@ -354,7 +392,7 @@
                                 <p class="why__stat-label">Ahorradas por semana por cliente</p>
                             </div>
                             <div class="why__stat-img">
-                                <img src="yo2.png" alt="Consultor de automatización con IA en acción" width="600"
+                                <img src="yo2.webp" alt="Consultor de automatización con IA en acción" width="600"
                                     height="400" loading="lazy" />
                             </div>
                         </div>
@@ -470,6 +508,85 @@
                             </div>
                     </article>
 
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════
+         LEAD MAGNET
+    ══════════════════════════════════════════════════════ -->
+        <section class="lead-magnet" id="recursos" aria-labelledby="lead-magnet-title">
+            <div class="container">
+                <div class="lead-magnet__card glass-card reveal">
+                    <div class="lead-magnet__content">
+                        <h2 class="lead-magnet__title section-title" id="lead-magnet-title">
+                            Guía Gratuita: <span>5 Procesos que toda PYME está perdiendo dinero por no
+                                automatizar</span>
+                        </h2>
+                        <p class="lead-magnet__desc section-desc"
+                            style="max-width: 800px; margin: 0 auto; color: var(--text);">
+                            Descubre dónde se escapa tu rentabilidad diaria. Descarga nuestra guía en PDF y empieza a
+                            recuperar el control de tu tiempo y tus márgenes hoy mismo.
+                        </p>
+                        <form class="lead-magnet__form" id="lead-form" action="https://formspree.io/f/mzdavaqn"
+                            method="POST">
+                            <input type="email" name="email" placeholder="Tu mejor correo electrónico" required
+                                aria-label="Tu mejor correo electrónico" class="lead-magnet__input">
+                            <button class="btn-primary" type="submit">
+                                Descargar Guía Ahora
+                                <span class="material-symbols-outlined" aria-hidden="true">download</span>
+                            </button>
+                        </form>
+                        <p class="lead-magnet__note">100% libre de spam. Date de baja cuando quieras.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════
+         FAQ
+    ══════════════════════════════════════════════════════ -->
+        <section class="faq" id="faq" aria-labelledby="faq-title">
+            <div class="container">
+                <div class="section-header reveal" style="margin-bottom: 2rem;">
+                    <h2 class="section-title" id="faq-title">Preguntas Frecuentes</h2>
+                    <p class="section-desc">Resolvemos las dudas más comunes sobre la automatización con IA.</p>
+                </div>
+                <div class="faq__list reveal reveal-delay-1">
+                    <details class="faq__item" open>
+                        <summary class="faq__question">¿Qué herramientas utilizas para automatizar?</summary>
+                        <div class="faq__answer">
+                            <p>Principalmente utilizo <strong>n8n</strong> por su potencia y flexibilidad en
+                                integraciones, y <strong>Power BI</strong> para la visualización avanzada de datos
+                                empresariales.</p>
+                        </div>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">¿Cuánto tiempo tarda en implementarse una automatización?
+                        </summary>
+                        <div class="faq__answer">
+                            <p>Depende de la complejidad. Flujos sencillos pueden estar listos en 1-2 semanas. Proyectos
+                                más grandes que involucran múltiples sistemas (ERP, CRM) pueden tomar de 3 a 6 semanas.
+                            </p>
+                        </div>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">¿Necesito conocimientos técnicos para usar las automatizaciones?
+                        </summary>
+                        <div class="faq__answer">
+                            <p>No, entregamos los sistemas configurados para que funcionen "llave en mano" y sean
+                                completamente automáticos. Además, incluimos formación para tu equipo si es necesario.
+                            </p>
+                        </div>
+                    </details>
+                    <details class="faq__item">
+                        <summary class="faq__question">¿Es segura la información de mi empresa?</summary>
+                        <div class="faq__answer">
+                            <p>Absolutamente. Trabajamos bajo estrictos estándares de seguridad y confidencialidad. Los
+                                datos se transmiten cifrados y solo se conectan las plataformas que tú autorizas, sin
+                                almacenar información sensible de forma innecesaria.</p>
+                        </div>
+                    </details>
                 </div>
             </div>
         </section>
@@ -618,8 +735,8 @@
             ],
             i18n: {
                 en: {
-                    title: 'Asistente de Miguel',
-                    subtitle: 'Pregunta sobre Automatización y IA',
+                    title: 'BiAilitics Assistant',
+                    subtitle: 'Ask me about automation & AI',
                     placeholder: 'Type your message...',
                     welcomeMessage: 'Hello! I am the BiAilitics assistant. How can I help you today?',
                     errorMsg: 'There was an error connecting. Please try again.',
@@ -679,4 +796,3 @@
 </body>
 
 </html>
-
