@@ -61,6 +61,11 @@ En `script.js`, en el bloque `catch` del formulario, cambia `hola@aiflow.es` por
 ### 4. Redes sociales
 En `index.html` (footer), actualiza los enlaces de LinkedIn y GitHub con tus perfiles reales.
 
+### 6. Chatbot de n8n
+He integrado un widget de chat que conecta con tu instancia de n8n.
+1. En `index.html` (línea ~563), busca `webhookUrl`.
+2. Reemplaza `'https://TU_INSTANCIA_N8N.app/webhook/CHAT_WEBHOOK_ID'` por la URL real de tu **Chat Trigger** en n8n.
+
 ### 5. Imagen OG (Open Graph)
 Crea una imagen de 1200×630px para redes sociales y súbela como `og-image.jpg` en la raíz del sitio.
 

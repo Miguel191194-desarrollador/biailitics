@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-     <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4PDXDV406W"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -14,7 +14,6 @@
 
         gtag('config', 'G-4PDXDV406W');
     </script>
-    
     <!-- ── SEO Primary ──────────────────────────────────────── -->
     <title>BiAilitics | Automatización con IA — Consultor Freelance</title>
     <meta name="description"
@@ -128,8 +127,123 @@
     <!-- Favicon placeholder -->
     <link rel="icon" type="image/svg+xml"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%236366f1'/></svg>" />
-    <!-- ── n8n Chat Custom Styles ──────────────────────────── -->
+    <!-- ── Animated Hero Word + n8n Chat Custom Styles ──────── -->
     <style>
+        /* ── Animated Hero Word ─────────────────────────────── */
+        .hero__title--static {
+            color: #000 !important;
+            margin-bottom: 0.1em;
+        }
+
+        .hero__title--dynamic {
+            margin-top: 0;
+        }
+
+        .animated-word-wrap {
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: bottom;
+        }
+
+        .animated-word {
+            display: inline-block;
+            background: linear-gradient(90deg, #22d3ee 0%, #a78bfa 50%, #e879f9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: wordSlideIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+        }
+
+        @keyframes wordSlideIn {
+            from {
+                transform: translateY(120%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .animated-word.slide-out {
+            animation: wordSlideOut 0.3s cubic-bezier(0.7, 0, 0.84, 0) forwards;
+        }
+
+        @keyframes wordSlideOut {
+            from {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            to {
+                transform: translateY(-120%);
+                opacity: 0;
+            }
+        }
+
+        @keyframes chipIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero__desc-highlight {
+            display: inline-block;
+            font-weight: 800;
+            padding: 0 0.2rem;
+            color: #000;
+            position: relative;
+            z-index: 1;
+            transition: all 0.3s ease;
+        }
+
+        .hero__desc-highlight::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0.1em;
+            width: 100%;
+            height: 0.3em;
+            background: linear-gradient(90deg, #22d3ee, #a78bfa);
+            z-index: -1;
+            opacity: 0.4;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            border-radius: 2px;
+        }
+
+        .hero__desc--dynamic:hover .hero__desc-highlight::after {
+            height: 1.1em;
+            opacity: 0.2;
+        }
+
+        .hero__desc-highlight {
+            animation: focusHighlight 3s infinite ease-in-out;
+        }
+
+        @keyframes focusHighlight {
+
+            0%,
+            100% {
+                transform: translateY(0);
+                text-shadow: 0 0 0px transparent;
+            }
+
+            50% {
+                transform: translateY(-2px);
+                text-shadow: 0 0 15px rgba(167, 139, 250, 0.3);
+            }
+        }
+
+        .hero__desc-highlight:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        .hero__desc-highlight:nth-child(3) {
+            animation-delay: 1s;
+        }
+
         /* Forzar color y cambio de icono en el botón de n8n */
         :root {
             --chat--color--primary: #6366f1 !important;
@@ -179,9 +293,11 @@
 
             <!-- Desktop Links -->
             <ul class="nav__links" role="list">
+                <li><a href="#sobre-mi">Sobre mí</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#por-que">Ventajas</a></li>
-                <li><a href="#testimonios">Casos de Éxito</a></li>
+                <li><a href="#herramientas">Herramientas</a></li>
+                <li><a href="#precios">Precios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
 
@@ -203,9 +319,11 @@
 
     <!-- Mobile Menu -->
     <nav class="nav__mobile" id="mobile-menu" aria-label="Menú móvil">
+        <a href="#sobre-mi">Sobre mí</a>
         <a href="#servicios">Servicios</a>
         <a href="#por-que">Ventajas</a>
-        <a href="#testimonios">Casos de Éxito</a>
+        <a href="#herramientas">Herramientas</a>
+        <a href="#precios">Precios</a>
         <a href="#contacto">Contacto</a>
         <a class="btn-cta-mobile" href="#contacto">Consultoría Gratuita →</a>
     </nav>
@@ -226,18 +344,20 @@
                             Disponible para nuevos proyectos
                         </div>
 
-                        <h1 class="hero__title" id="hero-title">
-                            Automatización de Procesos con
-                            <span class="gradient-text">Inteligencia Artificial.</span>
+                        <h1 class="hero__title hero__title--static" id="hero-title">Haz tu empresa más</h1>
+                        <h1 class="hero__title hero__title--dynamic" aria-live="polite">
+                            <span class="animated-word-wrap">
+                                <span class="animated-word" id="animated-word">competitiva.</span>
+                            </span>
                         </h1>
 
-                        <p class="hero__desc">
-                            Soy especialista freelance en n8n y Power BI. Ayudo a tu empresa a escalar creando flujos de
-                            trabajo automáticos y dashboards en tiempo real. Elimina tareas repetitivas y toma
-                            decisiones basadas en datos.
+                        <p class="hero__desc hero__desc--dynamic">
+                            Analizo cómo trabaja tu empresa, detecto ineficiencias y mejoro tus procesos para que
+                            <span class="hero__desc-highlight">ahorres tiempo</span>,
+                            <span class="hero__desc-highlight">reduzcas errores</span>
+                            y tengas más <span class="hero__desc-highlight">control</span>.
                         </p>
-
-                        <div class="hero__actions">
+                        <div class="hero__actions" style="margin-top: 2rem;">
                             <a class="btn-primary" href="#contacto">
                                 Empezar Transformación
                                 <span class="material-symbols-outlined" aria-hidden="true">trending_flat</span>
@@ -252,13 +372,65 @@
                     <div class="hero__img-wrap reveal reveal-delay-2">
                         <div class="hero__img-card hero__img-card--portrait">
                             <img src="yo.webp"
-                                alt="Consultor especialista en automatización con IA trabajando con su equipo"
-                                width="800" height="800" loading="eager" />
+                                alt="Miguel Ángel Domínguez Rangel, consultor freelance en automatización e IA"
+                                width="800" height="800" loading="eager" onerror="this.src='yo.webp'" />
                         </div>
                         <div class="hero__metric glass-card" aria-label="Eficiencia operativa aumentada un 85%">
                             <p class="hero__metric-label">Eficiencia Operativa</p>
                             <p class="hero__metric-value">+85%</p>
                         </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════
+         SOBRE MÍ
+     ══════════════════════════════════════════════════════ -->
+        <section class="about" id="sobre-mi" aria-labelledby="sobre-mi-title">
+            <div class="container">
+                <div class="about__grid">
+
+                    <!-- Photo -->
+                    <div class="about__photo-wrap reveal">
+                        <div class="about__photo-real">
+                            <img src="miguel-angel-about.jpg"
+                                alt="Miguel Ángel Domínguez Rangel en su espacio de trabajo" width="600" height="800"
+                                loading="lazy"
+                                onerror="this.parentElement.style.background='linear-gradient(135deg,rgba(99,102,241,.15),rgba(168,85,247,.1))'" />
+                            <div class="about__photo-overlay">
+                                <p class="about__photo-name">Miguel Ángel Domínguez Rangel</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="about__content reveal reveal-delay-1">
+                        <div class="section-badge">Quién hay detrás</div>
+                        <h2 class="section-title" id="sobre-mi-title">
+                            Quién hay detrás de <span>BiAilitics</span>
+                        </h2>
+                        <p class="about__text">
+                            Soy <strong>Miguel Ángel Domínguez Rangel</strong>, consultor freelance en automatización e
+                            IA desde Badajoz. Trabajo de forma remota con empresas de toda España.
+                        </p>
+                        <p class="about__text">
+                            Mi perfil es técnico y completo: domino <strong>n8n</strong>, <strong>Power BI</strong>,
+                            Excel avanzado, SQL y bases de datos, desarrollo web, y uso herramientas como Google
+                            Antigravity para construir soluciones desde cero. También formo a equipos para que saquen el
+                            máximo rendimiento a las herramientas que ya usan: desde Power BI o n8n hasta
+                            <strong>ChatGPT</strong>, <strong>Claude</strong> o cualquier IA del día a día.
+                        </p>
+                        <p class="about__text" style="font-weight: 500; color: var(--primary); margin-top: 1.5rem;">
+                            ¿Hablamos de tu próximo paso? Sin compromiso.
+                        </p>
+                        <hr
+                            style="border: 0; height: 1px; background: linear-gradient(90deg, var(--primary-light), transparent); margin: 2rem 0;">
+                        <a class="link-arrow" href="#contacto">
+                            Conectar en LinkedIn
+                            <span class="material-symbols-outlined" aria-hidden="true">north_east</span>
+                        </a>
                     </div>
 
                 </div>
@@ -338,6 +510,24 @@
                             <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=75"
                                 alt="Dashboard en tiempo real con visualización avanzada de datos empresariales"
                                 width="600" height="400" loading="lazy" />
+                        </div>
+                    </article>
+
+                    <!-- Card 4: Formaciones Personalizadas -->
+                    <article class="service-card service-card--green reveal reveal-delay-3">
+                        <div class="service-card__icon service-card__icon--green" aria-hidden="true">
+                            <span class="material-symbols-outlined">school</span>
+                        </div>
+                        <h3 class="service-card__title">Formaciones Personalizadas</h3>
+                        <p class="service-card__desc">
+                            Formación práctica en las herramientas que realmente usas: Power BI, n8n, Excel avanzado,
+                            ChatGPT, Claude y más. Sesiones adaptadas a tu nivel y a tu negocio, sin tecnicismos
+                            innecesarios.
+                        </p>
+                        <div class="service-card__img">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=75"
+                                alt="Formación práctica en herramientas de IA y automatización" width="600" height="400"
+                                loading="lazy" />
                         </div>
                     </article>
 
@@ -424,101 +614,48 @@
         </section>
 
         <!-- ══════════════════════════════════════════════════════
-         TESTIMONIALS
-    ══════════════════════════════════════════════════════ -->
-        <section class="testimonials" id="testimonios" aria-labelledby="testimonios-title">
+         CASOS DE USO
+     ══════════════════════════════════════════════════════ -->
+        <section class="use-cases" id="casos" aria-labelledby="casos-title">
             <div class="container">
-
                 <div class="testimonials__header reveal">
-                    <h2 class="section-title" id="testimonios-title">Casos de Uso: De problemas a resultados</h2>
-                    <p class="section-desc">
-                        No solo implementamos herramientas, resolvemos cuellos de botella reales con <span>Power
-                            BI</span> y <span>n8n</span>.
-                    </p>
+                    <h2 class="section-title" id="casos-title">Casos de uso: de <span>problema a resultado</span></h2>
+                    <p class="section-desc">Ejemplos reales de cómo la automatización y los datos transforman
+                        operaciones.</p>
                 </div>
 
-                <div class="testimonials__grid">
+                <div class="use-cases__grid reveal">
 
-                    <article class="testimonial-card glass-card reveal">
-                        <div class="use-case__content">
-                            <h4 class="use-case__label use-case__label--problem">El Problema</h4>
-                            <p class="use-case__text">"Teníamos a dos personas perdiendo 3 días a la semana solo
-                                consolidando Excels de diferentes departamentos para el reporte mensual."</p>
-
-                            <h4 class="use-case__label use-case__label--solution">La Solución</h4>
-                            <p class="use-case__text">Automatización completa del flujo con <strong>n8n</strong> y
-                                visualización en tiempo real con un dashboard de <strong>Power BI</strong>.</p>
-
-                            <div class="use-case__result">
-                                <span class="material-symbols-outlined">trending_up</span>
-                                <strong>Resultado:</strong> Ahorro del 95% del tiempo y reportes disponibles 24/7.
-                            </div>
+                    <article class="use-cases__card glass-card">
+                        <div class="use-cases__icon">
+                            <span class="material-symbols-outlined">trending_up</span>
                         </div>
-                        <div class="testimonial-card__author">
-                            <img class="testimonial-card__avatar"
-                                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=96&q=75"
-                                alt="Foto de Alejandro R." width="48" height="48" loading="lazy" />
-                            <div>
-                                <p class="testimonial-card__name">Alejandro R.</p>
-                                <p class="testimonial-card__role">Director de Operaciones</p>
-                            </div>
-                        </div>
+                        <p class="use-cases__sector">Sector logístico</p>
+                        <p class="use-cases__text">&ldquo;Automatización completa del flujo de reportes con n8n y Power
+                            BI. Resultado: <strong>95% de tiempo ahorrado</strong> en consolidación de datos
+                            mensuales.&rdquo;</p>
+                        <p class="use-cases__footer">Proyecto de implementación &mdash; Empresa de operaciones</p>
                     </article>
 
-                    <article class="testimonial-card glass-card reveal reveal-delay-1">
-                        <div class="use-case__content">
-                            <h4 class="use-case__label use-case__label--problem">El Problema</h4>
-                            <p class="use-case__text">"Nuestros proyectos de consultoría se descontrolaban en costes
-                                porque no sabíamos cuántas horas reales se dedicaban a cada tarea."</p>
-
-                            <h4 class="use-case__label use-case__label--solution">La Solución</h4>
-                            <p class="use-case__text">Integración automatizada entre el software de gestión y
-                                <strong>Power BI</strong> para control de márgenes en tiempo real.
-                            </p>
-
-                            <div class="use-case__result">
-                                <span class="material-symbols-outlined">payments</span>
-                                <strong>Resultado:</strong> Incremento del 18% en la rentabilidad por proyecto.
-                            </div>
+                    <article class="use-cases__card glass-card">
+                        <div class="use-cases__icon use-cases__icon--green">
+                            <span class="material-symbols-outlined">payments</span>
                         </div>
-                        <div class="testimonial-card__author">
-                            <img class="testimonial-card__avatar"
-                                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&q=75"
-                                alt="Foto de Sara M." width="48" height="48" loading="lazy" />
-                            <div>
-                                <p class="testimonial-card__name">Sara M.</p>
-                                <p class="testimonial-card__role">Fundadora de Consultoría</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="testimonial-card glass-card reveal reveal-delay-2">
-                        <div class="use-case__content">
-                            <h4 class="use-case__label use-case__label--problem">El Problema</h4>
-                            <p class="use-case__text">"Los leads que llegaban por la web tardaban horas en ser
-                                contactados, perdiendo muchas oportunidades de venta."</p>
-
-                            <h4 class="use-case__label use-case__label--solution">La Solución</h4>
-                            <p class="use-case__text">Flujo con <strong>n8n</strong> que califica el lead al instante,
-                                lo asigna al comercial en Slack y le envía un PDF personalizado.</p>
-
-                            <div class="use-case__result">
-                                <span class="material-symbols-outlined">bolt</span>
-                                <strong>Resultado:</strong> Respuesta en < 2 minutos y aumento de conversión del 30%.
-                                    </div>
-                            </div>
-                            <div class="testimonial-card__author">
-                                <img class="testimonial-card__avatar"
-                                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=96&q=75"
-                                    alt="Foto de Marcos T." width="48" height="48" loading="lazy" />
-                                <div>
-                                    <p class="testimonial-card__name">Marcos T.</p>
-                                    <p class="testimonial-card__role">Responsable Comercial</p>
-                                </div>
-                            </div>
+                        <p class="use-cases__sector">Sector consultoría</p>
+                        <p class="use-cases__text">&ldquo;Integración entre software de gestión y Power BI para control
+                            de márgenes en tiempo real. Resultado: <strong>+18% de rentabilidad</strong> por
+                            proyecto.&rdquo;</p>
+                        <p class="use-cases__footer">Proyecto de implementación &mdash; Consultoría de servicios</p>
                     </article>
 
                 </div>
+
+                <div class="use-cases__cta reveal">
+                    <p>¿Quieres ser uno de mis primeros casos de estudio con resultados reales? Hablemos de condiciones
+                        especiales.</p>
+                    <a href="#contacto">Contactar →</a>
+                </div>
+
             </div>
         </section>
 
@@ -597,6 +734,160 @@
                         </div>
                     </details>
                 </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════
+         HERRAMIENTAS
+     ══════════════════════════════════════════════════════ -->
+        <section class="tools" id="herramientas" aria-labelledby="herramientas-title">
+            <div class="container">
+                <div class="section-header reveal" style="margin-bottom:3rem; text-align:center; display:block;">
+                    <h2 class="section-title" id="herramientas-title">Tecnologías con las que trabajo</h2>
+                    <p class="section-desc">Herramientas reales, proyectos reales.</p>
+                </div>
+
+                <!-- Automatización -->
+                <div class="tools__group reveal">
+                    <h3 class="tools__group-title">Automatización</h3>
+                    <div class="tools__logos">
+                        <div class="tool-item">
+                            <img src="https://n8n.io/favicon.ico" alt="n8n" width="48" height="48" loading="lazy" />
+                            <span>n8n</span>
+                        </div>
+                        <div class="tool-item">
+                            <img src="https://www.make.com/favicon.ico" alt="Make" width="48" height="48"
+                                loading="lazy" />
+                            <span>Make</span>
+                        </div>
+                        <div class="tool-item">
+                            <img src="https://cdn.zapier.com/zapier/images/favicon.ico" alt="Zapier" width="48"
+                                height="48" loading="lazy" />
+                            <span>Zapier</span>
+                        </div>
+                        <div class="tool-item">
+                            <img src="https://powerautomate.microsoft.com/favicon.ico" alt="Power Automate" width="48"
+                                height="48" loading="lazy" />
+                            <span>Power Automate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Datos & Reporting -->
+                <div class="tools__group reveal reveal-delay-1">
+                    <h3 class="tools__group-title">Datos &amp; Reporting</h3>
+                    <div class="tools__logos">
+                        <div class="tool-item">
+                            <img src="https://powerbi.microsoft.com/favicon.ico" alt="Power BI" width="48" height="48"
+                                loading="lazy" />
+                            <span>Power BI</span>
+                        </div>
+                        <div class="tool-item">
+                            <img src="https://www.microsoft.com/favicon.ico" alt="Excel" width="48" height="48"
+                                loading="lazy" />
+                            <span>Excel</span>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item__icon-svg" aria-hidden="true">
+                                <span class="material-symbols-outlined">database</span>
+                            </div>
+                            <span>SQL / BBDD</span>
+                        </div>
+                        <div class="tool-item">
+                            <img src="https://www.python.org/static/favicon.ico" alt="Python" width="48" height="48"
+                                loading="lazy" />
+                            <span>Python</span>
+                        </div>
+                        <div class="tool-item">
+                            <div class="tool-item__icon-svg" aria-hidden="true">
+                                <span class="material-symbols-outlined">data_exploration</span>
+                            </div>
+                            <span>Power Query</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Inteligencia Artificial & Desarrollo -->
+                <div class="tools__group reveal reveal-delay-2">
+                    <h3 class="tools__group-title">Inteligencia Artificial &amp; Desarrollo</h3>
+                    <div class="tools__logos">
+                        <div class="tool-item">
+                            <img src="https://openai.com/favicon.ico" alt="ChatGPT / OpenAI" width="48" height="48"
+                                loading="lazy" />
+                            <span>ChatGPT</span>
+                        </div>
+                        <div class="tool-item">
+                            <img src="https://www.anthropic.com/favicon.ico" alt="Claude / Anthropic" width="48"
+                                height="48" loading="lazy" />
+                            <span>Claude</span>
+                        </div>
+                        <div class="tool-item">
+                            <img src="https://www.gstatic.com/lamda/images/gemini_favicon_f069958c85030456e93de685481c559f160ea06.svg"
+                                alt="Google Gemini" width="48" height="48" loading="lazy" />
+                            <span>Google AI</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════════════════════
+         PRECIOS
+     ══════════════════════════════════════════════════════ -->
+        <section class="pricing" id="precios" aria-labelledby="precios-title">
+            <div class="container">
+                <div class="section-header reveal" style="margin-bottom:3rem; text-align:center; display:block;">
+                    <h2 class="section-title" id="precios-title">Inversión: ¿Cuánto cuesta?</h2>
+                    <p class="section-desc">Precios orientativos, siempre incluye consultoría inicial gratuita.</p>
+                </div>
+
+                <div class="pricing__grid reveal">
+
+                    <div class="pricing__card">
+                        <div class="pricing__icon"><span
+                                class="material-symbols-outlined">settings_input_component</span></div>
+                        <h3 class="pricing__service">Automatización básica con n8n</h3>
+                        <p class="pricing__detail">(1-2 flujos)</p>
+                        <div class="pricing__price">Desde <strong>500€</strong></div>
+                    </div>
+
+                    <div class="pricing__card">
+                        <div class="pricing__icon"><span class="material-symbols-outlined">analytics</span></div>
+                        <h3 class="pricing__service">Dashboard Power BI</h3>
+                        <p class="pricing__detail">&nbsp;</p>
+                        <div class="pricing__price">Desde <strong>400€</strong></div>
+                    </div>
+
+                    <div class="pricing__card pricing__card--featured">
+                        <div class="pricing__badge">Más completo</div>
+                        <div class="pricing__icon"><span class="material-symbols-outlined">rocket_launch</span></div>
+                        <h3 class="pricing__service">Proyecto completo</h3>
+                        <p class="pricing__detail">(automatización + reporting)</p>
+                        <div class="pricing__price">Desde <strong>1.200€</strong></div>
+                    </div>
+
+                    <div class="pricing__card">
+                        <div class="pricing__icon"><span class="material-symbols-outlined">school</span></div>
+                        <h3 class="pricing__service">Formación en IA</h3>
+                        <p class="pricing__detail">(ChatGPT, Claude, herramientas IA)</p>
+                        <div class="pricing__price"><strong>150€</strong>/sesión</div>
+                    </div>
+
+                    <div class="pricing__card pricing__card--free">
+                        <div class="pricing__icon"><span class="material-symbols-outlined">handshake</span></div>
+                        <h3 class="pricing__service">Auditoría inicial</h3>
+                        <p class="pricing__detail">&nbsp;</p>
+                        <div class="pricing__price"><strong>0€</strong> ✅</div>
+                    </div>
+
+                </div>
+
+                <p class="pricing__note reveal reveal-delay-1">
+                    Todos los proyectos incluyen consultoría inicial gratuita. Precios orientativos, el presupuesto
+                    final depende del alcance.
+                </p>
+
             </div>
         </section>
 
@@ -694,13 +985,15 @@
             </a>
 
             <nav class="footer__links" aria-label="Redes sociales y contacto">
-                <a href="https://linkedin.com/in/aiflow" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://github.com/aiflow" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="mailto:hola@aiflow.es">Escríbeme</a>
+                <a href="https://www.linkedin.com/in/miguel-%C3%A1ngel-dom%C3%ADnguez-rangel" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/Miguel191194-desarrollador" target="_blank"
+                    rel="noopener noreferrer">GitHub</a>
+                <a href="mailto:infobiailitics@gmail.com">Escríbeme</a>
             </nav>
 
             <p class="footer__copy">
-                &copy; <span id="year"></span> BiAilitics Automation. Especialista en IA y Datos.
+                &copy; <span id="year"></span> BiAilitics &mdash; Miguel Ángel Domínguez Rangel
             </p>
 
         </div>
@@ -801,6 +1094,28 @@
         setTimeout(injectShadowStyles, 1000);
         // También intentar en 3 segundos por si tarda más en cargar
         setTimeout(injectShadowStyles, 3000);
+
+        // ── Animated Hero Word ───────────────────────────────────
+        (function () {
+            const WORDS = ['competitiva.', 'eficiente.', 'inteligente.', 'escalable.'];
+            let index = 0;
+            const el = document.getElementById('animated-word');
+            if (!el) return;
+
+            setInterval(function () {
+                // Slide out
+                el.classList.add('slide-out');
+                setTimeout(function () {
+                    index = (index + 1) % WORDS.length;
+                    el.textContent = WORDS[index];
+                    // Reset animation
+                    el.classList.remove('slide-out');
+                    el.style.animation = 'none';
+                    el.offsetHeight; // reflow
+                    el.style.animation = '';
+                }, 300);
+            }, 2200);
+        })();
     </script>
 </body>
 

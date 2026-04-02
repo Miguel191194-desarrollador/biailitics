@@ -1,0 +1,14 @@
+# BiAilitics Automation
+> Automatización de procesos empresariales con Inteligencia Artificial.
+
+Soy un consultor freelance especializado en:
+- **Flujos automatizados** utilizando n8n para conectar CRMs, ERPs y herramientas de marketing, eliminando tareas repetitivas.
+- **Dashboards en vivo** con Power BI para la visualización avanzada de datos empresariales en tiempo real.
+- **Gestión con IA**, creando sistemas que toman decisiones automáticas para escalar negocios sin intervención humana.
+
+Ofrecemos consultoría gratuita y garantizamos la reducción de costes y aumento de rentabilidad para PYMES mediante la precisión de datos y escalabilidad garantizada (hasta 20 horas ahorradas por semana por cliente).
+
+Nuestras soluciones aseguran que los datos se transmitan de forma cifrada y segura, integrando herramientas sin necesidad de almacenar información sensible de forma innecesaria. Contacto disponible con respuestas en menos de 24 horas.
+
+Visítanos en: https://www.biailitics.com
+Email: infobiailitics@gmail.com
