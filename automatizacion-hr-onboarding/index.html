@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4PDXDV406W"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4PDXDV406W');</script>
+<title>Automatización de HR | Onboarding, offboarding y operaciones</title>
+<meta name="description" content="Automatiza procesos de HR: onboarding, checklists, tickets internos y comunicaciones. Reduce carga administrativa con flujos auditables."/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://www.biailitics.com/automatizacion-hr-onboarding/"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="https://www.biailitics.com/automatizacion-hr-onboarding/"/>
+<meta property="og:title" content="Automatización de HR | Onboarding, offboarding y operaciones"/>
+<meta property="og:description" content="Automatiza procesos de HR: onboarding, checklists, tickets internos y comunicaciones. Reduce carga administrativa con flujos auditables."/>
+<meta property="og:locale" content="es_ES"/>
+<meta property="og:site_name" content="BiAilitics Automation"/>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://www.biailitics.com/"},{"@type":"ListItem","position":2,"name":"HR y Onboarding","item":"https://www.biailitics.com/automatizacion-hr-onboarding/"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link rel="stylesheet" href="../styles.css"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%236366f1'/%3E%3C/svg%3E"/>
+<style>
+.phero{padding-top:calc(var(--nav-h) + 5rem);padding-bottom:5rem;background:radial-gradient(at 0% 0%,var(--accent-light) 0,transparent 50%),radial-gradient(at 100% 0%,var(--primary-light) 0,transparent 50%);}
+.bcrumb{display:flex;align-items:center;gap:.5rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1.5rem;}
+.bcrumb a{color:var(--primary);font-weight:600;}
+.pbadge{display:inline-flex;align-items:center;gap:.5rem;padding:.3rem 1rem;border-radius:9999px;background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.25);color:var(--primary);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;margin-bottom:1.5rem;}
+.ph1{font-size:clamp(2rem,5vw,3.5rem);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:1.5rem;}
+.ph1 span{color:var(--primary);}
+.pintro{font-size:1.1rem;color:var(--text-muted);max-width:42rem;line-height:1.75;margin-bottom:2.5rem;}
+.pactions{display:flex;flex-wrap:wrap;gap:1rem;}
+.metrics-row{display:grid;gap:1.25rem;padding:4rem 0;background:var(--bg-alt);}
+@media(min-width:640px){.metrics-row{grid-template-columns:repeat(3,1fr);}}
+.metric-item{text-align:center;padding:1.5rem;border-radius:1rem;background:var(--bg-card);border:1px solid var(--border);}
+.metric-val{font-size:2rem;font-weight:800;color:var(--primary);display:block;}
+.metric-lbl{font-size:.82rem;color:var(--text-muted);margin-top:.25rem;}
+.prob-grid{display:grid;gap:1.25rem;margin-top:2rem;}
+@media(min-width:640px){.prob-grid{grid-template-columns:repeat(2,1fr);}}
+@media(min-width:1024px){.prob-grid{grid-template-columns:repeat(3,1fr);}}
+.prob-item{padding:1.5rem;border-radius:1.25rem;border:1px solid var(--border);background:var(--bg-card);transition:transform .25s,box-shadow .25s;}
+.prob-item:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.08);}
+.prob-icon{width:44px;height:44px;border-radius:.75rem;background:rgba(249,115,22,.1);display:flex;align-items:center;justify-content:center;margin-bottom:.875rem;color:#f97316;}
+.prob-item h3{font-size:.95rem;font-weight:700;margin-bottom:.4rem;}
+.prob-item p{font-size:.85rem;color:var(--text-muted);line-height:1.55;}
+.twocol{display:grid;gap:3rem;padding:5rem 0;}
+@media(min-width:1024px){.twocol{grid-template-columns:2fr 1fr;align-items:start;}}
+.prose h2{font-size:clamp(1.4rem,3vw,1.9rem);font-weight:800;letter-spacing:-.02em;margin:3rem 0 1rem;color:var(--text);}
+.prose h2:first-child{margin-top:0;}
+.prose h3{font-size:1rem;font-weight:700;color:var(--primary);margin:2rem 0 .4rem;}
+.prose p{color:var(--text-muted);line-height:1.75;margin-bottom:1.25rem;font-size:.97rem;}
+.prose ul{list-style:none;margin-bottom:1.5rem;}
+.prose ul li{display:flex;gap:.6rem;align-items:flex-start;padding:.35rem 0;color:var(--text-muted);line-height:1.6;font-size:.92rem;}
+.prose ul li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--primary);flex-shrink:0;margin-top:.52rem;}
+.aside-sticky{position:sticky;top:calc(var(--nav-h) + 2rem);display:flex;flex-direction:column;gap:1.5rem;}
+.cta-box{padding:1.75rem;border-radius:1.5rem;border:1px solid var(--border);background:var(--bg-card);box-shadow:0 4px 20px rgba(99,102,241,.07);}
+.cta-box h3{font-size:1.05rem;font-weight:800;margin-bottom:.65rem;}
+.cta-box p{color:var(--text-muted);font-size:.88rem;line-height:1.6;margin-bottom:1.2rem;}
+.cta-box .btn-primary{width:100%;justify-content:center;font-size:.92rem;}
+.cta-note{font-size:.76rem;color:var(--text-faint);text-align:center;margin-top:.5rem;}
+.rel-box h3{font-size:.95rem;font-weight:700;margin-bottom:.875rem;}
+.rel-card{display:flex;align-items:center;gap:.65rem;padding:.875rem 1.1rem;border:1px solid var(--border);border-radius:.875rem;background:var(--bg-card);color:var(--text);font-weight:600;font-size:.85rem;transition:border-color .25s,color .25s,transform .2s;text-decoration:none;margin-bottom:.5rem;}
+.rel-card:hover{border-color:var(--primary);color:var(--primary);transform:translateX(3px);}
+.rel-card .material-symbols-outlined{font-size:1rem;color:var(--primary);}
+.faq-item{border:1px solid var(--border);border-radius:1rem;overflow:hidden;background:var(--bg-card);margin-bottom:.875rem;}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.4rem;font-weight:700;font-size:.95rem;cursor:pointer;list-style:none;}
+.faq-q::-webkit-details-marker{display:none;}
+.faq-a{padding:0 1.4rem 1.1rem;color:var(--text-muted);line-height:1.7;font-size:.92rem;}
+.cta-final{background:linear-gradient(135deg,rgba(99,102,241,.07),rgba(168,85,247,.07));padding:5rem 0;text-align:center;}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido principal</a>
+<nav class="nav" role="navigation" aria-label="Navegación principal">
+<div class="container nav__inner">
+<a class="nav__logo" href="/"><span class="nav__logo-text">BiAilitics</span></a>
+<ul class="nav__links" role="list">
+<li><a href="/#sobre-mi">Sobre mí</a></li>
+<li><a href="/#servicios">Servicios</a></li>
+<li><a href="/#herramientas">Herramientas</a></li>
+<li><a href="/#precios">Precios</a></li>
+<li><a href="/#contacto">Contacto</a></li>
+</ul>
+<div class="nav__actions">
+<a class="btn-cta-nav" href="/#contacto">Consultoría Gratuita</a>
+<button class="nav__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+</div>
+</div>
+</nav>
+<nav class="nav__mobile" id="mobile-menu" aria-label="Menú móvil">
+<a href="/#sobre-mi">Sobre mí</a><a href="/#servicios">Servicios</a>
+<a href="/#herramientas">Herramientas</a><a href="/#precios">Precios</a><a href="/#contacto">Contacto</a>
+<a class="btn-cta-mobile" href="/#contacto">Consultoría Gratuita →</a>
+</nav>
+<main id="main">
+<section class="phero" aria-labelledby="page-title">
+<div class="container">
+<nav class="bcrumb" aria-label="Ruta de navegación"><a href="/">Inicio</a><span>›</span><span>HR y Onboarding</span></nav>
+<div class="pbadge">HR · Onboarding · Tickets</div>
+<h1 class="ph1" id="page-title">Automatización de HR y<br><span>procesos de onboarding</span></h1>
+<p class="pintro">Una experiencia fluida para empleados. Automatizamos la creación de cuentas de correo, accesos a herramientas y envíos de documentación para que recursos humanos no ejerza de robot.</p>
+<div class="pactions">
+<a class="btn-primary" href="/#contacto">Solicitar diagnóstico gratis <span class="material-symbols-outlined">trending_flat</span></a>
+<a class="btn-outline" href="#problemas">Ver problemas que resuelve</a>
+</div>
+</div>
+</section>
+
+<section style="background:var(--bg-alt);">
+<div class="container"><div class="metrics-row">
+<div class="metric-item"><span class="metric-val">- horas</span><p class="metric-lbl">Administración HR</p></div>
+<div class="metric-item"><span class="metric-val">100%</span><p class="metric-lbl">Cumplimiento normativo</p></div>
+<div class="metric-item"><span class="metric-val">Mejor</span><p class="metric-lbl">Experiencia del empleado</p></div>
+</div></div>
+</section>
+
+<section style="padding:5rem 0;" id="problemas" aria-labelledby="prob-title">
+<div class="container">
+<div class="reveal" style="text-align:center;margin-bottom:2.5rem;">
+<h2 class="section-title" id="prob-title">Problemas que <span>resolvemos</span></h2>
+<p class="section-desc">Las fricciones más comunes que vemos a diario trabajando con empresas.</p>
+</div>
+<div class="prob-grid">
+<div class="prob-item reveal">
+<div class="prob-icon"><span class="material-symbols-outlined">error_outline</span></div>
+<h3>Onboarding fragmentado</h3>
+<p>El empleado llega el día 1 y no tiene email, slack, ni permisos de IT solucionados.</p>
+</div><div class="prob-item reveal">
+<div class="prob-icon"><span class="material-symbols-outlined">error_outline</span></div>
+<h3>Riesgos en Offboarding</h3>
+<p>Un extrabajador mantiene acceso a sistemas de la empresa semanas después de irse.</p>
+</div><div class="prob-item reveal">
+<div class="prob-icon"><span class="material-symbols-outlined">error_outline</span></div>
+<h3>Buzón HR saturado</h3>
+<p>Las solicitudes de vacaciones, nóminas o dudas inundan a RRHH, perdiéndose.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section style="background:var(--bg-alt);padding:5rem 0;">
+<div class="container">
+<div class="twocol">
+<div class="prose">
+<h2>Nuestra solución y metodología técnica</h2>
+<p>Construimos pipelines con la API de Google Workspace/Microsoft 365, plataformas de gestión HR (Factorial, Personio) para disparar la activación de permisos e invitaciones de forma condicional. Se combinan notificaciones a IT y managers.</p>
+<h2>¿Por qué automatizar con BiAilitics?</h2>
+<p>Soy desarrollador freelance experto en n8n y Python. Implemento procesos técnicos seguros y controlados para que no dependas eternamente de terceros.</p>
+<ul>
+<li>Diagnóstico inicial gratuito sin compromiso</li>
+<li>Desarrollo en n8n (Hosting cloud o en tus servidores corporativos)</li>
+<li>Manejo estricto de seguridad de credenciales y rate limits</li>
+<li>Formación para que aprendas a mantener los flujos tú mismo</li>
+<li>Trabajo remoto con empresas de toda España</li>
+<li>Garantía de buen funcionamiento de 30 días post-entrega</li>
+</ul>
+<h2>Preguntas frecuentes</h2>
+<details class="faq-item">
+<summary class="faq-q">¿Qué procesos se automatizan primero en HR?</summary>
+<div class="faq-a"><p>Onboarding/Offboarding son esenciales por motivos de seguridad; también la firma automatizada masiva de contratos y nóminas (DocuSign/Signaturit) y aprobaciones de vacaciones.</p></div>
+</details><details class="faq-item">
+<summary class="faq-q">¿Cómo reducir el trabajo administrativo interno?</summary>
+<div class="faq-a"><p>Centralizando inputs. Que el empleado use un formulario unificado y n8n redirija al departamento adecuado o genere el archivo directamente en el software laboral.</p></div>
+</details><details class="faq-item">
+<summary class="faq-q">¿Cómo interactuamos con suites corporativas (M365/Google)?</summary>
+<div class="faq-a"><p>A través de APIs seguras (Graph API, GSuite Admin API). Podemos aprovisionar o suspender cuentas, controlar grupos y asignar material de forma controlada.</p></div>
+</details>
+</div>
+<aside class="aside-sticky">
+<div class="cta-box">
+<h3>¿Hablamos de tus procesos?</h3>
+<p>Cuéntame tu idea o fricción y te prepararé un análisis de viabilidad técnica en menos de 24 horas.</p>
+<a class="btn-primary" href="/#contacto">Solicitar análisis <span class="material-symbols-outlined">east</span></a>
+<p class="cta-note">Respuesta técnica rápida y sin compromiso</p>
+</div>
+<div class="cta-box rel-box">
+<h3>Servicios recomendados</h3>
+<a href="/integracion-apis-webhooks/" class="rel-card"><span class="material-symbols-outlined">arrow_forward</span>APIs y Webhooks</a><a href="/automatizacion-rpa-sin-api/" class="rel-card"><span class="material-symbols-outlined">arrow_forward</span>RPA sin API</a><a href="/automatizacion-soporte-cliente/" class="rel-card"><span class="material-symbols-outlined">arrow_forward</span>Soporte al cliente</a>
+</div>
+</aside>
+</div>
+</div>
+</section>
+
+<section class="cta-final" aria-labelledby="cta-final">
+<div class="container">
+<div class="reveal" style="max-width:640px;margin:0 auto;">
+<h2 class="section-title" id="cta-final">¿Listo para escalar <span>tus operaciones</span>?</h2>
+<p class="section-desc" style="margin-bottom:2rem;">Si automatizas con un enfoque de integración profesional y no con "parches", tu negocio crecerá sin romper costuras.</p>
+<a class="btn-primary" href="/#contacto" style="display:inline-flex;margin:0 auto;">Hablar con Miguel Ángel <span class="material-symbols-outlined">trending_flat</span></a>
+<p style="margin-top:1rem;font-size:.82rem;color:var(--text-faint);">O escríbeme a <a href="mailto:infobiailitics@gmail.com" style="color:var(--primary);">infobiailitics@gmail.com</a></p>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer" role="contentinfo">
+<div class="container footer__inner">
+<a class="footer__logo" href="/"><span class="footer__logo-text">BiAilitics</span></a>
+<nav class="footer__links" aria-label="Redes sociales">
+<a href="https://www.linkedin.com/in/miguel-%C3%A1ngel-dom%C3%ADnguez-rangel-373441176/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<a href="https://github.com/Miguel191194-desarrollador" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a href="mailto:infobiailitics@gmail.com">Escríbeme</a>
+</nav>
+<p class="footer__copy">&copy; <span id="year"></span> BiAilitics &mdash; Miguel Ángel Domínguez Rangel</p>
+</div>
+</footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const hb=document.getElementById('hamburger'),mm=document.getElementById('mobile-menu');
+if(hb&&mm){hb.addEventListener('click',()=>{const o=hb.classList.toggle('open');mm.classList.toggle('open',o);hb.setAttribute('aria-expanded',String(o));});}
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(r=>obs.observe(r));
+</script>
+</body>
+</html>

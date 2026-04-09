@@ -272,6 +272,78 @@
             background-repeat: no-repeat;
             background-position: center;
         }
+
+        /* ── Soluciones Grid ─────────────────────────────────── */
+        .soluciones__grid {
+            display: grid;
+            gap: 1rem;
+        }
+
+        @media (min-width: 640px) {
+            .soluciones__grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .soluciones__grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .sol-card {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1.25rem 1.5rem;
+            border: 1px solid var(--border);
+            border-radius: 1.25rem;
+            background: var(--bg-card);
+            color: var(--text);
+            text-decoration: none;
+            transition: border-color .25s, transform .25s, box-shadow .25s;
+        }
+
+        .sol-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 24px rgba(99, 102, 241, .1);
+        }
+
+        .sol-card__icon {
+            width: 48px;
+            height: 48px;
+            border-radius: .875rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .sol-card__title {
+            font-size: .95rem;
+            font-weight: 700;
+            margin-bottom: .2rem;
+        }
+
+        .sol-card__desc {
+            font-size: .82rem;
+            color: var(--text-muted);
+            line-height: 1.45;
+        }
+
+        .sol-card__arrow {
+            margin-left: auto;
+            flex-shrink: 0;
+            color: var(--text-faint);
+            font-size: 1.1rem;
+            transition: color .25s, transform .25s;
+        }
+
+        .sol-card:hover .sol-card__arrow {
+            color: var(--primary);
+            transform: translateX(3px);
+        }
     </style>
 </head>
 
@@ -657,7 +729,227 @@
                         especiales.</p>
                     <a href="#contacto">Contactar →</a>
                 </div>
+            </div>
+        </section>
 
+
+        <!-- ══════════════════════════════════════════════════════
+         SOLUCIONES (Enlazado SEO interno)
+     ══════════════════════════════════════════════════════ -->
+        <section id="soluciones" aria-labelledby="soluciones-title"
+            style="background:var(--bg-alt);padding-block:6rem;">
+            <div class="container">
+                <div class="reveal" style="text-align:center;margin-bottom:3rem;">
+                    <div class="section-badge">Soluciones específicas</div>
+                    <h2 class="section-title" id="soluciones-title">Encuentra la solución <span>exacta para ti</span>
+                    </h2>
+                    <p class="section-desc">Cada servicio tiene su propia página con información detallada, casos de uso
+                        y preguntas frecuentes.</p>
+                </div>
+                <div class="soluciones__grid reveal">
+                    <a href="/automatizar-pedidos-excel/" class="sol-card">
+                        <div class="sol-card__icon" style="background:rgba(99,102,241,.1);color:var(--primary);"><span
+                                class="material-symbols-outlined">description</span></div>
+                        <div>
+                            <h3 class="sol-card__title">Automatizar pedidos en Excel</h3>
+                            <p class="sol-card__desc">PDF automático con 1 clic, historial y trazabilidad. Sin ERP caro.
+                            </p>
+                        </div>
+                        <span class="material-symbols-outlined sol-card__arrow">arrow_forward</span>
+                    </a>
+                    <a href="/macros-excel-a-medida/" class="sol-card">
+                        <div class="sol-card__icon" style="background:rgba(168,85,247,.1);color:#a855f7;"><span
+                                class="material-symbols-outlined">code</span></div>
+                        <div>
+                            <h3 class="sol-card__title">Macros Excel a medida</h3>
+                            <p class="sol-card__desc">Automatización VBA 100% personalizada para tu empresa.</p>
+                        </div>
+                        <span class="material-symbols-outlined sol-card__arrow">arrow_forward</span>
+                    </a>
+                    <a href="/automatizar-informes-excel/" class="sol-card">
+                        <div class="sol-card__icon" style="background:rgba(249,115,22,.1);color:#f97316;"><span
+                                class="material-symbols-outlined">analytics</span></div>
+                        <div>
+                            <h3 class="sol-card__title">Automatizar informes en Excel</h3>
+                            <p class="sol-card__desc">Reportes mensuales sin errores generados en segundos.</p>
+                        </div>
+                        <span class="material-symbols-outlined sol-card__arrow">arrow_forward</span>
+                    </a>
+                    <a href="/power-query-consultoria/" class="sol-card">
+                        <div class="sol-card__icon" style="background:rgba(34,197,94,.1);color:#22c55e;"><span
+                                class="material-symbols-outlined">transform</span></div>
+                        <div>
+                            <h3 class="sol-card__title">Consultoría Power Query</h3>
+                            <p class="sol-card__desc">Limpieza, consolidación y ETL repetible en Excel y Power BI.</p>
+                        </div>
+                        <span class="material-symbols-outlined sol-card__arrow">arrow_forward</span>
+                    </a>
+                    <a href="/dashboard-power-bi-ventas/" class="sol-card">
+                        <div class="sol-card__icon" style="background:rgba(99,102,241,.1);color:var(--primary);"><span
+                                class="material-symbols-outlined">bar_chart</span></div>
+                        <div>
+                            <h3 class="sol-card__title">Dashboard ventas Power BI</h3>
+                            <p class="sol-card__desc">KPIs por producto, cliente y zona en tiempo real.</p>
+                        </div>
+                        <span class="material-symbols-outlined sol-card__arrow">arrow_forward</span>
+                    </a>
+                    <a href="/cuadro-mando-financiero-power-bi/" class="sol-card">
+                        <div class="sol-card__icon" style="background:rgba(234,179,8,.1);color:#eab308;"><span
+                                class="material-symbols-outlined">account_balance</span></div>
+                        <div>
+                            <h3 class="sol-card__title">Cuadro de mando financiero</h3>
+                            <p class="sol-card__desc">Ingresos, gastos y márgenes para dirección en tiempo real.</p>
+                        </div>
+                        <span class="material-symbols-outlined sol-card__arrow">arrow_forward</span>
+                    </a>
+                    <a href="/actualizacion-automatica-power-bi/" class="sol-card">
+                        <div class="sol-card__icon" style="background:rgba(239,68,68,.1);color:#ef4444;"><span
+                                class="material-symbols-outlined">sync</span></div>
+                        <div>
+                            <h3 class="sol-card__title">Actualización automática Power BI</h3>
+                            <p class="sol-card__desc">Soluciones para gateway, credenciales y refresh fallido.</p>
+                        </div>
+                        <span class="material-symbols-outlined sol-card__arrow">arrow_forward</span>
+                    </a>
+                    <a href="/migrar-excel-a-power-bi/" class="sol-card">
+                        <div class="sol-card__icon" style="background:rgba(14,165,233,.1);color:#0ea5e9;"><span
+                                class="material-symbols-outlined">upgrade</span></div>
+                        <div>
+                            <h3 class="sol-card__title">Migrar Excel a Power BI</h3>
+                            <p class="sol-card__desc">Moderniza tus reportes sin perder tu lógica de negocio.</p>
+                        </div>
+                        <span class="material-symbols-outlined sol-card__arrow">arrow_forward</span>
+                    </a>
+                    <a href="/consultoria-power-bi-pymes/" class="sol-card">
+                        <div class="sol-card__icon" style="background:rgba(168,85,247,.1);color:#a855f7;"><span
+                                class="material-symbols-outlined">groups</span></div>
+                        <div>
+                            <h3 class="sol-card__title">Consultoría Power BI para pymes</h3>
+                            <p class="sol-card__desc">Servicio completo end-to-end para pymes en toda España.</p>
+                        </div>
+                        <span class="material-symbols-outlined sol-card__arrow">arrow_forward</span>
+                    </a>
+                    <a href="/precio-dashboard-power-bi/" class="sol-card">
+                        <div class="sol-card__icon" style="background:rgba(34,197,94,.1);color:#22c55e;"><span
+                                class="material-symbols-outlined">payments</span></div>
+                        <div>
+                            <h3 class="sol-card__title">Precio dashboard Power BI</h3>
+                            <p class="sol-card__desc">Variables de coste, rangos y cómo presupuestar tu proyecto.</p>
+                        </div>
+                        <span class="material-symbols-outlined sol-card__arrow">arrow_forward</span>
+                    </a>
+                </div>
+
+                <div class="reveal" style="text-align:center;margin-top:6rem;margin-bottom:3rem;">
+                    <div class="section-badge">Automatización Pura</div>
+                    <h3 class="section-title" style="font-size: 2rem;">Automatización de <span>Procesos
+                            Empresariales</span></h3>
+                    <p class="section-desc">Conectamos tus sistemas (ERP, CRM, pagos, soporte) mediante webhooks y APIs
+                        para eliminar tareas manuales.</p>
+                </div>
+
+                <div class="soluciones__grid reveal">
+                    <a href="/integracion-apis-webhooks/" class="sol-card">
+                        <div class="sol-card__icon" style="background:rgba(99,102,241,.1);color:var(--primary);"><span
+                                class="material-symbols-outlined">webhook</span></div>
+                        <div>
+                            <h3 class="sol-card__title">Integración de APIs y Webhooks</h3>
+                            <p class="sol-card__desc">Flujos robustos por eventos, validación de datos y reintentos
+                                (n8n).</p>
+                        </div>
+                        <span class="material-symbols-outlined sol-card__arrow">arrow_forward</span>
+                    </a>
+                    <a href="/integracion-con-erp/" class="sol-card">
+                        <div class="sol-card__icon" style="background:rgba(168,85,247,.1);color:#a855f7;"><span
+                                class="material-symbols-outlined">account_tree</span></div>
+                        <div>
+                            <h3 class="sol-card__title">Integración con ERP</h3>
+                            <p class="sol-card__desc">Sincroniza Odoo, SAP B1 o Navision con tu e-commerce y CRM de
+                                forma bidireccional.</p>
+                        </div>
+                        <span class="material-symbols-outlined sol-card__arrow">arrow_forward</span>
+                    </a>
+                    <a href="/etl-pipelines-datos/" class="sol-card">
+                        <div class="sol-card__icon" style="background:rgba(239,68,68,.1);color:#ef4444;"><span
+                                class="material-symbols-outlined">database</span></div>
+                        <div>
+                            <h3 class="sol-card__title">ETL y pipelines de datos</h3>
+                            <p class="sol-card__desc">Extracción de múltiples APIs hacia tu base de datos para BI y
+                                reporting.</p>
+                        </div>
+                        <span class="material-symbols-outlined sol-card__arrow">arrow_forward</span>
+                    </a>
+                    <a href="/automatizacion-rpa-sin-api/" class="sol-card">
+                        <div class="sol-card__icon" style="background:rgba(34,197,94,.1);color:#22c55e;"><span
+                                class="material-symbols-outlined">smart_toy</span></div>
+                        <div>
+                            <h3 class="sol-card__title">Automatización RPA sin API</h3>
+                            <p class="sol-card__desc">Bots seguros en Python para portales del gobierno y sistemas
+                                legacy cerrados.</p>
+                        </div>
+                        <span class="material-symbols-outlined sol-card__arrow">arrow_forward</span>
+                    </a>
+                    <a href="/automatizacion-ventas-crm/" class="sol-card">
+                        <div class="sol-card__icon" style="background:rgba(249,115,22,.1);color:#f97316;"><span
+                                class="material-symbols-outlined">group_add</span></div>
+                        <div>
+                            <h3 class="sol-card__title">Automatización de ventas y CRM</h3>
+                            <p class="sol-card__desc">Lead routing en tiempo real, enriquecimiento de datos y pipeline
+                                más rápido.</p>
+                        </div>
+                        <span class="material-symbols-outlined sol-card__arrow">arrow_forward</span>
+                    </a>
+                    <a href="/automatizacion-marketing/" class="sol-card">
+                        <div class="sol-card__icon" style="background:rgba(14,165,233,.1);color:#0ea5e9;"><span
+                                class="material-symbols-outlined">campaign</span></div>
+                        <div>
+                            <h3 class="sol-card__title">Automatización de marketing</h3>
+                            <p class="sol-card__desc">Campañas orquestadas, segmentación dinámica y server-side
+                                tracking.</p>
+                        </div>
+                        <span class="material-symbols-outlined sol-card__arrow">arrow_forward</span>
+                    </a>
+                    <a href="/automatizacion-facturacion-pagos/" class="sol-card">
+                        <div class="sol-card__icon" style="background:rgba(234,179,8,.1);color:#eab308;"><span
+                                class="material-symbols-outlined">receipt_long</span></div>
+                        <div>
+                            <h3 class="sol-card__title">Facturación y pagos</h3>
+                            <p class="sol-card__desc">Conciliación bancaria automática, recibo de webhooks (Stripe) y
+                                facturación en ERP.</p>
+                        </div>
+                        <span class="material-symbols-outlined sol-card__arrow">arrow_forward</span>
+                    </a>
+                    <a href="/automatizacion-hr-onboarding/" class="sol-card">
+                        <div class="sol-card__icon" style="background:rgba(99,102,241,.1);color:var(--primary);"><span
+                                class="material-symbols-outlined">badge</span></div>
+                        <div>
+                            <h3 class="sol-card__title">HR y onboarding automático</h3>
+                            <p class="sol-card__desc">Aprovisionamiento de emails, permisos en Google Workspace y
+                                contratos automáticos.</p>
+                        </div>
+                        <span class="material-symbols-outlined sol-card__arrow">arrow_forward</span>
+                    </a>
+                    <a href="/automatizacion-soporte-cliente/" class="sol-card">
+                        <div class="sol-card__icon" style="background:rgba(168,85,247,.1);color:#a855f7;"><span
+                                class="material-symbols-outlined">support_agent</span></div>
+                        <div>
+                            <h3 class="sol-card__title">Soporte y atención al cliente</h3>
+                            <p class="sol-card__desc">Triage de tickets, enrutamiento condicional y enriquecimiento con
+                                info de pedidos.</p>
+                        </div>
+                        <span class="material-symbols-outlined sol-card__arrow">arrow_forward</span>
+                    </a>
+                    <a href="/reporting-automatico-kpis/" class="sol-card">
+                        <div class="sol-card__icon" style="background:rgba(34,197,94,.1);color:#22c55e;"><span
+                                class="material-symbols-outlined">notifications_active</span></div>
+                        <div>
+                            <h3 class="sol-card__title">Reporting y alertas en Slack</h3>
+                            <p class="sol-card__desc">KPIs del negocio enviados a diario a tus herramientas de
+                                comunicación sin trabajo.</p>
+                        </div>
+                        <span class="material-symbols-outlined sol-card__arrow">arrow_forward</span>
+                    </a>
+                </div>
             </div>
         </section>
 
