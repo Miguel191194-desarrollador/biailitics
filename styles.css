@@ -286,12 +286,12 @@ ol {
   }
 }
 
-.nav__links a {
+.nav__links>li>a {
   position: relative;
   transition: color var(--transition);
 }
 
-.nav__links a::after {
+.nav__links>li>a::after {
   content: '';
   position: absolute;
   bottom: -4px;
@@ -303,13 +303,13 @@ ol {
   transition: width var(--transition);
 }
 
-.nav__links a:hover,
-.nav__links a.active {
+.nav__links>li>a:hover,
+.nav__links>li>a.active {
   color: var(--primary);
 }
 
-.nav__links a:hover::after,
-.nav__links a.active::after {
+.nav__links>li>a:hover::after,
+.nav__links>li>a.active::after {
   width: 100%;
 }
 
@@ -338,7 +338,7 @@ ol {
   top: calc(100% + 12px);
   left: 50%;
   transform: translateX(-50%);
-  display: grid;
+  display: none;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
   min-width: 520px;
@@ -347,19 +347,11 @@ ol {
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
-  transform: translateX(-50%) translateY(8px);
   z-index: 100;
 }
 
 .nav__dropdown:hover .nav__mega {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  transform: translateX(-50%) translateY(0);
+  display: grid;
 }
 
 /* Invisible bridge to prevent gap flickering */
