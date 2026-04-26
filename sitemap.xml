@@ -1,115 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-<url>
-  <loc>https://www.biailitics.com/</loc>
-  <lastmod>2026-04-01T19:00:00+02:00</lastmod>
-  <changefreq>weekly</changefreq>
-  <priority>1.0</priority>
-</url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://www.biailitics.com/</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <!-- Páginas de servicio Excel -->
   <url>
     <loc>https://www.biailitics.com/automatizar-pedidos-excel/</loc>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/macros-excel-a-medida/</loc>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/automatizar-informes-excel/</loc>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/power-query-consultoria/</loc>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
+  <!-- Páginas de servicio Power BI -->
   <url>
     <loc>https://www.biailitics.com/dashboard-power-bi-ventas/</loc>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/cuadro-mando-financiero-power-bi/</loc>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/actualizacion-automatica-power-bi/</loc>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/migrar-excel-a-power-bi/</loc>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/consultoria-power-bi-pymes/</loc>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/precio-dashboard-power-bi/</loc>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
+  <!-- Páginas de automatización -->
   <url>
     <loc>https://www.biailitics.com/integracion-apis-webhooks/</loc>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/integracion-con-erp/</loc>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/etl-pipelines-datos/</loc>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/automatizacion-rpa-sin-api/</loc>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/automatizacion-ventas-crm/</loc>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/automatizacion-marketing/</loc>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/automatizacion-facturacion-pagos/</loc>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/automatizacion-hr-onboarding/</loc>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/automatizacion-soporte-cliente/</loc>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/reporting-automatico-kpis/</loc>
-    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <!-- Blog -->
+  <url>
+    <loc>https://www.biailitics.com/blog/</loc>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.biailitics.com/blog/n8n-vs-make-automatizacion-pymes/</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.biailitics.com/blog/que-es-n8n-guia-completa/</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.biailitics.com/blog/como-automatizar-informes-power-bi/</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.biailitics.com/blog/cuanto-cuesta-automatizar-empresa/</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.biailitics.com/blog/excel-vs-power-bi-diferencias/</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
   </url>
 </urlset>

@@ -53,6 +53,16 @@
     });
   });
 
+  /* ── Mobile Service Dropdown Toggle ────────────────────── */
+  const mobileToggle = document.querySelector('.nav__mobile-toggle');
+  if (mobileToggle) {
+    const sub = mobileToggle.nextElementSibling;
+    mobileToggle.addEventListener('click', () => {
+      const isOpen = sub.classList.toggle('open');
+      mobileToggle.setAttribute('aria-expanded', isOpen);
+    });
+  }
+
   /* ── Scroll Spy ─────────────────────────────────────────── */
   const navLinks = document.querySelectorAll('.nav__links a[href^="#"]');
   const sections = document.querySelectorAll('section[id]');
