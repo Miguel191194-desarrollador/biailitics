@@ -119,11 +119,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" as="style"
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
         rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-        rel="stylesheet" />
+
+    <!-- ── Preload hero image (LCP) ─────────────────────────── -->
+    <link rel="preload" as="image" href="yo.webp" fetchpriority="high" />
+
+    <!-- ── Preconnect CDN para n8n chat ─────────────────────── -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
 
     <!-- ── Styles ────────────────────────────────────────────── -->
     <link rel="stylesheet" href="styles.css" />
@@ -131,152 +135,8 @@
     <!-- Favicon placeholder -->
     <link rel="icon" type="image/svg+xml"
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%236366f1'/></svg>" />
-    <!-- ── Animated Hero Word + n8n Chat Custom Styles ──────── -->
+    <!-- ── Soluciones Grid + sol-card ───────────────────────── -->
     <style>
-        /* ── Animated Hero Word ─────────────────────────────── */
-        .hero__title--static {
-            color: #000 !important;
-            margin-bottom: 0.1em;
-        }
-
-        .hero__title--dynamic {
-            margin-top: 0;
-        }
-
-        .animated-word-wrap {
-            display: inline-block;
-            overflow: hidden;
-            vertical-align: bottom;
-        }
-
-        .animated-word {
-            display: inline-block;
-            background: linear-gradient(90deg, #22d3ee 0%, #a78bfa 50%, #e879f9 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: wordSlideIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
-        }
-
-        @keyframes wordSlideIn {
-            from {
-                transform: translateY(120%);
-                opacity: 0;
-            }
-
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        .animated-word.slide-out {
-            animation: wordSlideOut 0.3s cubic-bezier(0.7, 0, 0.84, 0) forwards;
-        }
-
-        @keyframes wordSlideOut {
-            from {
-                transform: translateY(0);
-                opacity: 1;
-            }
-
-            to {
-                transform: translateY(-120%);
-                opacity: 0;
-            }
-        }
-
-        @keyframes chipIn {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .hero__desc-highlight {
-            display: inline-block;
-            font-weight: 800;
-            padding: 0 0.2rem;
-            color: #000;
-            position: relative;
-            z-index: 1;
-            transition: all 0.3s ease;
-        }
-
-        .hero__desc-highlight::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0.1em;
-            width: 100%;
-            height: 0.3em;
-            background: linear-gradient(90deg, #22d3ee, #a78bfa);
-            z-index: -1;
-            opacity: 0.4;
-            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-            border-radius: 2px;
-        }
-
-        .hero__desc--dynamic:hover .hero__desc-highlight::after {
-            height: 1.1em;
-            opacity: 0.2;
-        }
-
-        .hero__desc-highlight {
-            animation: focusHighlight 3s infinite ease-in-out;
-        }
-
-        @keyframes focusHighlight {
-
-            0%,
-            100% {
-                transform: translateY(0);
-                text-shadow: 0 0 0px transparent;
-            }
-
-            50% {
-                transform: translateY(-2px);
-                text-shadow: 0 0 15px rgba(167, 139, 250, 0.3);
-            }
-        }
-
-        .hero__desc-highlight:nth-child(2) {
-            animation-delay: 0.5s;
-        }
-
-        .hero__desc-highlight:nth-child(3) {
-            animation-delay: 1s;
-        }
-
-        /* Forzar color y cambio de icono en el botón de n8n */
-        :root {
-            --chat--color--primary: #6366f1 !important;
-        }
-
-        #n8n-chat-container .n8n-chat-widget-launcher-button,
-        .n8n-chat-widget-launcher-button,
-        [class*="chat-widget-launcher-button"] {
-            background-color: #6366f1 !important;
-        }
-
-        /* Ocultar el icono de mensaje y poner el robot */
-        .n8n-chat-widget-launcher-button svg,
-        [class*="chat-widget-launcher-button"] svg {
-            display: none !important;
-        }
-
-        .n8n-chat-widget-launcher-button::after,
-        [class*="chat-widget-launcher-button"]::after {
-            content: "";
-            display: block;
-            width: 35px;
-            height: 35px;
-            background-image: url('https://cdn-icons-png.flaticon.com/512/4712/4712035.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
         /* ── Soluciones Grid ─────────────────────────────────── */
         .soluciones__grid {
             display: grid;
@@ -1501,115 +1361,71 @@
     </script>
     <script src="script.js" defer></script>
 
-    <!-- ── n8n Chatbot Integration ───────────────────────────── -->
-    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <!-- ── n8n Chatbot Integration (carga diferida tras interacción) ── -->
     <style>
-        /* Estilos base que sí pasan la frontera del Shadow DOM */
-        :root {
-            --chat--color--primary: #6366f1 !important;
-        }
+        :root { --chat--color--primary: #6366f1 !important; }
     </style>
-
-    <script type="module">
-        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
-
-        createChat({
-            webhookUrl: 'https://miguelangeljmrey.app.n8n.cloud/webhook/0c889e5d-b206-452e-a170-b0185e2aafd6/chat',
-            webhookConfig: {
-                method: 'POST'
-            },
-            showWelcomeScreen: true,
-            title: 'Asistente BiAilitics',
-            subtitle: 'Pregúntame sobre automatización e IA',
-            mainColor: '#6366f1',
-            avatarUrl: 'https://cdn-icons-png.flaticon.com/512/4712/4712035.png',
-            errorMsg: 'Hubo un error al conectar. Inténtalo de nuevo.',
-            placeholder: '¿En qué puedo ayudarte hoy?',
-            welcomeMessage: '¡Hola! 👋 Soy **Bia**, tu asistente virtual de BiAilitics. ¿En qué puedo ayudarte hoy?',
-            initialMessages: [
-                '¡Hola! Soy experto en Power BI y n8n.',
-                'Pregúntame sobre nuestros servicios o solicita una consultoría.'
-            ],
-            i18n: {
-                en: {
-                    title: 'BiAilitics Assistant',
-                    subtitle: 'Ask me about automation & AI',
-                    placeholder: 'Type your message...',
-                    welcomeMessage: 'Hello! I am the BiAilitics assistant. How can I help you today?',
-                    errorMsg: 'There was an error connecting. Please try again.',
-                    sendButtonAriaLabel: 'Send message',
-                },
-                es: {
-                    title: 'Asistente BiAilitics',
-                    subtitle: 'Consultoría en IA y Automatización',
-                    placeholder: 'Escribe tu mensaje...',
-                    welcomeMessage: '¡Hola! Soy el asistente de BiAilitics. ¿En qué puedo ayudarte?',
-                }
-            }
-        });
-
-        // Script para "Hackear" el Shadow DOM y cambiar el icono del botón flotante
-        function injectShadowStyles() {
-            // Buscamos cualquier elemento que pueda contener el chat
-            const hosts = document.querySelectorAll('n8n-chat, .n8n-chat-widget, #n8n-chat-container');
-
-            hosts.forEach(host => {
-                if (host.shadowRoot) {
-                    const style = document.createElement('style');
-                    style.textContent = `
-                        /* Ocultar el SVG original */
-                        .n8n-chat-widget-launcher-button svg { 
-                            display: none !important; 
-                        }
-                        /* Insertar el robot Bia */
-                        .n8n-chat-widget-launcher-button::after {
-                            content: "";
-                            display: block;
-                            width: 38px;
-                            height: 38px;
-                            background-image: url('https://cdn-icons-png.flaticon.com/512/4712/4712035.png');
-                            background-size: contain;
-                            background-repeat: no-repeat;
-                            background-position: center;
-                            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
-                        }
-                        /* Ajustar el botón si es necesario */
-                        .n8n-chat-widget-launcher-button {
-                            display: flex !important;
-                            align-items: center !important;
-                            justify-content: center !important;
-                        }
-                    `;
-                    host.shadowRoot.appendChild(style);
-                }
-            });
-        }
-
-        // Ejecutar con un pequeño delay para asegurar que el widget se ha renderizado
-        setTimeout(injectShadowStyles, 1000);
-        // También intentar en 3 segundos por si tarda más en cargar
-        setTimeout(injectShadowStyles, 3000);
-
-        // ── Animated Hero Word ───────────────────────────────────
+    <script>
         (function () {
-            const WORDS = ['competitiva.', 'eficiente.', 'inteligente.', 'escalable.'];
-            let index = 0;
-            const el = document.getElementById('animated-word');
-            if (!el) return;
+            let loaded = false;
+            function loadChat() {
+                if (loaded) return;
+                loaded = true;
 
-            setInterval(function () {
-                // Slide out
-                el.classList.add('slide-out');
-                setTimeout(function () {
-                    index = (index + 1) % WORDS.length;
-                    el.textContent = WORDS[index];
-                    // Reset animation
-                    el.classList.remove('slide-out');
-                    el.style.animation = 'none';
-                    el.offsetHeight; // reflow
-                    el.style.animation = '';
-                }, 300);
-            }, 2200);
+                // CSS del widget
+                const link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css';
+                document.head.appendChild(link);
+
+                // JS del widget
+                const script = document.createElement('script');
+                script.type = 'module';
+                script.textContent = `
+                    import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+                    createChat({
+                        webhookUrl: 'https://miguelangeljmrey.app.n8n.cloud/webhook/0c889e5d-b206-452e-a170-b0185e2aafd6/chat',
+                        webhookConfig: { method: 'POST' },
+                        showWelcomeScreen: true,
+                        title: 'Asistente BiAilitics',
+                        subtitle: 'Pregúntame sobre automatización e IA',
+                        mainColor: '#6366f1',
+                        avatarUrl: 'https://cdn-icons-png.flaticon.com/512/4712/4712035.png',
+                        errorMsg: 'Hubo un error al conectar. Inténtalo de nuevo.',
+                        placeholder: '¿En qué puedo ayudarte hoy?',
+                        welcomeMessage: '¡Hola! 👋 Soy Bia, tu asistente virtual de BiAilitics. ¿En qué puedo ayudarte hoy?',
+                        initialMessages: [
+                            '¡Hola! Soy experto en Power BI y n8n.',
+                            'Pregúntame sobre nuestros servicios o solicita una consultoría.'
+                        ],
+                        i18n: {
+                            es: {
+                                title: 'Asistente BiAilitics',
+                                subtitle: 'Consultoría en IA y Automatización',
+                                placeholder: 'Escribe tu mensaje...',
+                                welcomeMessage: '¡Hola! Soy el asistente de BiAilitics. ¿En qué puedo ayudarte?',
+                            }
+                        }
+                    });
+                    setTimeout(function () {
+                        const hosts = document.querySelectorAll('n8n-chat, .n8n-chat-widget, #n8n-chat-container');
+                        hosts.forEach(function (host) {
+                            if (!host.shadowRoot) return;
+                            const s = document.createElement('style');
+                            s.textContent = '.n8n-chat-widget-launcher-button svg{display:none!important}.n8n-chat-widget-launcher-button::after{content:"";display:block;width:38px;height:38px;background-image:url("https://cdn-icons-png.flaticon.com/512/4712/4712035.png");background-size:contain;background-repeat:no-repeat;background-position:center}';
+                            host.shadowRoot.appendChild(s);
+                        });
+                    }, 1500);
+                `;
+                document.body.appendChild(script);
+            }
+
+            // Carga tras primera interacción del usuario
+            ['scroll', 'mousemove', 'touchstart', 'keydown'].forEach(function (evt) {
+                window.addEventListener(evt, loadChat, { once: true, passive: true });
+            });
+            // Fallback: carga a los 5 segundos aunque no haya interacción
+            setTimeout(loadChat, 5000);
         })();
     </script>
 </body>
