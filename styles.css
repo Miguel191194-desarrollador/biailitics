@@ -337,8 +337,8 @@ ol {
   position: absolute;
   top: calc(100% + 12px);
   left: 50%;
-  transform: translateX(-50%);
-  display: none;
+  transform: translateX(-50%) translateY(-8px);
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
   min-width: 520px;
@@ -348,10 +348,15 @@ ol {
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
   z-index: 100;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .nav__dropdown:hover .nav__mega {
-  display: grid;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
 }
 
 /* Invisible bridge to prevent gap flickering */
