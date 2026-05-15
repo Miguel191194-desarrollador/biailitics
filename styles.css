@@ -764,6 +764,197 @@ ol {
   color: var(--text);
 }
 
+/* ── Process / Cómo trabajo ─────────────────────────────────── */
+.process {
+  background: var(--bg-alt);
+  padding-block: 6rem;
+}
+
+.process__steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+  max-width: 720px;
+  margin-inline: auto;
+}
+
+.process__steps::before {
+  content: '';
+  position: absolute;
+  left: 2rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--primary-light), var(--purple-light), transparent);
+}
+
+@media (min-width: 640px) {
+  .process__steps::before {
+    left: 2.5rem;
+  }
+}
+
+.process__step {
+  display: flex;
+  gap: 2rem;
+  padding: 1.75rem 0 1.75rem 1rem;
+  position: relative;
+}
+
+.process__number {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 0 4px var(--bg-alt), 0 0 0 6px var(--primary-light);
+}
+
+.process__content {
+  padding-top: 0.6rem;
+}
+
+.process__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  color: var(--text);
+}
+
+.process__desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+/* ── Comparativa ────────────────────────────────────────────── */
+.comparativa {
+  padding-block: 6rem;
+  background: var(--bg);
+}
+
+.comparativa__table {
+  max-width: 860px;
+  margin-inline: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+}
+
+.comparativa__header,
+.comparativa__row {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+}
+
+.comparativa__header {
+  background: var(--bg-alt);
+  border-bottom: 2px solid var(--border);
+}
+
+.comparativa__row {
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.comparativa__row:last-child {
+  border-bottom: none;
+}
+
+.comparativa__col-label,
+.comparativa__col,
+.comparativa__label,
+.comparativa__val--good,
+.comparativa__val--mid,
+.comparativa__val--bad {
+  padding: 1rem 1.25rem;
+  font-size: 0.88rem;
+  display: flex;
+  align-items: center;
+}
+
+.comparativa__col {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.25rem;
+  border-left: 1px solid var(--border-subtle);
+}
+
+.comparativa__col--highlight {
+  background: rgba(99, 102, 241, 0.04);
+  border-left: 2px solid var(--primary);
+}
+
+.comparativa__tool {
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--text);
+}
+
+.comparativa__badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: var(--primary);
+  color: #fff;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-full);
+}
+
+.comparativa__label {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 0.85rem;
+}
+
+.comparativa__val--good {
+  color: #22c55e;
+  font-weight: 600;
+  justify-content: center;
+  text-align: center;
+  border-left: 2px solid var(--primary);
+  background: rgba(99, 102, 241, 0.04);
+}
+
+.comparativa__val--mid {
+  color: var(--text-muted);
+  justify-content: center;
+  text-align: center;
+}
+
+.comparativa__val--bad {
+  color: #ef4444;
+  font-weight: 500;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .comparativa__header,
+  .comparativa__row {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .comparativa__col-label,
+  .comparativa__label {
+    display: none;
+  }
+  .comparativa__header,
+  .comparativa__row {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 /* ── Trust Bar ──────────────────────────────────────────────── */
 .trust-bar {
   padding: 2rem 0;
