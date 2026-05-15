@@ -764,6 +764,68 @@ ol {
   color: var(--text);
 }
 
+/* ── Trust Bar ──────────────────────────────────────────────── */
+.trust-bar {
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-alt);
+}
+
+.trust-bar__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem 2.5rem;
+}
+
+.trust-bar__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.2rem;
+}
+
+.trust-bar__value {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary);
+  letter-spacing: -0.02em;
+}
+
+.trust-bar__label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.trust-bar__divider {
+  width: 1px;
+  height: 2rem;
+  background: var(--border);
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .trust-bar__divider {
+    display: block;
+  }
+}
+
+.trust-bar__item--quote {
+  max-width: 280px;
+}
+
+.trust-bar__quote {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--text);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
 /* ── Buttons ─────────────────────────────────────────────────── */
 .btn-primary {
   display: inline-flex;
