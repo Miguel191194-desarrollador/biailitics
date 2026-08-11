@@ -764,6 +764,108 @@ ol {
   color: var(--text);
 }
 
+/* ── Clientes ────────────────────────────────────────────────── */
+.clientes {
+  padding: 2.5rem 0;
+  background: var(--bg);
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.clientes__titulo {
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  letter-spacing: 0.03em;
+}
+
+.clientes__logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem 3.5rem;
+}
+
+.clientes__logos a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+  transition: transform var(--transition);
+}
+
+.clientes__logos img {
+  width: auto;
+  height: 55px;
+  max-width: 150px;
+  object-fit: contain;
+
+  filter: grayscale(100%);
+  opacity: 0.55;
+
+  transition:
+    filter var(--transition),
+    opacity var(--transition),
+    transform var(--transition);
+}
+
+.clientes__logos a:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.06);
+}
+
+.clientes__logos a:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 6px;
+  border-radius: var(--radius-sm);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .clientes__logos {
+    gap: 2rem 2.5rem;
+  }
+
+  .clientes__logos img {
+    height: 48px;
+    max-width: 130px;
+  }
+}
+
+/* Móvil */
+@media (max-width: 640px) {
+  .clientes {
+    padding: 2rem 0;
+  }
+
+  .clientes__titulo {
+    margin-bottom: 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .clientes__logos {
+    gap: 1.75rem 2rem;
+  }
+
+  .clientes__logos a {
+    min-width: 90px;
+  }
+
+  .clientes__logos img {
+    height: 40px;
+    max-width: 105px;
+  }
+}
+
+
+
+
+
+
 /* ── Process / Cómo trabajo ─────────────────────────────────── */
 .process {
   background: var(--bg-alt);
