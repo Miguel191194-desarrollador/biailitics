@@ -202,6 +202,87 @@
             line-height: 1.45;
         }
 
+        /* ── Course Promo Banner ──────────────────────────────── */
+        .course-promo {
+            display: flex;
+            align-items: center;
+            gap: .75rem;
+            flex-wrap: wrap;
+            width: fit-content;
+            max-width: 100%;
+            padding: .75rem 1.25rem;
+            margin-bottom: 2.5rem;
+            border-radius: 9999px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow-sm);
+            text-decoration: none;
+            color: var(--text);
+            transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+        }
+
+        .course-promo:hover {
+            border-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .course-promo__dot {
+            position: relative;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--primary);
+            flex-shrink: 0;
+        }
+
+        .course-promo__dot::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 50%;
+            background: var(--primary);
+            opacity: .75;
+            animation: ping 1.8s cubic-bezier(0, 0, .2, 1) infinite;
+        }
+
+        .course-promo__text {
+            font-size: .85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .course-promo__text strong {
+            color: var(--text);
+            font-weight: 800;
+        }
+
+        .course-promo__cta {
+            display: inline-flex;
+            align-items: center;
+            gap: .25rem;
+            font-size: .85rem;
+            font-weight: 800;
+            color: var(--primary);
+            white-space: nowrap;
+        }
+
+        .course-promo__cta .material-symbols-outlined {
+            font-size: 1rem;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .course-promo__dot::before {
+                animation: none;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .course-promo__text {
+                font-size: .8rem;
+            }
+        }
+
         .sol-card__arrow {
             margin-left: auto;
             flex-shrink: 0;
@@ -280,6 +361,7 @@
     <li><a href="#sobre-mi">Sobre mí</a></li>
     <li><a href="#contacto">Contacto</a></li>
     <li><a href="/blog/">Blog</a></li>
+    <li><a href="/curso-inteligencia-artificial/">Curso IA</a></li>
 </ul>
 
 <!-- Actions -->
@@ -344,6 +426,7 @@
     <a href="#precios">Precios</a>
     <a href="#sobre-mi">Sobre mí</a>
     <a href="#contacto">Contacto</a>
+    <a href="/curso-inteligencia-artificial/">Curso IA</a>
 
     <a class="btn-cta-mobile" href="#contacto">
         Consultoría Gratuita →
@@ -357,6 +440,13 @@
     ══════════════════════════════════════════════════════ -->
         <section class="hero mesh-bg" aria-labelledby="hero-title">
             <div class="container">
+
+                <a class="course-promo reveal" href="/curso-inteligencia-artificial/">
+                    <span class="course-promo__dot" aria-hidden="true"></span>
+                    <span class="course-promo__text"><strong>Nueva formación</strong> · Curso práctico de IA y Automatización · Comienza el 1 de octubre · 30 plazas</span>
+                    <span class="course-promo__cta">Ver curso <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span>
+                </a>
+
                 <div class="hero__grid">
 
                     <!-- Left: Copy -->
@@ -589,6 +679,10 @@
                             <li>IA del día a día para equipos</li>
                             <li>Formación en remoto o presencial</li>
                         </ul>
+                        <a class="link-arrow" href="/curso-inteligencia-artificial/" style="margin-top: 1.25rem;">
+                            Ver curso de 3 meses para principiantes
+                            <span class="material-symbols-outlined" aria-hidden="true">east</span>
+                        </a>
                     </article>
 
                 </div>
@@ -1419,6 +1513,11 @@
                                     Solicitar consultoría gratuita →
                                 </button>
 
+                                <p style="font-size:.78rem;color:#64748b;text-align:center;margin-top:.75rem;">
+                                    Al enviar este formulario, aceptas nuestra
+                                    <a href="/politica-privacidad/" target="_blank" rel="noopener noreferrer" style="color:#a5b4fc;font-weight:700;">política de privacidad</a>.
+                                </p>
+
                             </form>
 
                             <div class="form-success" id="form-success" role="status" aria-live="polite">
@@ -1449,6 +1548,7 @@
                 <a href="https://github.com/Miguel191194-desarrollador" target="_blank"
                     rel="noopener noreferrer">GitHub</a>
                 <a href="mailto:infobiailitics@gmail.com">Escríbeme</a>
+                <a href="/politica-privacidad/">Privacidad</a>
             </nav>
 
             <p class="footer__copy">
