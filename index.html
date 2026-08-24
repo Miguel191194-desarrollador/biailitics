@@ -115,13 +115,16 @@
     }
     </script>
 
-    <!-- ── Fonts ─────────────────────────────────────────────── -->
+    <!-- ── Fonts (no bloqueantes: preload + swap a stylesheet) ─ -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preload" as="style"
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" />
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
-        rel="stylesheet" />
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" />
+    </noscript>
 
     <!-- ── Preload hero image (LCP) ─────────────────────────── -->
     <link rel="preload" as="image" href="yo.webp" fetchpriority="high" />
@@ -363,7 +366,8 @@
                             Disponible para nuevos proyectos
                         </div>
 
-                        <h1 class="hero__title" id="hero-title">Si lo haces a mano,<br>puedo automatizarlo.</h1>
+                        <h1 class="hero__eyebrow-title" id="hero-title">Automatización con IA para digitalizar tu pyme</h1>
+                        <p class="hero__title">Si lo haces a mano,<br>puedo automatizarlo.</p>
 
                         <p class="hero__desc">
                             En 6 años he ayudado a empresas de toda España a
@@ -416,8 +420,9 @@
                        target="_blank"
                        rel="noopener noreferrer"
                        aria-label="Visitar web de Puig Metal">
-                        <img src="logos-clientes/cliente1.png"
+                        <img src="logos-clientes/cliente1.webp"
                              alt="Puig Metal"
+                             width="400" height="99"
                              loading="lazy">
                     </a>
 
@@ -425,8 +430,9 @@
                        target="_blank"
                        rel="noopener noreferrer"
                        aria-label="Visitar web de Dimensa">
-                        <img src="logos-clientes/cliente2.png"
+                        <img src="logos-clientes/cliente2.webp"
                              alt="Dimensa"
+                             width="306" height="160"
                              loading="lazy">
                     </a>
 
@@ -434,8 +440,9 @@
                        target="_blank"
                        rel="noopener noreferrer"
                        aria-label="Visitar web de i-Nextia">
-                        <img src="logos-clientes/cliente3.png"
+                        <img src="logos-clientes/cliente3.webp"
                              alt="i-Nextia"
+                             width="400" height="133"
                              loading="lazy">
                     </a>
 
@@ -443,8 +450,9 @@
                        target="_blank"
                        rel="noopener noreferrer"
                        aria-label="Visitar web de Jobie FP">
-                        <img src="logos-clientes/cliente4.png"
+                        <img src="logos-clientes/cliente4.webp"
                              alt="Jobie FP"
+                             width="400" height="160"
                              loading="lazy">
                     </a>
 
@@ -452,8 +460,9 @@
                        target="_blank"
                        rel="noopener noreferrer"
                        aria-label="Visitar web de Alu Components">
-                        <img src="logos-clientes/cliente5.jpg"
+                        <img src="logos-clientes/cliente5.webp"
                              alt="Alu Components"
+                             width="320" height="160"
                              loading="lazy">
                     </a>
 
@@ -1172,7 +1181,7 @@
                             <span>Zapier</span>
                         </div>
                         <div class="tool-item">
-                            <img src="iconos/microsoft-power-automate.png" alt="Power Automate" width="48" height="48"
+                            <img src="iconos/microsoft-power-automate.webp" alt="Power Automate" width="48" height="48"
                                 loading="lazy" />
                             <span>Power Automate</span>
                         </div>
@@ -1184,7 +1193,7 @@
                     <h3 class="tools__group-title">Datos &amp; Reporting</h3>
                     <div class="tools__logos">
                         <div class="tool-item">
-                            <img src="iconos/power-bi.png" alt="Power BI" width="48" height="48" loading="lazy" />
+                            <img src="iconos/power-bi.webp" alt="Power BI" width="48" height="48" loading="lazy" />
                             <span>Power BI</span>
                         </div>
                         <div class="tool-item">
@@ -1193,7 +1202,7 @@
                             <span>Excel</span>
                         </div>
                         <div class="tool-item">
-                            <img src="iconos/sql.png" alt="SQL" width="48" height="48" loading="lazy" />
+                            <img src="iconos/sql.webp" alt="SQL" width="48" height="48" loading="lazy" />
                             <span>SQL / BBDD</span>
                         </div>
                         <div class="tool-item">
@@ -1210,15 +1219,15 @@
                     <h3 class="tools__group-title">Inteligencia Artificial &amp; Desarrollo</h3>
                     <div class="tools__logos">
                         <div class="tool-item">
-                            <img src="iconos/chatgpt.jpg" alt="ChatGPT" width="48" height="48" loading="lazy" />
+                            <img src="iconos/chatgpt.webp" alt="ChatGPT" width="48" height="48" loading="lazy" />
                             <span>ChatGPT</span>
                         </div>
                         <div class="tool-item">
-                            <img src="iconos/claude.png" alt="Claude" width="48" height="48" loading="lazy" />
+                            <img src="iconos/claude.webp" alt="Claude" width="48" height="48" loading="lazy" />
                             <span>Claude</span>
                         </div>
                         <div class="tool-item">
-                            <img src="iconos/1728457808_gemini_Icon_png.png" alt="Google AI" width="48" height="48"
+                            <img src="iconos/gemini.webp" alt="Google AI" width="48" height="48"
                                 loading="lazy" />
                             <span>Google AI</span>
                         </div>
@@ -1297,8 +1306,8 @@
                     <!-- Photo -->
                     <div class="about__photo-wrap reveal">
                         <div class="about__photo-real">
-                            <img src="miguel-angel-about.jpg"
-                                alt="Miguel Ángel Domínguez Rangel en su espacio de trabajo" width="600" height="800"
+                            <img src="miguel-angel-about.webp"
+                                alt="Miguel Ángel Domínguez Rangel en su espacio de trabajo" width="700" height="1050"
                                 loading="lazy"
                                 onerror="this.parentElement.style.background='linear-gradient(135deg,rgba(99,102,241,.15),rgba(168,85,247,.1))'" />
                             <div class="about__photo-overlay">

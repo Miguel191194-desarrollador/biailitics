@@ -653,6 +653,14 @@ ol {
   background: var(--primary);
 }
 
+.hero__eyebrow-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 0.01em;
+  margin-bottom: 0.75rem;
+}
+
 .hero__title {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 800;

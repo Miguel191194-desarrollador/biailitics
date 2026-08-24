@@ -63,25 +63,57 @@
     });
   }
 
-  /* ── Scroll Spy ─────────────────────────────────────────── */
+  /* ── Scroll Spy + Nav shadow ────────────────────────────────
+     offsetTop se cachea una sola vez (y se recalcula solo en
+     resize) para no forzar layout en cada evento de scroll.
+     Ambas actualizaciones se agrupan en un único callback
+     lanzado vía requestAnimationFrame, así las lecturas nunca
+     se intercalan con escrituras de estilo dentro del mismo
+     ciclo de scroll. ──────────────────────────────────────── */
   const navLinks = document.querySelectorAll('.nav__links a[href^="#"]');
   const sections = document.querySelectorAll('section[id]');
+  const nav = document.querySelector('.nav');
 
-  function updateScrollSpy() {
+  let sectionOffsets = [];
+  function cacheSectionOffsets() {
+    sectionOffsets = Array.prototype.map.call(sections, section => ({
+      id: section.getAttribute('id'),
+      top: section.offsetTop - 120
+    }));
+  }
+  cacheSectionOffsets();
+
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(cacheSectionOffsets, 200);
+  }, { passive: true });
+
+  function onScrollFrame() {
+    const scrollY = window.scrollY;
+
+    nav.style.boxShadow = scrollY > 10 ? '0 2px 20px rgba(0,0,0,0.08)' : '';
+
     let current = '';
-    sections.forEach(section => {
-      const sectionTop = section.offsetTop - 120;
-      if (window.scrollY >= sectionTop) {
-        current = section.getAttribute('id');
-      }
+    sectionOffsets.forEach(s => {
+      if (scrollY >= s.top) current = s.id;
     });
     navLinks.forEach(link => {
       link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
     });
+
+    ticking = false;
   }
 
-  window.addEventListener('scroll', updateScrollSpy, { passive: true });
-  updateScrollSpy();
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(onScrollFrame);
+      ticking = true;
+    }
+  }, { passive: true });
+
+  onScrollFrame();
 
   /* ── Scroll-Reveal (IntersectionObserver) ───────────────── */
   const revealEls = document.querySelectorAll('.reveal');
@@ -103,12 +135,6 @@
     // Fallback: show all immediately
     revealEls.forEach(el => el.classList.add('visible'));
   }
-
-  /* ── Nav shadow on scroll ───────────────────────────────── */
-  const nav = document.querySelector('.nav');
-  window.addEventListener('scroll', () => {
-    nav.style.boxShadow = window.scrollY > 10 ? '0 2px 20px rgba(0,0,0,0.08)' : '';
-  }, { passive: true });
 
   /* ── Contact Form ───────────────────────────────────────── */
   const form = document.getElementById('contact-form');
