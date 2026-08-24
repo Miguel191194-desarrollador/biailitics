@@ -132,9 +132,12 @@
     <!-- ── Styles ────────────────────────────────────────────── -->
     <link rel="stylesheet" href="styles.css" />
 
-    <!-- Favicon placeholder -->
-    <link rel="icon" type="image/svg+xml"
-        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%236366f1'/></svg>" />
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  
     <!-- ── Soluciones Grid + sol-card ───────────────────────── -->
     <style>
         /* ── Soluciones Grid ─────────────────────────────────── */
@@ -227,100 +230,124 @@
                 <span class="nav__logo-text">BiAilitics</span>
             </a>
 
-            <!-- Desktop Links -->
-            <ul class="nav__links" role="list">
-                <li><a href="/">Inicio</a></li>
-                <li class="nav__dropdown">
-                    <a href="#servicios" class="nav__dropdown-trigger" aria-haspopup="true"
-                        aria-expanded="false">Servicios <span class="material-symbols-outlined nav__dropdown-arrow"
-                            aria-hidden="true">expand_more</span></a>
-                    <div class="nav__mega" role="menu">
-                        <div class="nav__mega-col">
-                            <h4 class="nav__mega-heading">Excel & Power BI</h4>
-                            <a href="/automatizar-pedidos-excel/" role="menuitem">Automatizar pedidos</a>
-                            <a href="/macros-excel-a-medida/" role="menuitem">Macros a medida</a>
-                            <a href="/automatizar-informes-excel/" role="menuitem">Automatizar informes</a>
-                            <a href="/power-query-consultoria/" role="menuitem">Power Query</a>
-                            <a href="/dashboard-power-bi-ventas/" role="menuitem">Dashboard ventas</a>
-                            <a href="/cuadro-mando-financiero-power-bi/" role="menuitem">Cuadro mando financiero</a>
-                            <a href="/migrar-excel-a-power-bi/" role="menuitem">Migrar Excel a Power BI</a>
-                            <a href="/consultoria-power-bi-pymes/" role="menuitem">Consultoría Power BI pymes</a>
-                        </div>
-                        <div class="nav__mega-col">
-                            <h4 class="nav__mega-heading">Automatización</h4>
-                            <a href="/bolsa-de-horas/" role="menuitem">Bolsa de horas</a>
-                            <a href="/integracion-apis-webhooks/" role="menuitem">APIs y Webhooks</a>
-                            <a href="/integracion-con-erp/" role="menuitem">Integración ERP</a>
-                            <a href="/etl-pipelines-datos/" role="menuitem">ETL y pipelines</a>
-                            <a href="/automatizacion-rpa-sin-api/" role="menuitem">RPA sin API</a>
-                            <a href="/automatizacion-ventas-crm/" role="menuitem">Ventas y CRM</a>
-                            <a href="/automatizacion-marketing/" role="menuitem">Marketing</a>
-                            <a href="/automatizacion-facturacion-pagos/" role="menuitem">Facturación</a>
-                            <a href="/automatizacion-hr-onboarding/" role="menuitem">HR y onboarding</a>
-                            <a href="/automatizacion-soporte-cliente/" role="menuitem">Soporte al cliente</a>
-                            <a href="/reporting-automatico-kpis/" role="menuitem">Reporting KPIs</a>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="#precios">Precios</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="/blog/">Blog</a></li>
-            </ul>
+<!-- Desktop Links -->
+<ul class="nav__links" role="list">
+    <li><a href="/">Inicio</a></li>
 
-            <!-- Actions -->
-            <div class="nav__actions">
-                <button class="btn-icon" id="theme-toggle" aria-label="Activar modo oscuro">
-                    <span class="material-symbols-outlined" aria-hidden="true">dark_mode</span>
-                </button>
-                <a class="btn-cta-nav" href="#contacto">Consultoría Gratuita</a>
-                <button class="nav__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false"
-                    aria-controls="mobile-menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
+    <li class="nav__dropdown">
+        <a href="#servicios" class="nav__dropdown-trigger" aria-haspopup="true"
+            aria-expanded="false">
+            Servicios
+            <span class="material-symbols-outlined nav__dropdown-arrow"
+                aria-hidden="true">expand_more</span>
+        </a>
+
+        <div class="nav__mega" role="menu">
+            <div class="nav__mega-col">
+                <h4 class="nav__mega-heading">Excel & Power BI</h4>
+                <a href="/automatizar-pedidos-excel/" role="menuitem">Automatizar pedidos</a>
+                <a href="/macros-excel-a-medida/" role="menuitem">Macros a medida</a>
+                <a href="/automatizar-informes-excel/" role="menuitem">Automatizar informes</a>
+                <a href="/power-query-consultoria/" role="menuitem">Power Query</a>
+                <a href="/dashboard-power-bi-ventas/" role="menuitem">Dashboard ventas</a>
+                <a href="/cuadro-mando-financiero-power-bi/" role="menuitem">Cuadro mando financiero</a>
+                <a href="/migrar-excel-a-power-bi/" role="menuitem">Migrar Excel a Power BI</a>
+                <a href="/consultoria-power-bi-pymes/" role="menuitem">Consultoría Power BI pymes</a>
+            </div>
+
+            <div class="nav__mega-col">
+                <h4 class="nav__mega-heading">Automatización</h4>
+                <a href="/bolsa-de-horas/" role="menuitem">Bolsa de horas</a>
+                <a href="/integracion-apis-webhooks/" role="menuitem">APIs y Webhooks</a>
+                <a href="/integracion-con-erp/" role="menuitem">Integración ERP</a>
+                <a href="/etl-pipelines-datos/" role="menuitem">ETL y pipelines</a>
+                <a href="/automatizacion-rpa-sin-api/" role="menuitem">RPA sin API</a>
+                <a href="/automatizacion-ventas-crm/" role="menuitem">Ventas y CRM</a>
+                <a href="/automatizacion-marketing/" role="menuitem">Marketing</a>
+                <a href="/automatizacion-facturacion-pagos/" role="menuitem">Facturación</a>
+                <a href="/automatizacion-hr-onboarding/" role="menuitem">HR y onboarding</a>
+                <a href="/automatizacion-soporte-cliente/" role="menuitem">Soporte al cliente</a>
+                <a href="/reporting-automatico-kpis/" role="menuitem">Reporting KPIs</a>
             </div>
         </div>
-    </nav>
+    </li>
 
-    <!-- Mobile Menu -->
-    <nav class="nav__mobile" id="mobile-menu" aria-label="Menú móvil">
-        <a href="/">Inicio</a>
-        <div class="nav__mobile-dropdown">
-            <button class="nav__mobile-toggle" aria-expanded="false">Servicios <span class="material-symbols-outlined"
-                    aria-hidden="true">expand_more</span></button>
-            <div class="nav__mobile-sub">
-                <p class="nav__mobile-heading">Excel & Power BI</p>
-                <a href="/automatizar-pedidos-excel/">Automatizar pedidos</a>
-                <a href="/macros-excel-a-medida/">Macros a medida</a>
-                <a href="/automatizar-informes-excel/">Automatizar informes</a>
-                <a href="/power-query-consultoria/">Power Query</a>
-                <a href="/dashboard-power-bi-ventas/">Dashboard ventas</a>
-                <a href="/cuadro-mando-financiero-power-bi/">Cuadro mando financiero</a>
-                <a href="/migrar-excel-a-power-bi/">Migrar Excel a Power BI</a>
-                <a href="/consultoria-power-bi-pymes/">Consultoría Power BI pymes</a>
-                <p class="nav__mobile-heading" style="margin-top:1rem;">Automatización</p>
-                <a href="/bolsa-de-horas/">Bolsa de horas</a>
-                <a href="/integracion-apis-webhooks/">APIs y Webhooks</a>
-                <a href="/integracion-con-erp/">Integración ERP</a>
-                <a href="/etl-pipelines-datos/">ETL y pipelines</a>
-                <a href="/automatizacion-rpa-sin-api/">RPA sin API</a>
-                <a href="/automatizacion-ventas-crm/">Ventas y CRM</a>
-                <a href="/automatizacion-marketing/">Marketing</a>
-                <a href="/automatizacion-facturacion-pagos/">Facturación</a>
-                <a href="/automatizacion-hr-onboarding/">HR y onboarding</a>
-                <a href="/automatizacion-soporte-cliente/">Soporte al cliente</a>
-                <a href="/reporting-automatico-kpis/">Reporting KPIs</a>
-            </div>
+    <li><a href="#clientes">Clientes</a></li>
+    <li><a href="#precios">Precios</a></li>
+    <li><a href="#sobre-mi">Sobre mí</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <li><a href="/blog/">Blog</a></li>
+</ul>
+
+<!-- Actions -->
+<div class="nav__actions">
+    <button class="btn-icon" id="theme-toggle" aria-label="Activar modo oscuro">
+        <span class="material-symbols-outlined" aria-hidden="true">dark_mode</span>
+    </button>
+
+    <a class="btn-cta-nav" href="#contacto">Consultoría Gratuita</a>
+
+    <button class="nav__hamburger" id="hamburger" aria-label="Abrir menú"
+        aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+</div>
+
+</div>
+</nav>
+
+<!-- Mobile Menu -->
+<nav class="nav__mobile" id="mobile-menu" aria-label="Menú móvil">
+    <a href="/">Inicio</a>
+
+    <div class="nav__mobile-dropdown">
+        <button class="nav__mobile-toggle" aria-expanded="false">
+            Servicios
+            <span class="material-symbols-outlined"
+                aria-hidden="true">expand_more</span>
+        </button>
+
+        <div class="nav__mobile-sub">
+            <p class="nav__mobile-heading">Excel & Power BI</p>
+
+            <a href="/automatizar-pedidos-excel/">Automatizar pedidos</a>
+            <a href="/macros-excel-a-medida/">Macros a medida</a>
+            <a href="/automatizar-informes-excel/">Automatizar informes</a>
+            <a href="/power-query-consultoria/">Power Query</a>
+            <a href="/dashboard-power-bi-ventas/">Dashboard ventas</a>
+            <a href="/cuadro-mando-financiero-power-bi/">Cuadro mando financiero</a>
+            <a href="/migrar-excel-a-power-bi/">Migrar Excel a Power BI</a>
+            <a href="/consultoria-power-bi-pymes/">Consultoría Power BI pymes</a>
+
+            <p class="nav__mobile-heading" style="margin-top:1rem;">Automatización</p>
+            <a href="/bolsa-de-horas/">Bolsa de horas</a>
+
+            <a href="/integracion-apis-webhooks/">APIs y Webhooks</a>
+            <a href="/integracion-con-erp/">Integración ERP</a>
+            <a href="/etl-pipelines-datos/">ETL y pipelines</a>
+            <a href="/automatizacion-rpa-sin-api/">RPA sin API</a>
+            <a href="/automatizacion-ventas-crm/">Ventas y CRM</a>
+            <a href="/automatizacion-marketing/">Marketing</a>
+            <a href="/automatizacion-facturacion-pagos/">Facturación</a>
+            <a href="/automatizacion-hr-onboarding/">HR y onboarding</a>
+            <a href="/automatizacion-soporte-cliente/">Soporte al cliente</a>
+            <a href="/reporting-automatico-kpis/">Reporting KPIs</a>
         </div>
-        <a href="#precios">Precios</a>
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#contacto">Contacto</a>
-        <a class="btn-cta-mobile" href="#contacto">Consultoría Gratuita →</a>
-    </nav>
+    </div>
 
-    <main id="main">
+    <a href="#clientes">Clientes</a>
+    <a href="#precios">Precios</a>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#contacto">Contacto</a>
+
+    <a class="btn-cta-mobile" href="#contacto">
+        Consultoría Gratuita →
+    </a>
+</nav>
+
+<main id="main">
 
         <!-- ══════════════════════════════════════════════════════
          HERO
@@ -372,6 +399,72 @@
             </div>
         </section>
 
+        <!-- ══════════════════════════════════════════════════════
+             CLIENTES
+        ══════════════════════════════════════════════════════ -->
+        <section class="clientes" id="clientes" aria-label="Clientes que han confiado en BiAilitics">
+            
+            <div class="container">
+
+                <p class="clientes__titulo">
+                    Empresas que ya han confiado en mí
+                </p>
+
+                <div class="clientes__logos">
+
+                    <a href="https://puigmetal.es/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Visitar web de Puig Metal">
+                        <img src="logos-clientes/cliente1.png"
+                             alt="Puig Metal"
+                             loading="lazy">
+                    </a>
+
+                    <a href="https://dimensasl.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Visitar web de Dimensa">
+                        <img src="logos-clientes/cliente2.png"
+                             alt="Dimensa"
+                             loading="lazy">
+                    </a>
+
+                    <a href="https://i-nextia.com/es/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Visitar web de i-Nextia">
+                        <img src="logos-clientes/cliente3.png"
+                             alt="i-Nextia"
+                             loading="lazy">
+                    </a>
+
+                    <a href="https://jobiefp.es/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Visitar web de Jobie FP">
+                        <img src="logos-clientes/cliente4.png"
+                             alt="Jobie FP"
+                             loading="lazy">
+                    </a>
+
+                    <a href="https://alucomponents.com/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Visitar web de Alu Components">
+                        <img src="logos-clientes/cliente5.jpg"
+                             alt="Alu Components"
+                             loading="lazy">
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+
+        
         <!-- ══════════════════════════════════════════════════════
          BARRA DE CONFIANZA
      ══════════════════════════════════════════════════════ -->
