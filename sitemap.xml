@@ -5,6 +5,12 @@
     <priority>1.0</priority>
     <changefreq>weekly</changefreq>
   </url>
+  <!-- Bolsa de horas -->
+  <url>
+    <loc>https://www.biailitics.com/bolsa-de-horas/</loc>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
   <!-- Páginas de servicio Excel -->
   <url>
     <loc>https://www.biailitics.com/automatizar-pedidos-excel/</loc>
