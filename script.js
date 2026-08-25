@@ -53,15 +53,14 @@
     });
   });
 
-  /* ── Mobile Service Dropdown Toggle ────────────────────── */
-  const mobileToggle = document.querySelector('.nav__mobile-toggle');
-  if (mobileToggle) {
-    const sub = mobileToggle.nextElementSibling;
-    mobileToggle.addEventListener('click', () => {
+  /* ── Mobile Dropdown Toggles (Servicios + subcategorías) ── */
+  document.querySelectorAll('.nav__mobile-toggle, .nav__mobile-subtoggle').forEach(toggle => {
+    const sub = toggle.nextElementSibling;
+    toggle.addEventListener('click', () => {
       const isOpen = sub.classList.toggle('open');
-      mobileToggle.setAttribute('aria-expanded', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen);
     });
-  }
+  });
 
   /* ── Scroll Spy + Nav shadow ────────────────────────────────
      offsetTop se cachea una sola vez (y se recalcula solo en

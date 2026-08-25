@@ -151,6 +151,11 @@
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://www.biailitics.com/blog/automatizacion-procesos-pymes-2026/</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
   <!-- Legal -->
   <url>
     <loc>https://www.biailitics.com/politica-privacidad/</loc>

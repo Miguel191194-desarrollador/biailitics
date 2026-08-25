@@ -202,87 +202,6 @@
             line-height: 1.45;
         }
 
-        /* ── Course Promo Banner ──────────────────────────────── */
-        .course-promo {
-            display: flex;
-            align-items: center;
-            gap: .75rem;
-            flex-wrap: wrap;
-            width: fit-content;
-            max-width: 100%;
-            padding: .75rem 1.25rem;
-            margin-bottom: 2.5rem;
-            border-radius: 9999px;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            box-shadow: var(--shadow-sm);
-            text-decoration: none;
-            color: var(--text);
-            transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
-        }
-
-        .course-promo:hover {
-            border-color: var(--primary);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-md);
-        }
-
-        .course-promo__dot {
-            position: relative;
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: var(--primary);
-            flex-shrink: 0;
-        }
-
-        .course-promo__dot::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            border-radius: 50%;
-            background: var(--primary);
-            opacity: .75;
-            animation: ping 1.8s cubic-bezier(0, 0, .2, 1) infinite;
-        }
-
-        .course-promo__text {
-            font-size: .85rem;
-            font-weight: 600;
-            color: var(--text-muted);
-        }
-
-        .course-promo__text strong {
-            color: var(--text);
-            font-weight: 800;
-        }
-
-        .course-promo__cta {
-            display: inline-flex;
-            align-items: center;
-            gap: .25rem;
-            font-size: .85rem;
-            font-weight: 800;
-            color: var(--primary);
-            white-space: nowrap;
-        }
-
-        .course-promo__cta .material-symbols-outlined {
-            font-size: 1rem;
-        }
-
-        @media (prefers-reduced-motion: reduce) {
-            .course-promo__dot::before {
-                animation: none;
-            }
-        }
-
-        @media (max-width: 640px) {
-            .course-promo__text {
-                font-size: .8rem;
-            }
-        }
-
         .sol-card__arrow {
             margin-left: auto;
             flex-shrink: 0;
@@ -395,30 +314,44 @@
         </button>
 
         <div class="nav__mobile-sub">
-            <p class="nav__mobile-heading">Excel & Power BI</p>
 
-            <a href="/automatizar-pedidos-excel/">Automatizar pedidos</a>
-            <a href="/macros-excel-a-medida/">Macros a medida</a>
-            <a href="/automatizar-informes-excel/">Automatizar informes</a>
-            <a href="/power-query-consultoria/">Power Query</a>
-            <a href="/dashboard-power-bi-ventas/">Dashboard ventas</a>
-            <a href="/cuadro-mando-financiero-power-bi/">Cuadro mando financiero</a>
-            <a href="/migrar-excel-a-power-bi/">Migrar Excel a Power BI</a>
-            <a href="/consultoria-power-bi-pymes/">Consultoría Power BI pymes</a>
+            <div class="nav__mobile-subdropdown">
+                <button class="nav__mobile-subtoggle" aria-expanded="false">
+                    Excel &amp; Power BI
+                    <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
+                </button>
+                <div class="nav__mobile-subsub">
+                    <a href="/automatizar-pedidos-excel/">Automatizar pedidos</a>
+                    <a href="/macros-excel-a-medida/">Macros a medida</a>
+                    <a href="/automatizar-informes-excel/">Automatizar informes</a>
+                    <a href="/power-query-consultoria/">Power Query</a>
+                    <a href="/dashboard-power-bi-ventas/">Dashboard ventas</a>
+                    <a href="/cuadro-mando-financiero-power-bi/">Cuadro mando financiero</a>
+                    <a href="/migrar-excel-a-power-bi/">Migrar Excel a Power BI</a>
+                    <a href="/consultoria-power-bi-pymes/">Consultoría Power BI pymes</a>
+                </div>
+            </div>
 
-            <p class="nav__mobile-heading" style="margin-top:1rem;">Automatización</p>
-            <a href="/bolsa-de-horas/">Bolsa de horas</a>
+            <div class="nav__mobile-subdropdown">
+                <button class="nav__mobile-subtoggle" aria-expanded="false">
+                    Automatización
+                    <span class="material-symbols-outlined" aria-hidden="true">expand_more</span>
+                </button>
+                <div class="nav__mobile-subsub">
+                    <a href="/bolsa-de-horas/">Bolsa de horas</a>
+                    <a href="/integracion-apis-webhooks/">APIs y Webhooks</a>
+                    <a href="/integracion-con-erp/">Integración ERP</a>
+                    <a href="/etl-pipelines-datos/">ETL y pipelines</a>
+                    <a href="/automatizacion-rpa-sin-api/">RPA sin API</a>
+                    <a href="/automatizacion-ventas-crm/">Ventas y CRM</a>
+                    <a href="/automatizacion-marketing/">Marketing</a>
+                    <a href="/automatizacion-facturacion-pagos/">Facturación</a>
+                    <a href="/automatizacion-hr-onboarding/">HR y onboarding</a>
+                    <a href="/automatizacion-soporte-cliente/">Soporte al cliente</a>
+                    <a href="/reporting-automatico-kpis/">Reporting KPIs</a>
+                </div>
+            </div>
 
-            <a href="/integracion-apis-webhooks/">APIs y Webhooks</a>
-            <a href="/integracion-con-erp/">Integración ERP</a>
-            <a href="/etl-pipelines-datos/">ETL y pipelines</a>
-            <a href="/automatizacion-rpa-sin-api/">RPA sin API</a>
-            <a href="/automatizacion-ventas-crm/">Ventas y CRM</a>
-            <a href="/automatizacion-marketing/">Marketing</a>
-            <a href="/automatizacion-facturacion-pagos/">Facturación</a>
-            <a href="/automatizacion-hr-onboarding/">HR y onboarding</a>
-            <a href="/automatizacion-soporte-cliente/">Soporte al cliente</a>
-            <a href="/reporting-automatico-kpis/">Reporting KPIs</a>
         </div>
     </div>
 
@@ -440,13 +373,6 @@
     ══════════════════════════════════════════════════════ -->
         <section class="hero mesh-bg" aria-labelledby="hero-title">
             <div class="container">
-
-                <a class="course-promo reveal" href="/curso-inteligencia-artificial/">
-                    <span class="course-promo__dot" aria-hidden="true"></span>
-                    <span class="course-promo__text"><strong>Nueva formación</strong> · Curso práctico de IA y Automatización · Comienza el 1 de octubre · 30 plazas</span>
-                    <span class="course-promo__cta">Ver curso <span class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span>
-                </a>
-
                 <div class="hero__grid">
 
                     <!-- Left: Copy -->
