@@ -120,6 +120,37 @@
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
+  <!-- Servicios nuevos -->
+  <url>
+    <loc>https://www.biailitics.com/servicios/radiografia-digital/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.biailitics.com/servicios/agentes-ia/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.biailitics.com/servicios/dashboard-tesoreria/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.biailitics.com/servicios/whatsapp-erp/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.biailitics.com/servicios/onboarding-automatico/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
   <!-- Blog -->
   <url>
     <loc>https://www.biailitics.com/blog/</loc>
@@ -164,7 +195,7 @@
     <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://www.biailitics.com/blog/erp-pymes-holded-odoo-sap-factusol/</loc>
+    <loc>https://www.biailitics.com/blog/erp-herramientas-automatizar-pymes-espana/</loc>
     <lastmod>2026-10-13</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>

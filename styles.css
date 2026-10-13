@@ -405,6 +405,18 @@ ol {
   transition: background 0.15s ease, color 0.15s ease;
 }
 
+/* Bloque a ancho completo al final del menú, con sus enlaces en dos columnas */
+.nav__mega-col--wide {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.5rem;
+}
+
+.nav__mega-col--wide .nav__mega-heading {
+  grid-column: 1 / -1;
+}
+
 .nav__mega-col a:hover {
   background: var(--primary-light);
   color: var(--primary);

@@ -1,2 +1,4 @@
 # Borradores en markdown de los artículos (se publican como HTML en blog/<slug>/)
 blog/*.md
+servicios-nuevos-biailitics.md
+prompt-para-montar-web.md
