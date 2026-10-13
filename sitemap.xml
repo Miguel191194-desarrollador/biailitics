@@ -123,6 +123,7 @@
   <!-- Blog -->
   <url>
     <loc>https://www.biailitics.com/blog/</loc>
+    <lastmod>2026-10-13</lastmod>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
@@ -153,6 +154,24 @@
   </url>
   <url>
     <loc>https://www.biailitics.com/blog/automatizacion-procesos-pymes-2026/</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.biailitics.com/blog/tareas-administrativas-automatizar-pyme/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.biailitics.com/blog/erp-pymes-holded-odoo-sap-factusol/</loc>
+    <lastmod>2026-10-13</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.biailitics.com/blog/ia-automatizacion-empresas-espana-2026/</loc>
+    <lastmod>2026-10-13</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>

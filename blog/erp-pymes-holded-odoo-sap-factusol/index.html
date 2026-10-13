@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holded, Odoo, SAP o Factusol: qué automatizar | BiAilitics</title>
+    <meta name="description"
+        content="Qué ERP usan las empresas en España (Holded, Odoo, Sage, SAP, Factusol) y qué procesos puedes automatizar con cada uno sin cambiar de sistema." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.biailitics.com/blog/erp-pymes-holded-odoo-sap-factusol/" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://www.biailitics.com/blog/erp-pymes-holded-odoo-sap-factusol/" />
+    <meta property="og:title" content="Holded, Odoo, SAP o Factusol: qué automatizar | BiAilitics" />
+    <meta property="og:description"
+        content="Qué ERP usan las empresas en España (Holded, Odoo, Sage, SAP, Factusol) y qué procesos puedes automatizar con cada uno sin cambiar de sistema." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&q=80" />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:site_name" content="BiAilitics Automation" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Holded, Odoo, SAP o Factusol: qué automatizar | BiAilitics" />
+    <meta name="twitter:description"
+        content="Qué ERP usan las empresas en España (Holded, Odoo, Sage, SAP, Factusol) y qué procesos puedes automatizar con cada uno sin cambiar de sistema." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&q=80" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
+        onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" />
+    </noscript>
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%236366f1'/></svg>" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Holded, Odoo, SAP o Factusol: qué ERP usan las empresas en España y qué puedes automatizar con cada uno",
+      "author": {"@type": "Person", "name": "Miguel Ángel Domínguez Rangel", "url": "https://www.biailitics.com"},
+      "publisher": {"@type": "Organization", "name": "BiAilitics", "url": "https://www.biailitics.com"},
+      "datePublished": "2026-10-13",
+      "dateModified": "2026-10-13",
+      "image": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=1200&q=80",
+      "mainEntityOfPage": "https://www.biailitics.com/blog/erp-pymes-holded-odoo-sap-factusol/"
+    }
+    </script>
+    <style>
+        .article-hero {
+            padding-top: calc(var(--nav-h) + 4rem);
+            padding-bottom: 2rem;
+        }
+
+        .article-content {
+            max-width: 780px;
+            margin: 0 auto;
+            padding-bottom: 4rem;
+        }
+
+        .article-content h2 {
+            font-size: 1.75rem;
+            font-weight: 800;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-content h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .article-content p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--text-muted);
+            margin-bottom: 1.25rem;
+        }
+
+        .article-content ul,
+        .article-content ol {
+            margin-bottom: 1.25rem;
+            padding-left: 1.5rem;
+        }
+
+        .article-content li {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .article-content strong {
+            color: var(--text);
+        }
+
+        .article-content a {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        .article-content blockquote {
+            border-left: 4px solid var(--primary);
+            background: var(--bg-alt);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+        }
+
+        .article-content blockquote p {
+            margin-bottom: 0;
+            font-style: italic;
+            color: var(--text);
+        }
+
+        .article-meta {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--text-faint);
+            margin-bottom: 2rem;
+        }
+
+        .article-tag {
+            background: var(--primary-light);
+            color: var(--primary);
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--radius-full);
+            font-weight: 700;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        .article-cta {
+            background: var(--bg-alt);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-xl);
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .article-cta h3 {
+            margin-top: 0;
+        }
+
+        /* .article-content a fuerza color:var(--primary) con más
+           especificidad que .btn-primary, dejando el texto del botón
+           invisible (mismo color que el fondo). Se corrige solo en
+           esta página, sin tocar estilos globales. */
+        .article-cta .btn-primary {
+            color: #fff;
+        }
+
+        .article-img {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+
+        .article-img img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Saltar al contenido principal</a>
+    <nav class="nav" role="navigation" aria-label="Navegación principal">
+        <div class="container nav__inner">
+            <a class="nav__logo" href="/" aria-label="BiAilitics — Inicio"><span
+                    class="nav__logo-text">BiAilitics</span></a>
+            <ul class="nav__links" role="list">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/#precios">Precios</a></li>
+                <li><a href="/#sobre-mi">Sobre mí</a></li>
+                <li><a href="/#contacto">Contacto</a></li>
+            </ul>
+            <div class="nav__actions">
+                <button class="btn-icon" id="theme-toggle" aria-label="Activar modo oscuro"><span
+                        class="material-symbols-outlined" aria-hidden="true">dark_mode</span></button>
+                <a class="btn-cta-nav" href="/#contacto">Consultoría Gratuita</a>
+            </div>
+        </div>
+    </nav>
+    <main id="main">
+        <section class="article-hero mesh-bg">
+            <div class="container" style="max-width:780px;">
+                <a href="/blog/" style="color:var(--primary);font-weight:600;font-size:0.9rem;">← Volver al blog</a>
+                <h1 class="section-title" style="margin-top:1.5rem;">Holded, Odoo, SAP o Factusol: qué ERP usan las empresas en España y qué puedes automatizar con cada uno</h1>
+                <div class="article-meta">
+                    <span class="article-tag">ERP</span>
+                    <span>Miguel Ángel Domínguez Rangel</span>
+                    <span>13 Oct 2026</span>
+                </div>
+            </div>
+        </section>
+        <article class="article-content container">
+            <div class="article-img">
+                <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80"
+                    alt="Equipo de una pyme trabajando con su ERP y herramientas de gestión" width="800" height="450"
+                    loading="eager" />
+            </div>
+
+            <p>Si diriges una pyme, probablemente ya uses algún programa de gestión. Quizás Holded. Quizás Factusol. Quizás Odoo, o un Excel que ha crecido hasta convertirse en "el sistema" de tu empresa.</p>
+
+            <p>La pregunta no es si necesitas un ERP. La pregunta es: <strong>¿estás aprovechando lo que ya tienes?</strong></p>
+
+            <p>En los últimos meses he analizado más de 60 ofertas de empleo en España relacionadas con datos, gestión y automatización. El objetivo era sencillo: ver qué herramientas usan las empresas realmente, qué problemas tienen con ellas y qué se puede automatizar sin cambiar de sistema.</p>
+
+            <p>Esto es lo que he encontrado.</p>
+
+            <h2>El mapa real de herramientas en empresas españolas</h2>
+
+            <p>No todas las empresas usan SAP. Ni todas necesitan un ERP de 50.000 euros. El panorama es mucho más variado de lo que parece:</p>
+
+            <h3>Para pymes pequeñas (1-15 empleados)</h3>
+
+            <ul>
+                <li><strong>Factusol / ContaSOL:</strong> Muy extendido en autónomos y micropymes. Facturación, contabilidad básica. Sencillo, barato, pero limitado en automatización.</li>
+                <li><strong>Holded:</strong> El que más ha crecido en los últimos años. Facturación, CRM, proyectos, RRHH. Todo en la nube. Buena API para conectar con otras herramientas.</li>
+                <li><strong>Excel / Google Sheets:</strong> Sí, sigue siendo el "ERP" de miles de pymes. No es ideal, pero es la realidad.</li>
+            </ul>
+
+            <h3>Para pymes medianas (15-100 empleados)</h3>
+
+            <ul>
+                <li><strong>Odoo:</strong> ERP modular y de código abierto. Puedes empezar con facturación e ir añadiendo inventario, CRM, fabricación, RRHH. Gran comunidad en España. Muy automatizable.</li>
+                <li><strong>Sage:</strong> Tradicional en España, especialmente Sage 200. Potente, pero a veces rígido.</li>
+                <li><strong>A3 / Wolters Kluwer:</strong> Muy usado en asesorías y despachos. Contabilidad, nóminas, fiscal.</li>
+                <li><strong>Dynamics 365 Business Central:</strong> El ERP de Microsoft para pymes. Se integra nativamente con todo el ecosistema Microsoft (Power BI, Power Automate, Teams).</li>
+            </ul>
+
+            <h3>Para empresas grandes</h3>
+
+            <ul>
+                <li><strong>SAP:</strong> El estándar en grandes corporaciones. En las ofertas analizadas, SAP aparece en AXA, KPMG y varias multinacionales.</li>
+                <li><strong>Oracle:</strong> Bases de datos y ERP. Globalcaja lo usa como base de datos principal junto con Google BigQuery.</li>
+                <li><strong>SuccessFactors (SAP):</strong> El módulo de RRHH de SAP. KPMG lo menciona explícitamente en su oferta de innovación en People.</li>
+            </ul>
+
+            <h2>Los 5 problemas más comunes (da igual qué ERP tengas)</h2>
+
+            <p>Después de analizar decenas de ofertas, estos problemas se repiten independientemente del software:</p>
+
+            <h3>1. "Tenemos el ERP pero seguimos con Excel"</h3>
+
+            <p>Es el más frecuente. La empresa compró un ERP hace años, pero nadie ha configurado los informes que dirección necesita. Así que alguien exporta los datos a Excel y monta el informe a mano.</p>
+
+            <p><strong>Solución:</strong> <a href="/integracion-con-erp/">Conectar un cuadro de mando (Power BI, por ejemplo) directamente al ERP</a>. Cero exportaciones. Datos en tiempo real.</p>
+
+            <p><strong>Funciona con:</strong> Holded (API REST), Odoo (API XML-RPC/JSON-RPC), Sage (base de datos SQL), Factusol (base de datos Firebird), SAP (conectores nativos en Power BI), Dynamics 365 (integración nativa).</p>
+
+            <h3>2. "Los datos están en tres sitios distintos"</h3>
+
+            <p>El CRM en un sitio. La facturación en otro. Los proyectos en una hoja de cálculo. Los presupuestos en Word. Nadie tiene la foto completa.</p>
+
+            <p><strong>Solución:</strong> <a href="/etl-pipelines-datos/">Crear un flujo de datos que unifique la información</a>. No hace falta cambiar de herramienta. Solo conectarlas.</p>
+
+            <p><strong>Caso real:</strong> LALIGA publicó una oferta de "IA Business Partner" cuya misión principal es conectar las diferentes direcciones de la organización con Microsoft Copilot y Power Platform, precisamente porque la información está dispersa entre SharePoint, distintos departamentos y herramientas internas.</p>
+
+            <h3>3. "Cada mes cerramos a mano"</h3>
+
+            <p>El cierre contable mensual consume días. Conciliar bancos, cuadrar intercompañía, validar provisiones. Todo manual.</p>
+
+            <p><strong>Solución:</strong> Automatizar las conciliaciones rutinarias. El sistema cruza los datos, detecta discrepancias, y la persona solo revisa las excepciones. El cierre que antes tardaba 3 días puede hacerse en medio día.</p>
+
+            <h3>4. "No sabemos cuánto vendemos hasta fin de mes"</h3>
+
+            <p>Dirección pide números y hay que esperar a que alguien monte un informe. Las decisiones se toman con datos de hace semanas.</p>
+
+            <p><strong>Solución:</strong> <a href="/dashboard-power-bi-ventas/">Un dashboard conectado al ERP</a> que muestre ventas, margen, stock y cobros en tiempo real. No es ciencia ficción. Es una conexión directa a la base de datos que ya tienes.</p>
+
+            <p><strong>Caso real:</strong> Rubió/Nutribrain busca un Data Analyst que analice "ventas, previsiones, stock y series temporales" y construya "dashboards y herramientas de visualización que faciliten la toma de decisiones". Una pyme más pequeña necesita lo mismo, a menor escala.</p>
+
+            <h3>5. "Introducimos lo mismo dos veces"</h3>
+
+            <p>Un pedido entra por email, alguien lo copia en el ERP, luego lo pasa al almacén, luego genera la factura, luego actualiza el Excel de seguimiento. Cuatro pasos manuales para un solo pedido.</p>
+
+            <p><strong>Solución:</strong> Un flujo automatizado que detecte el pedido (por email, por formulario web o desde un marketplace), lo registre en el ERP y avise al almacén. Un solo input, cero copias manuales.</p>
+
+            <h2>¿Qué se puede automatizar con cada herramienta?</h2>
+
+            <h3>Si usas Holded</h3>
+
+            <p>Holded tiene una API REST bien documentada. Puedes automatizar:</p>
+
+            <ul>
+                <li>Creación automática de facturas desde pedidos</li>
+                <li>Alertas de facturas vencidas sin cobrar</li>
+                <li>Sincronización con tu tienda online (WooCommerce, Shopify)</li>
+                <li>Dashboard de ventas y tesorería en Power BI</li>
+                <li>Envío automático de recordatorios de pago</li>
+            </ul>
+
+            <h3>Si usas Odoo</h3>
+
+            <p>Odoo es especialmente potente en automatización gracias a su estructura modular:</p>
+
+            <ul>
+                <li>Flujos de aprobación de presupuestos</li>
+                <li>Generación automática de órdenes de compra desde mínimos de stock</li>
+                <li>Informes automáticos por email a dirección</li>
+                <li>Integración con pasarelas de pago y bancos</li>
+                <li>Automatización de la cadena pedido → albarán → factura</li>
+            </ul>
+
+            <h3>Si usas Factusol</h3>
+
+            <p>Factusol es más limitado, pero aún puedes:</p>
+
+            <ul>
+                <li>Extraer datos de su base de datos para crear dashboards</li>
+                <li>Automatizar la generación de informes de ventas mensuales</li>
+                <li>Cruzar automáticamente facturas con pagos bancarios</li>
+                <li>Exportar datos periódicamente a un sistema de análisis</li>
+            </ul>
+
+            <h3>Si usas Excel (o Google Sheets)</h3>
+
+            <p>Incluso sin ERP formal, puedes automatizar:</p>
+
+            <ul>
+                <li>Recogida de datos desde formularios web</li>
+                <li>Alertas automáticas cuando un valor supera un umbral</li>
+                <li>Informes que se generan solos cada lunes</li>
+                <li>Envío automático de resúmenes por email</li>
+                <li><a href="/migrar-excel-a-power-bi/">Migración gradual a un sistema más robusto</a> sin perder datos</li>
+            </ul>
+
+            <h3>Si usas Microsoft 365 (sin ERP)</h3>
+
+            <p>Con Power Automate (incluido en muchas licencias de Microsoft 365) puedes:</p>
+
+            <ul>
+                <li>Automatizar aprobaciones por email o Teams</li>
+                <li>Archivar automáticamente documentos que llegan por email</li>
+                <li>Crear tareas en Planner desde formularios</li>
+                <li>Generar informes en Power BI desde datos de SharePoint</li>
+                <li>Conectar formularios web con tu CRM o tu hoja de seguimiento</li>
+            </ul>
+
+            <h2>La herramienta no es el problema. El proceso sí.</h2>
+
+            <p>El error más común que veo es pensar que cambiar de software resolverá los problemas. "Si nos pasamos a Odoo, todo irá mejor." "Si compramos SAP, se acabaron los Excels."</p>
+
+            <p>No funciona así.</p>
+
+            <p>Si tus procesos son manuales y desordenados con Factusol, serán manuales y desordenados con SAP. Solo que habrás gastado 10 veces más.</p>
+
+            <p><strong>Lo primero es entender qué procesos tienes, cuáles se repiten, cuáles generan errores y cuáles consumen más tiempo.</strong> Después, se automatiza lo que tiene sentido. Y muchas veces, se puede hacer con la herramienta que ya tienes.</p>
+
+            <h2>¿Y la Inteligencia Artificial?</h2>
+
+            <p>La IA no reemplaza al ERP. Lo complementa. Algunas aplicaciones que ya se están implantando en empresas españolas (lo sé porque lo piden en sus ofertas de empleo):</p>
+
+            <ul>
+                <li><strong>Clasificación automática de documentos:</strong> Un documento llega por email y el sistema "lee" de qué tipo es (factura, albarán, contrato) y lo archiva solo. Globalcaja y Quental buscan perfiles que implementen esto con OCR e IA.</li>
+                <li><strong>Asistentes internos:</strong> Un chatbot que responde preguntas de empleados consultando la documentación interna. KPMG lo está implementando con Microsoft Copilot Studio.</li>
+                <li><strong>Detección de anomalías:</strong> El sistema detecta automáticamente facturas inusuales, pagos duplicados o desviaciones de presupuesto. KPMG Audit Tech lo implementa con Databricks y Python.</li>
+                <li><strong>Previsión de demanda:</strong> A partir del histórico de ventas, el sistema predice qué vas a vender el mes que viene. Nutribrain/Rubió busca esto específicamente para su catálogo de suplementos.</li>
+            </ul>
+
+            <h2>¿Por dónde empezar?</h2>
+
+            <ol>
+                <li><strong>Haz un inventario:</strong> ¿Qué herramientas usas hoy? ¿Dónde están tus datos?</li>
+                <li><strong>Identifica el cuello de botella:</strong> ¿Qué tarea repetitiva consume más tiempo?</li>
+                <li><strong>Empieza por una:</strong> No intentes automatizar todo a la vez. Una sola automatización bien hecha te dará confianza y ahorro para la siguiente.</li>
+                <li><strong>Mide el antes y el después:</strong> ¿Cuántas horas tardabas? ¿Cuántas tardas ahora? Eso es tu ROI.</li>
+            </ol>
+
+            <p>En BiAilitics trabajamos con una <strong><a href="/bolsa-de-horas/">bolsa de horas flexible</a></strong>. Empezamos por entender tu situación, identificamos las automatizaciones con mayor impacto y las implantamos paso a paso.</p>
+
+            <p><strong>Primero entiendes. Luego construyes.</strong></p>
+
+            <p>¿Usas alguna de estas herramientas y sientes que no le sacas partido? <strong><a href="/#contacto">Cuéntamelo</a>.</strong> A veces una conversación de 20 minutos te ahorra meses de trabajo manual.</p>
+
+            <div class="article-cta">
+                <h3>¿Hablamos de tu caso?</h3>
+                <p style="color:var(--text-muted);">En <strong>BiAilitics</strong> ayudo a pymes a automatizar
+                    procesos, conectar sistemas y aprovechar mejor sus datos y la inteligencia artificial, con una
+                    bolsa de horas flexible y sin permanencias.</p>
+                <a class="btn-primary" href="/#contacto" style="margin-top:1rem;display:inline-flex;">Hablemos
+                    <span class="material-symbols-outlined" aria-hidden="true">trending_flat</span></a>
+            </div>
+        </article>
+    </main>
+    <footer class="footer" role="contentinfo">
+        <div class="container footer__inner">
+            <a class="footer__logo" href="/"><span class="footer__logo-text">BiAilitics</span></a>
+            <nav class="footer__links" aria-label="Redes sociales y contacto">
+                <a href="https://www.linkedin.com/in/miguel-ángel-domínguez-rangel-373441176/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/Miguel191194-desarrollador" target="_blank"
+                    rel="noopener noreferrer">GitHub</a>
+                <a href="mailto:infobiailitics@gmail.com">Escríbeme</a>
+                <a href="/politica-privacidad/">Privacidad</a>
+            </nav>
+            <p class="footer__copy">&copy; <span id="year"></span> BiAilitics &mdash; Miguel Ángel Domínguez Rangel</p>
+        </div>
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+    <script>const html = document.documentElement, themeToggle = document.getElementById('theme-toggle'); function applyTheme(d) { if (d) { html.classList.add('dark'); themeToggle.innerHTML = '<span class="material-symbols-outlined" aria-hidden="true">light_mode</span>'; } else { html.classList.remove('dark'); themeToggle.innerHTML = '<span class="material-symbols-outlined" aria-hidden="true">dark_mode</span>'; } } const stored = localStorage.getItem('theme'), prefersDark = window.matchMedia('(prefers-color-scheme:dark)').matches; applyTheme(stored === 'dark' || (!stored && prefersDark)); themeToggle.addEventListener('click', () => { const isDark = html.classList.contains('dark'); applyTheme(!isDark); localStorage.setItem('theme', isDark ? 'light' : 'dark'); });</script>
+</body>
+
+</html>
