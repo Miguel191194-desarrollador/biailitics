@@ -30,6 +30,7 @@
   </url>
   <url>
     <loc>https://www.biailitics.com/automatizar-informes-excel/</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -122,6 +123,25 @@
   </url>
   <!-- Servicios nuevos -->
   <url>
+    <loc>https://www.biailitics.com/automatizacion-factura-electronica-verifactu/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.biailitics.com/pasar-ventas-excel-a-power-bi/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.biailitics.com/calculadora-coste-automatizacion/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
     <loc>https://www.biailitics.com/servicios/radiografia-digital/</loc>
     <lastmod>2026-10-13</lastmod>
     <priority>0.8</priority>
@@ -154,7 +174,7 @@
   <!-- Blog -->
   <url>
     <loc>https://www.biailitics.com/blog/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
@@ -203,6 +223,12 @@
   <url>
     <loc>https://www.biailitics.com/blog/ia-automatizacion-empresas-espana-2026/</loc>
     <lastmod>2026-10-13</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.biailitics.com/blog/agentes-ia-automatizacion-pymes/</loc>
+    <lastmod>2026-10-15</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>

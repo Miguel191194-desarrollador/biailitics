@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4PDXDV406W"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4PDXDV406W');</script>
+<title>Calculadora: ¿Cuánto Cuesta Automatizar Procesos?</title>
+<meta name="description" content="Calcula el ahorro y coste de automatizar procesos en tu pyme con IA, n8n y Power BI. Descarga la plantilla gratuita y calcula tu ROI."/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://www.biailitics.com/calculadora-coste-automatizacion/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://www.biailitics.com/calculadora-coste-automatizacion/"/>
+<meta property="og:title" content="Calculadora: ¿Cuánto Cuesta Automatizar Procesos?"/>
+<meta property="og:description" content="Calcula el ahorro y coste de automatizar procesos en tu pyme con IA, n8n y Power BI. Descarga la plantilla gratuita y calcula tu ROI."/>
+<meta property="og:locale" content="es_ES"/>
+<meta property="og:site_name" content="BiAilitics Automation"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.biailitics.com/"}, {"@type": "ListItem", "position": 2, "name": "Calculadora de coste de automatización", "item": "https://www.biailitics.com/calculadora-coste-automatizacion/"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" onload="this.onload=null;this.rel='stylesheet'"/>
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"/></noscript>
+<link rel="stylesheet" href="../styles.css"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%236366f1'/%3E%3C/svg%3E"/>
+<style>
+.phero{padding-top:calc(var(--nav-h) + 5rem);padding-bottom:5rem;background:radial-gradient(at 0% 0%,var(--accent-light) 0,transparent 50%),radial-gradient(at 100% 0%,var(--primary-light) 0,transparent 50%);}
+.bcrumb{display:flex;align-items:center;gap:.5rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1.5rem;}
+.bcrumb a{color:var(--primary);font-weight:600;}
+.pbadge{display:inline-flex;align-items:center;gap:.5rem;padding:.3rem 1rem;border-radius:9999px;background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.25);color:var(--primary);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;margin-bottom:1.5rem;}
+.ph1{font-size:clamp(2rem,5vw,3.5rem);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:1.5rem;}
+.ph1 span{color:var(--primary);}
+.pintro{font-size:1.1rem;color:var(--text-muted);max-width:42rem;line-height:1.75;margin-bottom:2.5rem;}
+.pactions{display:flex;flex-wrap:wrap;gap:1rem;}
+.metrics-row{display:grid;gap:1.25rem;padding:4rem 0;background:var(--bg-alt);}
+@media(min-width:640px){.metrics-row{grid-template-columns:repeat(3,1fr);}}
+.metric-item{text-align:center;padding:1.5rem;border-radius:1rem;background:var(--bg-card);border:1px solid var(--border);}
+.metric-val{font-size:2rem;font-weight:800;color:var(--primary);display:block;}
+.metric-lbl{font-size:.82rem;color:var(--text-muted);margin-top:.25rem;}
+.prob-grid{display:grid;gap:1.25rem;margin-top:2rem;}
+@media(min-width:640px){.prob-grid{grid-template-columns:repeat(2,1fr);}}
+@media(min-width:1024px){.prob-grid{grid-template-columns:repeat(3,1fr);}}
+.prob-item{padding:1.5rem;border-radius:1.25rem;border:1px solid var(--border);background:var(--bg-card);transition:transform .25s,box-shadow .25s;}
+.prob-item:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.08);}
+.prob-icon{width:44px;height:44px;border-radius:.75rem;background:rgba(249,115,22,.1);display:flex;align-items:center;justify-content:center;margin-bottom:.875rem;color:#f97316;}
+.prob-item h3{font-size:.95rem;font-weight:700;margin-bottom:.4rem;}
+.prob-item p{font-size:.85rem;color:var(--text-muted);line-height:1.55;}
+.twocol{display:grid;gap:3rem;padding:5rem 0;}
+@media(min-width:1024px){.twocol{grid-template-columns:2fr 1fr;align-items:start;}}
+.prose h2{font-size:clamp(1.4rem,3vw,1.9rem);font-weight:800;letter-spacing:-.02em;margin:3rem 0 1rem;color:var(--text);}
+.prose h2:first-child{margin-top:0;}
+.prose h3{font-size:1rem;font-weight:700;color:var(--primary);margin:2rem 0 .4rem;}
+.prose p{color:var(--text-muted);line-height:1.75;margin-bottom:1.25rem;font-size:.97rem;}
+.prose ul{list-style:none;margin-bottom:1.5rem;}
+.prose ul li{display:flex;gap:.6rem;align-items:flex-start;padding:.35rem 0;color:var(--text-muted);line-height:1.6;font-size:.92rem;}
+.prose ul li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--primary);flex-shrink:0;margin-top:.52rem;}
+.aside-sticky{position:sticky;top:calc(var(--nav-h) + 2rem);display:flex;flex-direction:column;gap:1.5rem;}
+.cta-box{padding:1.75rem;border-radius:1.5rem;border:1px solid var(--border);background:var(--bg-card);box-shadow:0 4px 20px rgba(99,102,241,.07);}
+.cta-box h3{font-size:1.05rem;font-weight:800;margin-bottom:.65rem;}
+.cta-box p{color:var(--text-muted);font-size:.88rem;line-height:1.6;margin-bottom:1.2rem;}
+.cta-box .btn-primary{width:100%;justify-content:center;font-size:.92rem;}
+.cta-note{font-size:.76rem;color:var(--text-faint);text-align:center;margin-top:.5rem;}
+.rel-box h3{font-size:.95rem;font-weight:700;margin-bottom:.875rem;}
+.rel-card{display:flex;align-items:center;gap:.65rem;padding:.875rem 1.1rem;border:1px solid var(--border);border-radius:.875rem;background:var(--bg-card);color:var(--text);font-weight:600;font-size:.85rem;transition:border-color .25s,color .25s,transform .2s;text-decoration:none;margin-bottom:.5rem;}
+.rel-card:hover{border-color:var(--primary);color:var(--primary);transform:translateX(3px);}
+.rel-card .material-symbols-outlined{font-size:1rem;color:var(--primary);}
+.faq-item{border:1px solid var(--border);border-radius:1rem;overflow:hidden;background:var(--bg-card);margin-bottom:.875rem;}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.4rem;font-weight:700;font-size:.95rem;cursor:pointer;list-style:none;}
+.faq-q::-webkit-details-marker{display:none;}
+.faq-a{padding:0 1.4rem 1.1rem;color:var(--text-muted);line-height:1.7;font-size:.92rem;}
+.cta-final{background:linear-gradient(135deg,rgba(99,102,241,.07),rgba(168,85,247,.07));padding:5rem 0;text-align:center;}
+
+.box{max-width:820px;margin:0 auto;}
+.lead p{color:var(--text-muted);line-height:1.8;font-size:1.02rem;margin-bottom:1rem;}
+.steps{display:grid;gap:1.25rem;margin-top:2rem;counter-reset:st;}
+@media(min-width:768px){.steps{grid-template-columns:repeat(3,1fr);}}
+.step{padding:1.5rem;border-radius:1.25rem;border:1px solid var(--border);background:var(--bg-card);position:relative;}
+.step::before{counter-increment:st;content:counter(st);display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--primary);color:#fff;font-weight:800;margin-bottom:.875rem;}
+.step h3{font-size:1rem;font-weight:700;margin-bottom:.4rem;}
+.step p{font-size:.88rem;color:var(--text-muted);line-height:1.6;}
+.ok-icon{background:rgba(99,102,241,.1);color:var(--primary);}
+.tbl-wrap{overflow-x:auto;margin:1.5rem 0;border:1px solid var(--border);border-radius:1rem;background:var(--bg-card);}
+.tbl{width:100%;border-collapse:collapse;font-size:.9rem;min-width:520px;}
+.tbl th,.tbl td{padding:.85rem 1rem;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;}
+.tbl th{font-weight:800;color:var(--text);background:var(--bg-alt);}
+.tbl td{color:var(--text-muted);}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl td strong{color:var(--text);}
+.note{font-size:.82rem;color:var(--text-faint);line-height:1.6;}
+.calc{display:grid;gap:2rem;margin-top:2rem;}
+@media(min-width:1024px){.calc{grid-template-columns:1fr 1fr;}}
+.calc-card{padding:1.75rem;border-radius:1.5rem;border:1px solid var(--border);background:var(--bg-card);}
+.calc-card h3{font-size:1.1rem;font-weight:800;margin-bottom:1rem;}
+.fld{display:flex;flex-direction:column;gap:.35rem;margin-bottom:1rem;}
+.fld label{font-size:.85rem;font-weight:600;color:var(--text);}
+.fld input[type=number],.fld input[type=text],.fld input[type=email]{padding:.7rem .9rem;border:1px solid var(--border);border-radius:.75rem;background:var(--bg);color:var(--text);font:inherit;font-size:.95rem;width:100%;}
+.fld input:focus{outline:2px solid var(--primary);outline-offset:1px;}
+.chk{display:flex;gap:.6rem;align-items:flex-start;font-size:.88rem;color:var(--text-muted);margin-bottom:1rem;}
+.chk input{margin-top:.2rem;accent-color:var(--primary);}
+.res-grid{display:grid;grid-template-columns:1fr 1fr;gap:.875rem;margin-bottom:1.25rem;}
+.res{padding:1rem;border-radius:1rem;background:var(--bg-alt);border:1px solid var(--border);}
+.res span{display:block;font-size:1.35rem;font-weight:800;color:var(--primary);}
+.res small{font-size:.78rem;color:var(--text-muted);}
+.form-ok{display:none;padding:1.25rem;border-radius:1rem;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.35);color:var(--text);font-size:.92rem;line-height:1.6;}
+.form-ok.show{display:block;}
+.form-err{color:#ef4444;font-size:.82rem;min-height:1.1rem;margin-bottom:.5rem;}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido principal</a>
+<nav class="nav" role="navigation" aria-label="Navegación principal">
+<div class="container nav__inner">
+<a class="nav__logo" href="/"><span class="nav__logo-text">BiAilitics</span></a>
+<ul class="nav__links" role="list">
+<li><a href="/#sobre-mi">Sobre mí</a></li>
+<li><a href="/#servicios">Servicios</a></li>
+<li><a href="/#herramientas">Herramientas</a></li>
+<li><a href="/#precios">Precios</a></li>
+<li><a href="/#contacto">Contacto</a></li>
+</ul>
+<div class="nav__actions">
+<a class="btn-cta-nav" href="/#contacto">Consultoría Gratuita</a>
+<button class="nav__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+</div>
+</div>
+</nav>
+<nav class="nav__mobile" id="mobile-menu" aria-label="Menú móvil">
+<a href="/#sobre-mi">Sobre mí</a><a href="/#servicios">Servicios</a>
+<a href="/#herramientas">Herramientas</a><a href="/#precios">Precios</a><a href="/#contacto">Contacto</a>
+<a class="btn-cta-mobile" href="/#contacto">Consultoría Gratuita →</a>
+</nav>
+<main id="main">
+<section class="phero" aria-labelledby="page-title">
+<div class="container">
+<nav class="bcrumb" aria-label="Ruta de navegación"><a href="/">Inicio</a><span>›</span><span>Calculadora de coste de automatización</span></nav>
+<div class="pbadge">Calculadora · ROI · Plantilla gratis</div>
+<h1 class="ph1" id="page-title">Calculadora de Ahorro y Coste<br><span>de Automatización para Pymes</span></h1>
+<p class="pintro">¿Cuánto cuesta automatizar procesos en tu empresa y cuánto vas a ahorrar? Calcula en un minuto el ahorro por automatización de tus tareas repetitivas y descarga la plantilla Excel gratuita para calcular tu ROI con tus propios datos.</p>
+<div class="pactions">
+<a class="btn-primary" href="/#contacto">Agendar valoración técnica <span class="material-symbols-outlined">trending_flat</span></a>
+<a class="btn-outline" href="#calculadora">Calcular mi ahorro</a>
+</div>
+</div>
+</section>
+<section style="padding:5rem 0;">
+<div class="container">
+<div class="reveal" style="text-align:center;margin-bottom:2.5rem;">
+<h2 class="section-title">Qué factores determinan <span>cuánto cuesta automatizar procesos</span></h2>
+</div>
+<div class="box prose">
+<p>No hay un precio único para automatizar: el coste de automatizar tareas depende sobre todo de cinco factores.</p>
+<ul>
+<li><span><strong>Número de sistemas a conectar.</strong> Un flujo entre dos herramientas es mucho más sencillo que sincronizar ERP, CRM, banco y tienda online.</span></li>
+<li><span><strong>Si tus herramientas tienen API.</strong> Holded, Odoo o Microsoft 365 se conectan fácilmente; un programa antiguo sin API puede requerir RPA o acceso a base de datos.</span></li>
+<li><span><strong>Volumen y excepciones.</strong> No es lo mismo procesar 50 facturas al mes con un formato fijo que 2.000 de proveedores distintos.</span></li>
+<li><span><strong>Calidad de los datos.</strong> Si hay clientes duplicados o Excels con formatos distintos, primero hay que ordenarlos.</span></li>
+<li><span><strong>Mantenimiento.</strong> Servidor de n8n, licencias de Power BI o APIs de IA: costes pequeños, pero recurrentes.</span></li>
+</ul>
+<h3>Precio de automatización para pymes: rangos orientativos</h3>
+</div>
+<div class="box"><div class="tbl-wrap"><table class="tbl">
+<thead><tr><th>Tipo de proyecto</th><th>Precio orientativo</th><th>Plazo</th></tr></thead>
+<tbody>
+<tr><td><strong>Flujo de automatización con n8n</strong> (1-2 flujos, p. ej. email → Excel → aviso)</td><td>500&nbsp;€ – 1.000&nbsp;€</td><td>1-2 semanas</td></tr>
+<tr><td><strong>Dashboard en Power BI</strong> (1-3 fuentes de datos)</td><td>400&nbsp;€ – 1.200&nbsp;€</td><td>1-3 semanas</td></tr>
+<tr><td><strong>Proyecto completo</strong> (automatización + reporting)</td><td>1.200&nbsp;€ – 3.500&nbsp;€</td><td>3-6 semanas</td></tr>
+<tr><td><strong>Integración con ERP</strong> o sistema complejo</td><td>2.000&nbsp;€ – 5.000&nbsp;€</td><td>4-8 semanas</td></tr>
+<tr><td><strong>Bolsa de horas</strong> para mejoras continuas</td><td>desde 55&nbsp;€/hora</td><td>Mensual, sin permanencia</td></tr>
+</tbody></table></div>
+<p class="note">Precios sin IVA. Tienes el desglose completo en la guía <a href="/blog/cuanto-cuesta-automatizar-empresa/" style="color:var(--primary);font-weight:600;">¿Cuánto cuesta automatizar una empresa?</a> y las tarifas mensuales en la <a href="/bolsa-de-horas/" style="color:var(--primary);font-weight:600;">bolsa de horas</a>.</p>
+</div>
+</div>
+</section>
+<section style="background:var(--bg-alt);padding:5rem 0;" id="calculadora">
+<div class="container">
+<div class="reveal" style="text-align:center;margin-bottom:2.5rem;">
+<h2 class="section-title">Calculadora interactiva y <span>plantilla Excel descargable</span></h2><p class="section-desc">Introduce los datos de una tarea repetitiva y verás al momento cuánto te cuesta hoy y cuánto ahorrarías.</p>
+</div>
+<div class="calc">
+<div class="calc-card">
+<h3>1. Calcula tu ahorro por automatización</h3>
+<div class="fld"><label for="c-h">Horas por semana dedicadas a la tarea (por persona)</label><input type="number" id="c-h" min="0" step="0.5" value="8"></div>
+<div class="fld"><label for="c-p">Personas que hacen esa tarea</label><input type="number" id="c-p" min="1" step="1" value="1"></div>
+<div class="fld"><label for="c-c">Coste por hora del empleado (€, salario + Seguridad Social)</label><input type="number" id="c-c" min="0" step="1" value="22"></div>
+<div class="fld"><label for="c-a">% de la tarea que se puede automatizar</label><input type="number" id="c-a" min="0" max="100" step="5" value="80"></div>
+<div class="fld"><label for="c-i">Coste de implantación (€, pago único)</label><input type="number" id="c-i" min="0" step="100" value="1500"></div>
+<div class="fld"><label for="c-m">Mantenimiento y licencias al año (€)</label><input type="number" id="c-m" min="0" step="50" value="300"></div>
+<p class="note">Cálculo con 46 semanas laborables al año. Es una estimación orientativa.</p>
+</div>
+<div class="calc-card">
+<h3>Tu resultado</h3>
+<div class="res-grid" aria-live="polite">
+<div class="res"><span id="r-h">–</span><small>horas liberadas al año</small></div>
+<div class="res"><span id="r-s">–</span><small>ahorro anual bruto</small></div>
+<div class="res"><span id="r-n">–</span><small>ahorro neto el primer año</small></div>
+<div class="res"><span id="r-m">–</span><small>meses para recuperar la inversión</small></div>
+</div>
+<h3>2. Descarga la plantilla Excel gratuita</h3>
+<p class="note" style="margin-bottom:1rem;">Calcula varias tareas a la vez con tus datos reales: horas ahorradas, coste de implementación y ROI.</p>
+<form id="dl-form" novalidate>
+<div class="fld"><label for="d-n">Nombre</label><input type="text" id="d-n" name="nombre" autocomplete="name" required></div>
+<div class="fld"><label for="d-e">Email</label><input type="email" id="d-e" name="email" autocomplete="email" required></div>
+<div class="fld"><label for="d-c">Empresa (opcional)</label><input type="text" id="d-c" name="empresa" autocomplete="organization"></div>
+<label class="chk"><input type="checkbox" id="d-call" name="llamada" value="Sí">Quiero agendar una llamada de valoración técnica gratuita sobre mi caso</label>
+<p class="form-err" id="d-err" role="alert"></p>
+<button class="btn-primary" type="submit" style="width:100%;justify-content:center;">Descargar plantilla gratis <span class="material-symbols-outlined">download</span></button>
+<p class="note" style="text-align:center;margin-top:.75rem;">Al enviar aceptas la <a href="/politica-privacidad/" style="color:var(--primary);font-weight:600;">política de privacidad</a>.</p>
+</form>
+<div class="form-ok" id="dl-ok" role="status">
+<p style="margin-bottom:.75rem;"><strong>¡Listo!</strong> Tu plantilla está preparada.</p>
+<a class="btn-primary" id="dl-link" href="/calculadora-coste-automatizacion/plantilla-calculadora-automatizacion.xlsx" download>Descargar Excel <span class="material-symbols-outlined">download</span></a>
+<p id="dl-call" style="margin-top:.75rem;display:none;">Te escribiré en menos de 24 horas para agendar la llamada de valoración técnica.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section style="padding:5rem 0;">
+<div class="container">
+<div class="reveal" style="text-align:center;margin-bottom:2.5rem;">
+<h2 class="section-title">Ejemplos de <span>ROI</span> en casos habituales</h2>
+</div>
+<div class="box">
+<p class="note" style="text-align:center;margin-bottom:1.5rem;">Ejemplos ilustrativos calculados con la misma fórmula de la calculadora y cifras habituales en pymes.</p>
+<div class="tbl-wrap"><table class="tbl">
+<thead><tr><th></th><th>Automatización administrativa</th><th>Automatización de facturación</th></tr></thead>
+<tbody>
+<tr><td><strong>Tarea</strong></td><td>Copiar pedidos del email al ERP y preparar el informe semanal</td><td>Conciliar facturas con albaranes y enviar recordatorios de cobro</td></tr>
+<tr><td><strong>Tiempo actual</strong></td><td>8 h/semana · 1 persona · 22&nbsp;€/h</td><td>6 h/semana · 1 persona · 24&nbsp;€/h</td></tr>
+<tr><td><strong>Coste anual actual</strong></td><td>8.096&nbsp;€</td><td>6.624&nbsp;€</td></tr>
+<tr><td><strong>Ahorro anual (80 % automatizado)</strong></td><td>6.477&nbsp;€ · 294 horas</td><td>5.299&nbsp;€ · 221 horas</td></tr>
+<tr><td><strong>Inversión</strong></td><td>1.500&nbsp;€ + 300&nbsp;€/año</td><td>2.000&nbsp;€ + 360&nbsp;€/año</td></tr>
+<tr><td><strong>Ahorro neto primer año</strong></td><td>4.677&nbsp;€</td><td>2.939&nbsp;€</td></tr>
+<tr><td><strong>Recuperas la inversión en</strong></td><td>3 meses</td><td>5 meses</td></tr>
+</tbody></table></div>
+<p class="note">A partir del segundo año solo queda el mantenimiento, así que el ahorro neto sube a 6.177&nbsp;€ y 4.939&nbsp;€ al año respectivamente. Más sobre el segundo caso en <a href="/automatizacion-facturacion-pagos/" style="color:var(--primary);font-weight:600;">automatización de facturación y pagos</a>.</p>
+</div>
+</div>
+</section>
+<section class="cta-final" aria-labelledby="cta-final">
+<div class="container">
+<div class="reveal" style="max-width:640px;margin:0 auto;">
+<h2 class="section-title" id="cta-final">¿Quieres una valoración técnica <span>de tu caso</span>?</h2>
+<p class="section-desc" style="margin-bottom:2rem;">En una llamada de 20-30 minutos revisamos tus procesos, te digo qué merece la pena automatizar y cuánto costaría. Gratis y sin compromiso.</p>
+<a class="btn-primary" href="/#contacto" style="display:inline-flex;margin:0 auto;">Agendar llamada de valoración técnica <span class="material-symbols-outlined">trending_flat</span></a>
+<p style="margin-top:1rem;font-size:.82rem;color:var(--text-faint);">O escríbeme a <a href="mailto:infobiailitics@gmail.com" style="color:var(--primary);">infobiailitics@gmail.com</a></p>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer" role="contentinfo">
+<div class="container footer__inner">
+<a class="footer__logo" href="/"><span class="footer__logo-text">BiAilitics</span></a>
+<nav class="footer__links" aria-label="Redes sociales">
+<a href="https://www.linkedin.com/in/miguel-%C3%A1ngel-dom%C3%ADnguez-rangel-373441176/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<a href="https://github.com/Miguel191194-desarrollador" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a href="mailto:infobiailitics@gmail.com">Escríbeme</a>
+<a href="/politica-privacidad/">Privacidad</a>
+</nav>
+<p class="footer__copy">&copy; <span id="year"></span> BiAilitics &mdash; Miguel Ángel Domínguez Rangel</p>
+</div>
+</footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const hb=document.getElementById('hamburger'),mm=document.getElementById('mobile-menu');
+if(hb&&mm){hb.addEventListener('click',()=>{const o=hb.classList.toggle('open');mm.classList.toggle('open',o);hb.setAttribute('aria-expanded',String(o));});}
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(r=>obs.observe(r));
+
+(function(){
+const $=id=>document.getElementById(id),eur=n=>Math.round(n).toLocaleString('es-ES')+' €';
+function calc(){
+ const h=+$('c-h').value||0,p=+$('c-p').value||0,c=+$('c-c').value||0,a=(+$('c-a').value||0)/100,i=+$('c-i').value||0,m=+$('c-m').value||0;
+ const horas=h*p*46,ahorro=horas*c*a,neto=ahorro-i-m,mens=(ahorro-m)/12;
+ $('r-h').textContent=Math.round(horas*a).toLocaleString('es-ES');
+ $('r-s').textContent=eur(ahorro);$('r-n').textContent=eur(neto);
+ $('r-m').textContent=mens>0?(i/mens).toLocaleString('es-ES',{maximumFractionDigits:1}):'—';
+ return {horas_liberadas:Math.round(horas*a),ahorro_anual:Math.round(ahorro),ahorro_neto_1:Math.round(neto)};
+}
+document.querySelectorAll('.calc-card input[type=number]').forEach(el=>el.addEventListener('input',calc));calc();
+const f=$('dl-form');
+f.addEventListener('submit',async e=>{
+ e.preventDefault();
+ const n=$('d-n').value.trim(),em=$('d-e').value.trim();
+ if(!n||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){$('d-err').textContent='Introduce tu nombre y un email válido.';return;}
+ $('d-err').textContent='';const b=f.querySelector('button');b.disabled=true;
+ const d=new FormData(f),r=calc();d.append('_subject','Descarga calculadora de automatización'+($('d-call').checked?' + quiere llamada':''));
+ Object.entries(r).forEach(([k,v])=>d.append(k,v));
+ try{await fetch('https://formspree.io/f/mzdavaqn',{method:'POST',body:d,headers:{Accept:'application/json'}});}catch(_){}
+ f.style.display='none';$('dl-ok').classList.add('show');if($('d-call').checked)$('dl-call').style.display='block';
+ $('dl-link').click();
+ if(typeof gtag==='function')gtag('event','descarga_calculadora');
+});
+})();
+</script>
+</body>
+</html>
