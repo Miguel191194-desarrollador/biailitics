@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://www.biailitics.com/automatizar-informes-excel/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -57,6 +57,7 @@
   </url>
   <url>
     <loc>https://www.biailitics.com/migrar-excel-a-power-bi/</loc>
+    <lastmod>2026-10-19</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -108,11 +109,13 @@
   </url>
   <url>
     <loc>https://www.biailitics.com/automatizacion-hr-onboarding/</loc>
+    <lastmod>2026-10-19</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/automatizacion-soporte-cliente/</loc>
+    <lastmod>2026-10-19</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -123,58 +126,65 @@
   </url>
   <!-- Servicios nuevos -->
   <url>
+    <loc>https://www.biailitics.com/automatizacion-licitaciones-publicas/</loc>
+    <lastmod>2026-10-19</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
     <loc>https://www.biailitics.com/automatizacion-factura-electronica-verifactu/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/pasar-ventas-excel-a-power-bi/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/calculadora-coste-automatizacion/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
 
   <url>
     <loc>https://www.biailitics.com/servicios/radiografia-digital/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/servicios/agentes-ia/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/servicios/dashboard-tesoreria/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/servicios/whatsapp-erp/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://www.biailitics.com/servicios/onboarding-automatico/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
   <!-- Blog -->
   <url>
     <loc>https://www.biailitics.com/blog/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <priority>0.7</priority>
     <changefreq>weekly</changefreq>
   </url>
@@ -229,6 +239,12 @@
   <url>
     <loc>https://www.biailitics.com/blog/agentes-ia-automatizacion-pymes/</loc>
     <lastmod>2026-10-15</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.biailitics.com/blog/power-bi-para-ventas/</loc>
+    <lastmod>2026-10-19</lastmod>
     <priority>0.6</priority>
     <changefreq>monthly</changefreq>
   </url>
