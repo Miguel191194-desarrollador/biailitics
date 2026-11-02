@@ -14,6 +14,7 @@
   <!-- Bolsa de horas -->
   <url>
     <loc>https://www.biailitics.com/bolsa-de-horas/</loc>
+    <lastmod>2026-11-02</lastmod>
     <priority>0.9</priority>
     <changefreq>weekly</changefreq>
   </url>
@@ -47,6 +48,7 @@
   </url>
   <url>
     <loc>https://www.biailitics.com/cuadro-mando-financiero-power-bi/</loc>
+    <lastmod>2026-11-02</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -63,6 +65,7 @@
   </url>
   <url>
     <loc>https://www.biailitics.com/consultoria-power-bi-pymes/</loc>
+    <lastmod>2026-11-02</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -104,6 +107,7 @@
   </url>
   <url>
     <loc>https://www.biailitics.com/automatizacion-facturacion-pagos/</loc>
+    <lastmod>2026-11-02</lastmod>
     <priority>0.8</priority>
     <changefreq>monthly</changefreq>
   </url>
@@ -125,6 +129,12 @@
     <changefreq>monthly</changefreq>
   </url>
   <!-- Servicios nuevos -->
+  <url>
+    <loc>https://www.biailitics.com/automatizacion-conciliacion-pagos/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
   <url>
     <loc>https://www.biailitics.com/automatizacion-licitaciones-publicas/</loc>
     <lastmod>2026-10-19</lastmod>
