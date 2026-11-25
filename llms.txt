@@ -60,6 +60,7 @@ El punto de partida siempre es la **Radiografía Digital gratuita**: una videoll
 - [Clínicas y salud](https://www.biailitics.com/automatizacion-clinicas-salud/)
 - [Distribución y venta de materiales](https://www.biailitics.com/automatizacion-distribucion-materiales/)
 - [Telecomunicaciones y telefonía](https://www.biailitics.com/automatizacion-telecomunicaciones/)
+- [Industria y fabricación](https://www.biailitics.com/automatizacion-industria-fabricacion/)
 
 ## Proyectos reales
 
@@ -68,6 +69,7 @@ El punto de partida siempre es la **Radiografía Digital gratuita**: una videoll
 - Limpiezas Alferro (servicios de limpieza): pedidos de compra y facturas de proveedores que entran directamente en el ERP, sin doble entrada de datos.
 - PuigMetal y Alu Components (venta de hierro, aluminio y metal): facturación en Holded y formularios web que crean automáticamente el cliente en Holded.
 - JMREY (administración de fincas): agente de voz con IA (Vapi + n8n) que atiende las llamadas de los vecinos y registra cada incidencia con su prioridad.
+- Dimensa (fabricación y distribución de productos químicos, experiencia en empresa): cuadros de mando en Power BI de producción, ventas, comerciales y almacén, portal B2B de pedidos conectado al ERP, chatbot de IA para consultas de ventas y gestión de rutas y gasoil de la flota.
 - Jobie (formación): 7 clases grabadas para un máster de análisis de datos e inteligencia de negocio y 2 meses de soporte a los alumnos.
 
 ## Precios orientativos (sin IVA)
