@@ -2282,6 +2282,13 @@ section {
   }
 }
 
+/* Tarjeta a lo ancho (la séptima, para no dejarla sola en una fila) */
+@media (min-width: 768px) {
+  .use-cases__card--wide {
+    grid-column: 1 / -1;
+  }
+}
+
 .use-cases__title {
   font-size: 1.1rem;
   font-weight: 800;
