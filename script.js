@@ -206,10 +206,12 @@
       // Fallback: mailto
       const nombre = form.nombre.value;
       const email = form.email.value;
+      const empresa = form.empresa.value;
       const servicio = form.servicio.value;
+      const origen = form.como_me_conocio.value;
       const mensaje = form.mensaje.value;
       const subject = encodeURIComponent(`Consultoría BiAilitics — ${servicio}`);
-      const body = encodeURIComponent(`Nombre: ${nombre}\nEmail: ${email}\nServicio: ${servicio}\n\n${mensaje}`);
+      const body = encodeURIComponent(`Nombre: ${nombre}\nEmail: ${email}\nEmpresa: ${empresa}\nServicio: ${servicio}\nCómo me conoció: ${origen}\n\n${mensaje}`);
       window.location.href = `mailto:infobiailitics@gmail.com?subject=${subject}&body=${body}`;
       submitBtn.disabled = false;
       submitBtn.textContent = 'Solicitar consultoría gratuita →';

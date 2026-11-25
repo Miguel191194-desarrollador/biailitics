@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4PDXDV406W"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4PDXDV406W');</script>
+<title>Automatización y Power BI para Telecomunicaciones | BiAilitics</title>
+<meta name="description" content="Seguimiento automático de campañas, cuadros de mando de resultados, leads, comisiones y stock para empresas de telefonía, venta de SIM y móviles. Caso real."/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://www.biailitics.com/automatizacion-telecomunicaciones/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://www.biailitics.com/automatizacion-telecomunicaciones/"/>
+<meta property="og:title" content="Automatización y Power BI para Telecomunicaciones | BiAilitics"/>
+<meta property="og:description" content="Seguimiento automático de campañas, cuadros de mando de resultados, leads, comisiones y stock para empresas de telefonía, venta de SIM y móviles. Caso real."/>
+<meta property="og:image" content="https://images.unsplash.com/photo-1556656793-08538906a9f8?w=1200&h=630&fit=crop&q=80"/>
+<meta property="og:locale" content="es_ES"/>
+<meta property="og:site_name" content="BiAilitics Automation"/>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://www.biailitics.com/"}, {"@type": "ListItem", "position": 2, "name": "Telecomunicaciones y telefonía", "item": "https://www.biailitics.com/automatizacion-telecomunicaciones/"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Con qué plataformas de anuncios funciona?", "acceptedAnswer": {"@type": "Answer", "text": "Google Ads, Meta (Facebook e Instagram) y cualquier plataforma que permita exportar o consultar sus datos por API."}}, {"@type": "Question", "name": "¿Puedo ver el cuadro de mando en el móvil?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Power BI tiene app para móvil y el panel se puede consultar desde cualquier dispositivo, con permisos por usuario."}}, {"@type": "Question", "name": "¿Incluye mantenimiento?", "acceptedAnswer": {"@type": "Answer", "text": "Puede incluirlo. Como con i-Nextia, podemos encargarnos del soporte cada mes para que todo siga funcionando cuando cambian las campañas o las plataformas."}}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" onload="this.onload=null;this.rel='stylesheet'"/>
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"/></noscript>
+<link rel="stylesheet" href="../styles.css"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%236366f1'/%3E%3C/svg%3E"/>
+<style>
+.phero{padding-top:calc(var(--nav-h) + 5rem);padding-bottom:5rem;background:radial-gradient(at 0% 0%,var(--accent-light) 0,transparent 50%),radial-gradient(at 100% 0%,var(--primary-light) 0,transparent 50%);}
+.bcrumb{display:flex;align-items:center;gap:.5rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1.5rem;}
+.bcrumb a{color:var(--primary);font-weight:600;}
+.pbadge{display:inline-flex;align-items:center;gap:.5rem;padding:.3rem 1rem;border-radius:9999px;background:rgba(99,102,241,.1);border:1px solid rgba(99,102,241,.25);color:var(--primary);font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;margin-bottom:1.5rem;}
+.ph1{font-size:clamp(2rem,5vw,3.5rem);font-weight:800;letter-spacing:-.03em;line-height:1.1;margin-bottom:1.5rem;}
+.ph1 span{color:var(--primary);}
+.pintro{font-size:1.1rem;color:var(--text-muted);max-width:42rem;line-height:1.75;margin-bottom:2.5rem;}
+.pactions{display:flex;flex-wrap:wrap;gap:1rem;}
+.metrics-row{display:grid;gap:1.25rem;padding:4rem 0;background:var(--bg-alt);}
+@media(min-width:640px){.metrics-row{grid-template-columns:repeat(3,1fr);}}
+.metric-item{text-align:center;padding:1.5rem;border-radius:1rem;background:var(--bg-card);border:1px solid var(--border);}
+.metric-val{font-size:2rem;font-weight:800;color:var(--primary);display:block;}
+.metric-lbl{font-size:.82rem;color:var(--text-muted);margin-top:.25rem;}
+.prob-grid{display:grid;gap:1.25rem;margin-top:2rem;}
+@media(min-width:640px){.prob-grid{grid-template-columns:repeat(2,1fr);}}
+@media(min-width:1024px){.prob-grid{grid-template-columns:repeat(3,1fr);}}
+.prob-item{padding:1.5rem;border-radius:1.25rem;border:1px solid var(--border);background:var(--bg-card);transition:transform .25s,box-shadow .25s;}
+.prob-item:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(0,0,0,.08);}
+.prob-icon{width:44px;height:44px;border-radius:.75rem;background:rgba(249,115,22,.1);display:flex;align-items:center;justify-content:center;margin-bottom:.875rem;color:#f97316;}
+.prob-item h3{font-size:.95rem;font-weight:700;margin-bottom:.4rem;}
+.prob-item p{font-size:.85rem;color:var(--text-muted);line-height:1.55;}
+.twocol{display:grid;gap:3rem;padding:5rem 0;}
+@media(min-width:1024px){.twocol{grid-template-columns:2fr 1fr;align-items:start;}}
+.prose h2{font-size:clamp(1.4rem,3vw,1.9rem);font-weight:800;letter-spacing:-.02em;margin:3rem 0 1rem;color:var(--text);}
+.prose h2:first-child{margin-top:0;}
+.prose h3{font-size:1rem;font-weight:700;color:var(--primary);margin:2rem 0 .4rem;}
+.prose p{color:var(--text-muted);line-height:1.75;margin-bottom:1.25rem;font-size:.97rem;}
+.prose ul{list-style:none;margin-bottom:1.5rem;}
+.prose ul li{display:flex;gap:.6rem;align-items:flex-start;padding:.35rem 0;color:var(--text-muted);line-height:1.6;font-size:.92rem;}
+.prose ul li::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--primary);flex-shrink:0;margin-top:.52rem;}
+.aside-sticky{position:sticky;top:calc(var(--nav-h) + 2rem);display:flex;flex-direction:column;gap:1.5rem;}
+.cta-box{padding:1.75rem;border-radius:1.5rem;border:1px solid var(--border);background:var(--bg-card);box-shadow:0 4px 20px rgba(99,102,241,.07);}
+.cta-box h3{font-size:1.05rem;font-weight:800;margin-bottom:.65rem;}
+.cta-box p{color:var(--text-muted);font-size:.88rem;line-height:1.6;margin-bottom:1.2rem;}
+.cta-box .btn-primary{width:100%;justify-content:center;font-size:.92rem;}
+.cta-note{font-size:.76rem;color:var(--text-faint);text-align:center;margin-top:.5rem;}
+.rel-box h3{font-size:.95rem;font-weight:700;margin-bottom:.875rem;}
+.rel-card{display:flex;align-items:center;gap:.65rem;padding:.875rem 1.1rem;border:1px solid var(--border);border-radius:.875rem;background:var(--bg-card);color:var(--text);font-weight:600;font-size:.85rem;transition:border-color .25s,color .25s,transform .2s;text-decoration:none;margin-bottom:.5rem;}
+.rel-card:hover{border-color:var(--primary);color:var(--primary);transform:translateX(3px);}
+.rel-card .material-symbols-outlined{font-size:1rem;color:var(--primary);}
+.faq-item{border:1px solid var(--border);border-radius:1rem;overflow:hidden;background:var(--bg-card);margin-bottom:.875rem;}
+.faq-q{display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.4rem;font-weight:700;font-size:.95rem;cursor:pointer;list-style:none;}
+.faq-q::-webkit-details-marker{display:none;}
+.faq-a{padding:0 1.4rem 1.1rem;color:var(--text-muted);line-height:1.7;font-size:.92rem;}
+.cta-final{background:linear-gradient(135deg,rgba(99,102,241,.07),rgba(168,85,247,.07));padding:5rem 0;text-align:center;}
+
+.box{max-width:820px;margin:0 auto;}
+.lead p{color:var(--text-muted);line-height:1.8;font-size:1.02rem;margin-bottom:1rem;}
+.steps{display:grid;gap:1.25rem;margin-top:2rem;counter-reset:st;}
+@media(min-width:768px){.steps{grid-template-columns:repeat(3,1fr);}}
+.step{padding:1.5rem;border-radius:1.25rem;border:1px solid var(--border);background:var(--bg-card);position:relative;}
+.step::before{counter-increment:st;content:counter(st);display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;background:var(--primary);color:#fff;font-weight:800;margin-bottom:.875rem;}
+.step h3{font-size:1rem;font-weight:700;margin-bottom:.4rem;}
+.step p{font-size:.88rem;color:var(--text-muted);line-height:1.6;}
+.ok-icon{background:rgba(99,102,241,.1);color:var(--primary);}
+.tbl-wrap{overflow-x:auto;margin:1.5rem 0;border:1px solid var(--border);border-radius:1rem;background:var(--bg-card);}
+.tbl{width:100%;border-collapse:collapse;font-size:.9rem;min-width:520px;}
+.tbl th,.tbl td{padding:.85rem 1rem;text-align:left;border-bottom:1px solid var(--border);vertical-align:top;}
+.tbl th{font-weight:800;color:var(--text);background:var(--bg-alt);}
+.tbl td{color:var(--text-muted);}
+.tbl tr:last-child td{border-bottom:0;}
+.tbl td strong{color:var(--text);}
+.note{font-size:.82rem;color:var(--text-faint);line-height:1.6;}
+.calc{display:grid;gap:2rem;margin-top:2rem;}
+@media(min-width:1024px){.calc{grid-template-columns:1fr 1fr;}}
+.calc-card{padding:1.75rem;border-radius:1.5rem;border:1px solid var(--border);background:var(--bg-card);}
+.calc-card h3{font-size:1.1rem;font-weight:800;margin-bottom:1rem;}
+.fld{display:flex;flex-direction:column;gap:.35rem;margin-bottom:1rem;}
+.fld label{font-size:.85rem;font-weight:600;color:var(--text);}
+.fld input[type=number],.fld input[type=text],.fld input[type=email]{padding:.7rem .9rem;border:1px solid var(--border);border-radius:.75rem;background:var(--bg);color:var(--text);font:inherit;font-size:.95rem;width:100%;}
+.fld input:focus{outline:2px solid var(--primary);outline-offset:1px;}
+.chk{display:flex;gap:.6rem;align-items:flex-start;font-size:.88rem;color:var(--text-muted);margin-bottom:1rem;}
+.chk input{margin-top:.2rem;accent-color:var(--primary);}
+.res-grid{display:grid;grid-template-columns:1fr 1fr;gap:.875rem;margin-bottom:1.25rem;}
+.res{padding:1rem;border-radius:1rem;background:var(--bg-alt);border:1px solid var(--border);}
+.res span{display:block;font-size:1.35rem;font-weight:800;color:var(--primary);}
+.res small{font-size:.78rem;color:var(--text-muted);}
+.form-ok{display:none;padding:1.25rem;border-radius:1rem;background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.35);color:var(--text);font-size:.92rem;line-height:1.6;}
+.form-ok.show{display:block;}
+.form-err{color:#ef4444;font-size:.82rem;min-height:1.1rem;margin-bottom:.5rem;}
+
+.phero-grid{display:grid;gap:2.5rem;align-items:center;}
+@media(min-width:1024px){.phero-grid{grid-template-columns:1.15fr .85fr;gap:3.5rem;}}
+.phero-img{margin:0;}
+.phero-img img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:1.5rem;box-shadow:0 20px 50px rgba(15,23,42,.15);}
+.sec-img{margin:0 auto 2.5rem;max-width:900px;}
+.sec-img img{display:block;width:100%;height:auto;aspect-ratio:16/7;object-fit:cover;border-radius:1.25rem;}
+.case-grid{display:grid;gap:1.25rem;}
+@media(min-width:900px){.case-grid{grid-template-columns:repeat(3,1fr);}}
+.case{padding:1.5rem;border-radius:1.25rem;border:1px solid var(--border);background:var(--bg-card);}
+.case h3{font-size:1rem;font-weight:800;margin-bottom:.75rem;}
+.case dl{display:grid;gap:.6rem;font-size:.88rem;line-height:1.55;}
+.case dt{font-weight:700;color:var(--text);}
+.case dd{margin:0;color:var(--text-muted);}
+.case a{color:var(--primary);font-weight:600;}
+.illus{font-size:.82rem;color:var(--text-faint);text-align:center;margin:-1.25rem auto 2rem;max-width:680px;}
+.inline-cta{max-width:820px;margin:2.5rem auto 0;padding:2rem;border-radius:1.5rem;text-align:center;background:linear-gradient(135deg,rgba(99,102,241,.08),rgba(168,85,247,.08));border:1px solid var(--border);}
+.inline-cta p{font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:1.25rem;line-height:1.5;}
+.checklist{display:grid;gap:.75rem;max-width:820px;margin:0 auto;}
+@media(min-width:768px){.checklist{grid-template-columns:1fr 1fr;}}
+.checklist li{list-style:none;display:flex;gap:.75rem;align-items:flex-start;padding:1rem 1.1rem;border:1px solid var(--border);border-radius:1rem;background:var(--bg-card);font-size:.9rem;color:var(--text-muted);line-height:1.55;}
+.checklist li .material-symbols-outlined{color:var(--primary);font-size:1.3rem;}
+.checklist li strong{color:var(--text);}
+.lead-c{max-width:820px;margin:0 auto 2rem;}
+.lead-c p{color:var(--text-muted);line-height:1.8;font-size:1.02rem;margin-bottom:1rem;}
+.lead-c a{color:var(--primary);font-weight:600;}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido principal</a>
+<nav class="nav" role="navigation" aria-label="Navegación principal">
+<div class="container nav__inner">
+<a class="nav__logo" href="/"><span class="nav__logo-text">BiAilitics</span></a>
+<ul class="nav__links" role="list">
+<li><a href="/#sobre-mi">Sobre mí</a></li>
+<li><a href="/#servicios">Servicios</a></li>
+<li><a href="/#herramientas">Herramientas</a></li>
+<li><a href="/#precios">Precios</a></li>
+<li><a href="/#contacto">Contacto</a></li>
+</ul>
+<div class="nav__actions">
+<a class="btn-cta-nav" href="/servicios/radiografia-digital/">Radiografía gratuita</a>
+<button class="nav__hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+</div>
+</div>
+</nav>
+<nav class="nav__mobile" id="mobile-menu" aria-label="Menú móvil">
+<a href="/#sobre-mi">Sobre mí</a><a href="/#servicios">Servicios</a>
+<a href="/#herramientas">Herramientas</a><a href="/#precios">Precios</a><a href="/#contacto">Contacto</a>
+<a class="btn-cta-mobile" href="/servicios/radiografia-digital/">Radiografía gratuita →</a>
+</nav>
+<main id="main">
+<section class="phero" aria-labelledby="page-title">
+<div class="container">
+<div class="phero-grid">
+<div>
+<nav class="bcrumb" aria-label="Ruta de navegación"><a href="/">Inicio</a><span>›</span><span>Telecomunicaciones y telefonía</span></nav>
+<div class="pbadge">Telecomunicaciones · Ads · Power BI</div>
+<h1 class="ph1" id="page-title">Automatización y Datos para<br><span>Telecomunicaciones y Telefonía</span></h1>
+<p class="pintro">Campañas de publicidad, altas, portabilidades, comisiones de operadoras y stock de terminales: en la venta de SIM y móviles los datos cambian cada día. Automatizamos el seguimiento y te damos un cuadro de mando para ver qué funciona.</p>
+<div class="pactions">
+<a class="btn-primary" href="/servicios/radiografia-digital/">Pide tu Radiografía gratuita <span class="material-symbols-outlined">trending_flat</span></a>
+<a class="btn-outline" href="#caso">Ver el caso real</a>
+</div>
+</div>
+<figure class="phero-img"><img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?w=900&h=675&fit=crop&q=75" srcset="https://images.unsplash.com/photo-1556656793-08538906a9f8?w=600&h=450&fit=crop&q=70 600w, https://images.unsplash.com/photo-1556656793-08538906a9f8?w=900&h=675&fit=crop&q=75 900w" sizes="(min-width:1024px) 450px, 100vw" alt="Smartphones de distintas marcas sobre una mesa" width="900" height="675" fetchpriority="high"/></figure>
+</div>
+</div>
+</section>
+<section style="padding:5rem 0;" id="problemas">
+<div class="container">
+<div class="reveal" style="text-align:center;margin-bottom:2.5rem;">
+<h2 class="section-title">Problemas que vemos <span>en tu sector</span></h2>
+</div>
+<div class="prob-grid"><div class="prob-item reveal"><div class="prob-icon"><span class="material-symbols-outlined">campaign</span></div><h3>Campañas sin seguimiento diario</h3><p>Inviertes en Google Ads o redes, pero revisar a mano qué campaña trae ventas lleva horas y se hace tarde.</p></div><div class="prob-item reveal"><div class="prob-icon"><span class="material-symbols-outlined">dataset</span></div><h3>Datos en cada plataforma</h3><p>Anuncios, CRM, tienda y operadoras tienen cada uno sus informes y nadie los junta.</p></div><div class="prob-item reveal"><div class="prob-icon"><span class="material-symbols-outlined">person_search</span></div><h3>Leads que se enfrían</h3><p>Las solicitudes que llegan por las campañas tardan en contactarse y se pierden ventas.</p></div><div class="prob-item reveal"><div class="prob-icon"><span class="material-symbols-outlined">payments</span></div><h3>Comisiones difíciles de cuadrar</h3><p>Cada operadora liquida a su manera y comprobar lo cobrado contra lo vendido es lento.</p></div><div class="prob-item reveal"><div class="prob-icon"><span class="material-symbols-outlined">smartphone</span></div><h3>Stock de terminales</h3><p>Saber qué móviles quedan, en qué punto de venta y cuáles reponer obliga a revisar varias hojas.</p></div><div class="prob-item reveal"><div class="prob-icon"><span class="material-symbols-outlined">forum</span></div><h3>Las mismas consultas</h3><p>Cobertura, tarifas, estado de la portabilidad... preguntas repetidas que saturan la atención.</p></div></div>
+</div>
+</section>
+<section style="background:var(--bg-alt);padding:5rem 0;">
+<div class="container">
+<div class="reveal" style="text-align:center;margin-bottom:2.5rem;">
+<h2 class="section-title">Qué podemos <span>automatizar</span></h2><p class="section-desc">Primero automatizamos la recogida de datos; después te damos el panel para medirlo todo.</p>
+</div>
+<figure class="sec-img reveal"><img src="https://images.unsplash.com/photo-1557838923-2985c318be48?w=1200&h=525&fit=crop&q=75" srcset="https://images.unsplash.com/photo-1557838923-2985c318be48?w=800&h=350&fit=crop&q=70 800w, https://images.unsplash.com/photo-1557838923-2985c318be48?w=1200&h=525&fit=crop&q=75 1200w" sizes="(min-width:1024px) 600px, 100vw" alt="Marketing digital y campañas de publicidad" width="1200" height="525" loading="lazy" decoding="async"/></figure>
+<div class="prob-grid"><div class="prob-item reveal"><div class="prob-icon ok-icon"><span class="material-symbols-outlined">auto_graph</span></div><h3>Seguimiento automático de campañas</h3><p>Los datos de tus anuncios se recogen solos cada día. Más en <a href="/automatizacion-marketing/" style="color:var(--primary);font-weight:600;">automatización de marketing</a>.</p></div><div class="prob-item reveal"><div class="prob-icon ok-icon"><span class="material-symbols-outlined">monitoring</span></div><h3>Cuadro de mando de resultados</h3><p>Inversión, leads, ventas y coste por venta en un solo panel. Más en <a href="/dashboard-power-bi-ventas/" style="color:var(--primary);font-weight:600;">dashboards de ventas</a>.</p></div><div class="prob-item reveal"><div class="prob-icon ok-icon"><span class="material-symbols-outlined">bolt</span></div><h3>Leads al momento</h3><p>Cada solicitud de una campaña llega al CRM y al comercial al instante. Más en <a href="/automatizacion-ventas-crm/" style="color:var(--primary);font-weight:600;">ventas y CRM</a>.</p></div><div class="prob-item reveal"><div class="prob-icon ok-icon"><span class="material-symbols-outlined">fact_check</span></div><h3>Comisiones cruzadas</h3><p>Las liquidaciones de las operadoras se comparan solas con tus ventas y se marcan las diferencias.</p></div><div class="prob-item reveal"><div class="prob-icon ok-icon"><span class="material-symbols-outlined">inventory</span></div><h3>Stock conectado</h3><p>Existencias de terminales actualizadas y avisos de reposición. Más en <a href="/integracion-con-erp/" style="color:var(--primary);font-weight:600;">integración con ERP</a>.</p></div><div class="prob-item reveal"><div class="prob-icon ok-icon"><span class="material-symbols-outlined">smart_toy</span></div><h3>Atención con IA</h3><p>Respuestas automáticas a las consultas habituales, con paso a una persona. Más en <a href="/automatizacion-soporte-cliente/" style="color:var(--primary);font-weight:600;">atención al cliente</a>.</p></div></div>
+</div>
+</section>
+<section style="padding:5rem 0;" id="caso" aria-labelledby="caso-title">
+<div class="container">
+<div class="reveal" style="text-align:center;margin-bottom:2rem;">
+<h2 class="section-title" id="caso-title">Caso real: <span>i-Nextia</span></h2>
+</div>
+<figure class="sec-img reveal"><img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1200&h=525&fit=crop&q=75" srcset="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=350&fit=crop&q=70 800w, https://images.unsplash.com/photo-1551650975-87deedd944c3?w=1200&h=525&fit=crop&q=75 1200w" sizes="(min-width:1024px) 600px, 100vw" alt="Cuadro de mando de resultados en el móvil y el portátil" width="1200" height="525" loading="lazy" decoding="async"/></figure>
+<div class="lead-c reveal">
+<p><strong>Cliente:</strong> <a href="https://i-nextia.com/es/" target="_blank" rel="noopener noreferrer">i-Nextia</a>, telecomunicaciones: venta de SIM y móviles.</p>
+<p>Automaticé el seguimiento de sus campañas de Google Ads y les monté un cuadro de mando para medir los datos y resultados de esa automatización. Desde la entrega les doy soporte y mantenimiento cada mes.</p>
+<p><a href="/#casos">Ver más proyectos reales →</a></p>
+</div>
+</div>
+</section>
+<section style="background:var(--bg-alt);padding:5rem 0;">
+<div class="container">
+<div class="twocol">
+<div class="prose">
+<h2>Automatizar y medir, juntos</h2>
+<p>Una automatización sin medición es un acto de fe. Por eso cada proyecto incluye su cuadro de mando: ves cuánto inviertes, qué te devuelve cada campaña y dónde se pierden las ventas, con datos que se actualizan solos.</p>
+<h2>Preguntas frecuentes</h2>
+<details class="faq-item"><summary class="faq-q">¿Con qué plataformas de anuncios funciona?</summary><div class="faq-a"><p>Google Ads, Meta (Facebook e Instagram) y cualquier plataforma que permita exportar o consultar sus datos por API.</p></div></details>
+<details class="faq-item"><summary class="faq-q">¿Puedo ver el cuadro de mando en el móvil?</summary><div class="faq-a"><p>Sí. Power BI tiene app para móvil y el panel se puede consultar desde cualquier dispositivo, con permisos por usuario.</p></div></details>
+<details class="faq-item"><summary class="faq-q">¿Incluye mantenimiento?</summary><div class="faq-a"><p>Puede incluirlo. Como con i-Nextia, podemos encargarnos del soporte cada mes para que todo siga funcionando cuando cambian las campañas o las plataformas.</p></div></details>
+</div>
+<aside class="aside-sticky">
+<div class="cta-box">
+<h3>¿Empezamos por tu caso?</h3>
+<p>En la Radiografía Digital gratuita vemos tus procesos y te digo qué automatizar primero, en qué orden y cuánto costaría.</p>
+<a class="btn-primary" href="/servicios/radiografia-digital/">Pedir Radiografía gratuita <span class="material-symbols-outlined">east</span></a>
+<p class="cta-note">Gratis · Sin compromiso · &lt;24h</p>
+</div>
+<div class="cta-box rel-box">
+<h3>Servicios relacionados</h3>
+<a href="/automatizacion-marketing/" class="rel-card"><span class="material-symbols-outlined">arrow_forward</span>Automatización de marketing</a><a href="/dashboard-power-bi-ventas/" class="rel-card"><span class="material-symbols-outlined">arrow_forward</span>Dashboard de ventas</a><a href="/automatizacion-ventas-crm/" class="rel-card"><span class="material-symbols-outlined">arrow_forward</span>Ventas y CRM</a>
+</div>
+</aside>
+</div>
+</div>
+</section>
+<section class="cta-final" aria-labelledby="cta-final">
+<div class="container">
+<div class="reveal" style="max-width:640px;margin:0 auto;">
+<h2 class="section-title" id="cta-final">¿Hablamos de <span>tu empresa</span>?</h2>
+<p class="section-desc" style="margin-bottom:2rem;">30 minutos por videollamada para ver dónde se te va el tiempo y qué se puede automatizar. Gratis y sin compromiso.</p>
+<a class="btn-primary" href="/servicios/radiografia-digital/" style="display:inline-flex;margin:0 auto;">Pide tu Radiografía gratuita <span class="material-symbols-outlined">trending_flat</span></a>
+<p style="margin-top:1rem;font-size:.82rem;color:var(--text-faint);">O escríbeme a <a href="mailto:infobiailitics@gmail.com" style="color:var(--primary);">infobiailitics@gmail.com</a></p>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer" role="contentinfo">
+<div class="container footer__inner">
+<a class="footer__logo" href="/"><span class="footer__logo-text">BiAilitics</span></a>
+<nav class="footer__links" aria-label="Redes sociales">
+<a href="https://www.linkedin.com/in/miguel-%C3%A1ngel-dom%C3%ADnguez-rangel-373441176/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+<a href="https://github.com/Miguel191194-desarrollador" target="_blank" rel="noopener noreferrer">GitHub</a>
+<a href="mailto:infobiailitics@gmail.com">Escríbeme</a>
+<a href="/politica-privacidad/">Privacidad</a>
+</nav>
+<p class="footer__copy">&copy; <span id="year"></span> BiAilitics &mdash; Miguel Ángel Domínguez Rangel</p>
+</div>
+</footer>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const hb=document.getElementById('hamburger'),mm=document.getElementById('mobile-menu');
+if(hb&&mm){hb.addEventListener('click',()=>{const o=hb.classList.toggle('open');mm.classList.toggle('open',o);hb.setAttribute('aria-expanded',String(o));});}
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(r=>obs.observe(r));
+</script>
+</body>
+</html>

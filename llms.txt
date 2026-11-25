@@ -1,14 +1,104 @@
-# BiAilitics Automation
-> Automatización de procesos empresariales con Inteligencia Artificial.
+# BiAilitics
 
-Soy un consultor freelance especializado en:
-- **Flujos automatizados** utilizando n8n para conectar CRMs, ERPs y herramientas de marketing, eliminando tareas repetitivas.
-- **Dashboards en vivo** con Power BI para la visualización avanzada de datos empresariales en tiempo real.
-- **Gestión con IA**, creando sistemas que toman decisiones automáticas para escalar negocios sin intervención humana.
+> Consultoría freelance de automatización de procesos, análisis de datos (Excel y Power BI) e inteligencia artificial aplicada para pymes en España. Detrás está Miguel Ángel Domínguez Rangel, desde Badajoz, trabajando en remoto con empresas de toda España.
 
-Ofrecemos consultoría gratuita y garantizamos la reducción de costes y aumento de rentabilidad para PYMES mediante la precisión de datos y escalabilidad garantizada (hasta 20 horas ahorradas por semana por cliente).
+BiAilitics ayuda a pymes a eliminar tareas manuales y repetitivas, conectar sus herramientas (ERP, CRM, Holded, Excel, bancos, web) y tomar decisiones con datos. Herramientas habituales: n8n, Power Automate, Power BI, Power Query, Excel/VBA, Python, SQL, APIs y agentes de IA.
 
-Nuestras soluciones aseguran que los datos se transmitan de forma cifrada y segura, integrando herramientas sin necesidad de almacenar información sensible de forma innecesaria. Contacto disponible con respuestas en menos de 24 horas.
+El punto de partida siempre es la **Radiografía Digital gratuita**: una videollamada de 30 minutos para analizar los procesos de la empresa y decidir qué automatizar primero. Se puede reservar directamente en https://calendar.app.google/YXWtVqvTcukkEFuv6
 
-Visítanos en: https://www.biailitics.com
-Email: infobiailitics@gmail.com
+## Empieza aquí
+
+- [Radiografía Digital gratuita](https://www.biailitics.com/servicios/radiografia-digital/): análisis gratuito de procesos (30 min, sin compromiso) con hoja de ruta de qué automatizar.
+- [Calculadora de ahorro y coste de automatización](https://www.biailitics.com/calculadora-coste-automatizacion/): calcula horas ahorradas y retorno de la inversión; incluye plantilla Excel.
+- [Bolsa de horas](https://www.biailitics.com/bolsa-de-horas/): horas mensuales para mejoras continuas, desde 55 €/hora, sin permanencia.
+- [Formación en IA y datos para empresas](https://www.biailitics.com/formacion-ia-empresas/): formación práctica en ChatGPT, Claude, Copilot, Power BI y automatización; plan por perfiles alineado con el artículo 4 del Reglamento europeo de IA.
+
+## Excel
+
+- [Automatizar pedidos en Excel](https://www.biailitics.com/automatizar-pedidos-excel/)
+- [Macros Excel a medida](https://www.biailitics.com/macros-excel-a-medida/)
+- [Automatizar informes en Excel](https://www.biailitics.com/automatizar-informes-excel/): Power Query, macros VBA y conexiones de datos.
+- [Consultoría Power Query](https://www.biailitics.com/power-query-consultoria/)
+
+## Power BI
+
+- [Dashboard de ventas en Power BI](https://www.biailitics.com/dashboard-power-bi-ventas/)
+- [Pasar ventas de Excel a Power BI](https://www.biailitics.com/pasar-ventas-excel-a-power-bi/)
+- [Cuadro de mando financiero](https://www.biailitics.com/cuadro-mando-financiero-power-bi/)
+- [Dashboard de tesorería](https://www.biailitics.com/servicios/dashboard-tesoreria/)
+- [Migrar Excel a Power BI](https://www.biailitics.com/migrar-excel-a-power-bi/)
+- [Consultoría Power BI para pymes](https://www.biailitics.com/consultoria-power-bi-pymes/)
+- [Actualización automática de Power BI](https://www.biailitics.com/actualizacion-automatica-power-bi/)
+- [Precio de un dashboard Power BI](https://www.biailitics.com/precio-dashboard-power-bi/)
+
+## Integraciones e IA
+
+- [Integración con APIs y webhooks](https://www.biailitics.com/integracion-apis-webhooks/)
+- [Integración con ERP](https://www.biailitics.com/integracion-con-erp/): Holded, Odoo, Sage, Business Central y otros.
+- [WhatsApp Business conectado al ERP](https://www.biailitics.com/servicios/whatsapp-erp/)
+- [ETL y pipelines de datos](https://www.biailitics.com/etl-pipelines-datos/)
+- [RPA para sistemas sin API](https://www.biailitics.com/automatizacion-rpa-sin-api/)
+- [Agentes de IA para empresas](https://www.biailitics.com/servicios/agentes-ia/): agentes que leen documentos, responden consultas y ejecutan tareas con n8n.
+- [Licitaciones públicas con IA](https://www.biailitics.com/automatizacion-licitaciones-publicas/)
+
+## Procesos
+
+- [Ventas y CRM](https://www.biailitics.com/automatizacion-ventas-crm/)
+- [Marketing](https://www.biailitics.com/automatizacion-marketing/)
+- [Facturación y pagos](https://www.biailitics.com/automatizacion-facturacion-pagos/)
+- [Factura electrónica y Verifactu](https://www.biailitics.com/automatizacion-factura-electronica-verifactu/)
+- [Conciliación de pagos](https://www.biailitics.com/automatizacion-conciliacion-pagos/)
+- [RR. HH.: onboarding y offboarding](https://www.biailitics.com/automatizacion-hr-onboarding/)
+- [Onboarding automático de empleados](https://www.biailitics.com/servicios/onboarding-automatico/)
+- [Atención al cliente con IA y Ley 10/2025](https://www.biailitics.com/automatizacion-soporte-cliente/)
+- [Reporting automático de KPIs](https://www.biailitics.com/reporting-automatico-kpis/)
+
+## Sectores con experiencia real
+
+- [Empresas de limpieza](https://www.biailitics.com/automatizacion-empresas-limpieza/)
+- [Administración de fincas](https://www.biailitics.com/automatizacion-administracion-fincas/)
+- [Clínicas y salud](https://www.biailitics.com/automatizacion-clinicas-salud/)
+- [Distribución y venta de materiales](https://www.biailitics.com/automatizacion-distribucion-materiales/)
+- [Telecomunicaciones y telefonía](https://www.biailitics.com/automatizacion-telecomunicaciones/)
+
+## Proyectos reales
+
+- HealthStrategix (consultora del sector salud): dashboard en Power BI con su actividad comercial y clínica, actualizado automáticamente.
+- i-Nextia (telecomunicaciones, venta de SIM y móviles): automatización del seguimiento de campañas de Google Ads y cuadro de mando para medir sus resultados; soporte mensual.
+- Limpiezas Alferro (servicios de limpieza): pedidos de compra y facturas de proveedores que entran directamente en el ERP, sin doble entrada de datos.
+- PuigMetal y Alu Components (venta de hierro, aluminio y metal): facturación en Holded y formularios web que crean automáticamente el cliente en Holded.
+- JMREY (administración de fincas): agente de voz con IA (Vapi + n8n) que atiende las llamadas de los vecinos y registra cada incidencia con su prioridad.
+- Jobie (formación): 7 clases grabadas para un máster de análisis de datos e inteligencia de negocio y 2 meses de soporte a los alumnos.
+
+## Precios orientativos (sin IVA)
+
+- Radiografía Digital: gratuita.
+- Automatización básica con n8n (1-2 flujos): desde 500 €.
+- Dashboard Power BI: desde 400 €.
+- Proyecto completo (automatización + reporting): desde 1.200 €.
+- Mantenimiento: desde 150 €/mes con 2 horas incluidas, sin permanencia.
+- Formación en IA: desde 150 € por sesión.
+- Bolsa de horas: desde 650 €/mes (10 horas).
+
+El presupuesto final depende del alcance de cada proyecto.
+
+## Blog
+
+- [Ley de Atención al Cliente 10/2025: ¿afecta a tu pyme?](https://www.biailitics.com/blog/ley-atencion-cliente-pymes/)
+- [¿Cuánto cuesta automatizar una empresa?](https://www.biailitics.com/blog/cuanto-cuesta-automatizar-empresa/)
+- [7 tareas administrativas que tu pyme puede automatizar hoy](https://www.biailitics.com/blog/tareas-administrativas-automatizar-pyme/)
+- [Qué ERP usan las empresas en España y qué automatizar con cada uno](https://www.biailitics.com/blog/erp-herramientas-automatizar-pymes-espana/)
+- [Agentes de IA para pymes](https://www.biailitics.com/blog/agentes-ia-automatizacion-pymes/)
+- [Power BI para ventas](https://www.biailitics.com/blog/power-bi-para-ventas/)
+- [Excel vs Power BI](https://www.biailitics.com/blog/excel-vs-power-bi-diferencias/)
+- [n8n vs Make](https://www.biailitics.com/blog/n8n-vs-make-automatizacion-pymes/)
+- [Todos los artículos](https://www.biailitics.com/blog/)
+
+## Contacto
+
+- Web: https://www.biailitics.com
+- Reservar la Radiografía Digital (30 min): https://calendar.app.google/YXWtVqvTcukkEFuv6
+- Formulario de contacto: https://www.biailitics.com/#contacto
+- Email: infobiailitics@gmail.com
+- LinkedIn: https://www.linkedin.com/in/miguel-ángel-domínguez-rangel-373441176/
+- Respuesta en menos de 24 horas.

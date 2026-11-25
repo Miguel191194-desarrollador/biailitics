@@ -383,7 +383,7 @@ ol {
 
 @media (min-width: 1100px) {
   .nav__mega {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
@@ -749,9 +749,15 @@ ol {
   gap: 1rem;
 }
 
+/* Los botones no parten su texto: si no caben, el segundo baja de línea */
+.hero__actions a {
+  white-space: nowrap;
+}
+
 @media (min-width: 640px) {
   .hero__actions {
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
   }
 }
@@ -860,7 +866,10 @@ ol {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 2.5rem 3.5rem;
+  gap: 2.5rem 2.25rem;
+  /* 8 logos: dos filas equilibradas de 4 en escritorio */
+  max-width: 780px;
+  margin-inline: auto;
 }
 
 .clientes__logos a {
@@ -890,6 +899,17 @@ ol {
   filter: grayscale(0%);
   opacity: 1;
   transform: scale(1.06);
+}
+
+/* Modo oscuro: logos en gris claro (todos tienen fondo transparente) */
+.dark .clientes__logos img {
+  filter: grayscale(100%) invert(1);
+  opacity: 0.6;
+}
+
+.dark .clientes__logos a:hover img {
+  filter: grayscale(100%) invert(1);
+  opacity: 0.95;
 }
 
 .clientes__logos a:focus-visible {
@@ -1714,6 +1734,37 @@ section {
   font-weight: 500;
 }
 
+/* Reserva de llamada (Google Calendar) junto al formulario */
+.contact__book {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact__book p {
+  color: #cbd5e1;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.contact__book a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.4rem;
+  border-radius: var(--radius-full);
+  background: #fff;
+  color: #0f172a;
+  font-weight: 700;
+  font-size: 0.95rem;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.contact__book a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.15);
+}
+
 /* Form */
 .contact__form {
   display: flex;
@@ -2224,6 +2275,25 @@ section {
   flex: 1;
 }
 
+/* Casos reales: 3 columnas en escritorio y texto descriptivo (no es una cita) */
+@media (min-width: 1024px) {
+  .use-cases__grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.use-cases__title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.3;
+  margin: -0.25rem 0 0;
+}
+
+.use-cases__text--plain {
+  font-style: normal;
+  font-size: 0.92rem;
+}
+
 .use-cases__text strong {
   color: var(--text);
   font-style: normal;
@@ -2411,7 +2481,7 @@ section {
 
 @media (min-width: 1280px) {
   .pricing__grid {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
